@@ -1,11 +1,11 @@
-package ru.dixi.Diadoc.Api
+package Diadoc.Api.XML
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonRootName
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
 @JsonRootName("UniversalTransferDocumentBuyerTitle")
-class UniversalTransferDocumentBuyerTitle {
+class UniversalTransferDocumentBuyerTitle_utd820_05_01_02_hyphen {
     //Attributes
     @JacksonXmlProperty(localName = "DocumentCreator", isAttribute = true)
     var documentCreator = ""
