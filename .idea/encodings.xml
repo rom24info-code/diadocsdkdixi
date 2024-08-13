@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Events/DiadocMessage_PostApiProtos.java" charset="windows-1251" />
-  </component>
+    <component name="Encoding">
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Events/DiadocMessage_PostApiProtos.java" charset="windows-1251" />
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Events/ResolutionInfoProtos.java" charset="UTF-8" />
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Invoicing/AcceptanceCertificate552InfoProtos.java" charset="UTF-8" />
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Invoicing/InvoiceInfoProtos.java" charset="UTF-8" />
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Invoicing/OrganizationInfoProtos.java" charset="UTF-8" />
+        <file url="file://$PROJECT_DIR$/src/main/java/Diadoc/Api/Proto/Invoicing/Organizations/ExtendedOrganizationInfoProtos.java" charset="UTF-8" />
+    </component>
 </project>

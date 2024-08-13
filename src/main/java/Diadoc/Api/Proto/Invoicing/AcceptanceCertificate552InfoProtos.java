@@ -16,7 +16,7 @@ public final class AcceptanceCertificate552InfoProtos {
      * <code>required .Diadoc.Api.Proto.Invoicing.Organizations.ExtendedOrganizationInfo Seller = 1;</code>
      *
      * <pre>
-     * Исполнитель (продавец услуг) // Исполнитель
+     *     Исполнитель (продавец услуг) // Исполнитель
      * </pre>
      */
     boolean hasSeller();
