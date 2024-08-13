@@ -19,11 +19,11 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin();
+    UserLoginPatch getLogin();
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder();
+    UserLoginPatchOrBuilder getLoginOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
@@ -32,11 +32,11 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName();
+    UserFullNamePatch getFullName();
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder();
+    UserFullNamePatchOrBuilder getFullNameOrBuilder();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Users.UserToUpdate}
@@ -62,7 +62,7 @@ public final class UserToUpdateProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -91,11 +91,11 @@ public final class UserToUpdateProtos {
               break;
             }
             case 10: {
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder subBuilder = null;
+              UserLoginPatch.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = login_.toBuilder();
               }
-              login_ = input.readMessage(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.PARSER, extensionRegistry);
+              login_ = input.readMessage(UserLoginPatch.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(login_);
                 login_ = subBuilder.buildPartial();
@@ -104,11 +104,11 @@ public final class UserToUpdateProtos {
               break;
             }
             case 18: {
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder subBuilder = null;
+              UserFullNamePatch.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = fullName_.toBuilder();
               }
-              fullName_ = input.readMessage(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.PARSER, extensionRegistry);
+              fullName_ = input.readMessage(UserFullNamePatch.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(fullName_);
                 fullName_ = subBuilder.buildPartial();
@@ -130,14 +130,14 @@ public final class UserToUpdateProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_fieldAccessorTable
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.Builder.class);
+              UserToUpdate.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<UserToUpdate> PARSER =
@@ -150,14 +150,14 @@ public final class UserToUpdateProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<UserToUpdate> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int LOGIN_FIELD_NUMBER = 1;
-    private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch login_;
+    private UserLoginPatch login_;
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
      */
@@ -167,18 +167,18 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
+    public UserLoginPatch getLogin() {
       return login_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
+    public UserLoginPatchOrBuilder getLoginOrBuilder() {
       return login_;
     }
 
     public static final int FULLNAME_FIELD_NUMBER = 2;
-    private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch fullName_;
+    private UserFullNamePatch fullName_;
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
      */
@@ -188,19 +188,19 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
+    public UserFullNamePatch getFullName() {
       return fullName_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
+    public UserFullNamePatchOrBuilder getFullNameOrBuilder() {
       return fullName_;
     }
 
     private void initFields() {
-      login_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
-      fullName_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
+      login_ = UserLoginPatch.getDefaultInstance();
+      fullName_ = UserFullNamePatch.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -250,59 +250,59 @@ public final class UserToUpdateProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(byte[] data)
+    public static UserToUpdate parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(java.io.InputStream input)
+    public static UserToUpdate parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseDelimitedFrom(java.io.InputStream input)
+    public static UserToUpdate parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseDelimitedFrom(
+    public static UserToUpdate parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parseFrom(
+    public static UserToUpdate parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -311,14 +311,14 @@ public final class UserToUpdateProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate prototype) {
+    public static Builder newBuilder(UserToUpdate prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -328,17 +328,17 @@ public final class UserToUpdateProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Users.UserToUpdate)
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdateOrBuilder {
+        UserToUpdateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_fieldAccessorTable
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.Builder.class);
+                UserToUpdate.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.newBuilder()
@@ -347,7 +347,7 @@ public final class UserToUpdateProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -364,13 +364,13 @@ public final class UserToUpdateProtos {
       public Builder clear() {
         super.clear();
         if (loginBuilder_ == null) {
-          login_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
+          login_ = UserLoginPatch.getDefaultInstance();
         } else {
           loginBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         if (fullNameBuilder_ == null) {
-          fullName_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
+          fullName_ = UserFullNamePatch.getDefaultInstance();
         } else {
           fullNameBuilder_.clear();
         }
@@ -384,23 +384,23 @@ public final class UserToUpdateProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.getDefaultInstance();
+      public UserToUpdate getDefaultInstanceForType() {
+        return UserToUpdate.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate build() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate result = buildPartial();
+      public UserToUpdate build() {
+        UserToUpdate result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate buildPartial() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate result = new Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate(this);
+      public UserToUpdate buildPartial() {
+        UserToUpdate result = new UserToUpdate(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -425,16 +425,16 @@ public final class UserToUpdateProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate) {
-          return mergeFrom((Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate)other);
+        if (other instanceof UserToUpdate) {
+          return mergeFrom((UserToUpdate)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate other) {
-        if (other == Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate.getDefaultInstance()) return this;
+      public Builder mergeFrom(UserToUpdate other) {
+        if (other == UserToUpdate.getDefaultInstance()) return this;
         if (other.hasLogin()) {
           mergeLogin(other.getLogin());
         }
@@ -459,11 +459,11 @@ public final class UserToUpdateProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate parsedMessage = null;
+        UserToUpdate parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Users.UserToUpdateProtos.UserToUpdate) e.getUnfinishedMessage();
+          parsedMessage = (UserToUpdate) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -474,9 +474,9 @@ public final class UserToUpdateProtos {
       }
       private int bitField0_;
 
-      private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch login_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
+      private UserLoginPatch login_ = UserLoginPatch.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder> loginBuilder_;
+          UserLoginPatch, UserLoginPatch.Builder, UserLoginPatchOrBuilder> loginBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
@@ -486,7 +486,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
+      public UserLoginPatch getLogin() {
         if (loginBuilder_ == null) {
           return login_;
         } else {
@@ -496,7 +496,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
-      public Builder setLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
+      public Builder setLogin(UserLoginPatch value) {
         if (loginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -513,7 +513,7 @@ public final class UserToUpdateProtos {
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
       public Builder setLogin(
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder builderForValue) {
+          UserLoginPatch.Builder builderForValue) {
         if (loginBuilder_ == null) {
           login_ = builderForValue.build();
           onChanged();
@@ -526,12 +526,12 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
-      public Builder mergeLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
+      public Builder mergeLogin(UserLoginPatch value) {
         if (loginBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              login_ != Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance()) {
+              login_ != UserLoginPatch.getDefaultInstance()) {
             login_ =
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.newBuilder(login_).mergeFrom(value).buildPartial();
+              UserLoginPatch.newBuilder(login_).mergeFrom(value).buildPartial();
           } else {
             login_ = value;
           }
@@ -547,7 +547,7 @@ public final class UserToUpdateProtos {
        */
       public Builder clearLogin() {
         if (loginBuilder_ == null) {
-          login_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
+          login_ = UserLoginPatch.getDefaultInstance();
           onChanged();
         } else {
           loginBuilder_.clear();
@@ -558,7 +558,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder getLoginBuilder() {
+      public UserLoginPatch.Builder getLoginBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getLoginFieldBuilder().getBuilder();
@@ -566,7 +566,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
+      public UserLoginPatchOrBuilder getLoginOrBuilder() {
         if (loginBuilder_ != null) {
           return loginBuilder_.getMessageOrBuilder();
         } else {
@@ -577,11 +577,11 @@ public final class UserToUpdateProtos {
        * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder> 
+          UserLoginPatch, UserLoginPatch.Builder, UserLoginPatchOrBuilder>
           getLoginFieldBuilder() {
         if (loginBuilder_ == null) {
           loginBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder>(
+              UserLoginPatch, UserLoginPatch.Builder, UserLoginPatchOrBuilder>(
                   getLogin(),
                   getParentForChildren(),
                   isClean());
@@ -590,9 +590,9 @@ public final class UserToUpdateProtos {
         return loginBuilder_;
       }
 
-      private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch fullName_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
+      private UserFullNamePatch fullName_ = UserFullNamePatch.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder> fullNameBuilder_;
+          UserFullNamePatch, UserFullNamePatch.Builder, UserFullNamePatchOrBuilder> fullNameBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
@@ -602,7 +602,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
+      public UserFullNamePatch getFullName() {
         if (fullNameBuilder_ == null) {
           return fullName_;
         } else {
@@ -612,7 +612,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
-      public Builder setFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
+      public Builder setFullName(UserFullNamePatch value) {
         if (fullNameBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -629,7 +629,7 @@ public final class UserToUpdateProtos {
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
       public Builder setFullName(
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder builderForValue) {
+          UserFullNamePatch.Builder builderForValue) {
         if (fullNameBuilder_ == null) {
           fullName_ = builderForValue.build();
           onChanged();
@@ -642,12 +642,12 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
-      public Builder mergeFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
+      public Builder mergeFullName(UserFullNamePatch value) {
         if (fullNameBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              fullName_ != Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance()) {
+              fullName_ != UserFullNamePatch.getDefaultInstance()) {
             fullName_ =
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.newBuilder(fullName_).mergeFrom(value).buildPartial();
+              UserFullNamePatch.newBuilder(fullName_).mergeFrom(value).buildPartial();
           } else {
             fullName_ = value;
           }
@@ -663,7 +663,7 @@ public final class UserToUpdateProtos {
        */
       public Builder clearFullName() {
         if (fullNameBuilder_ == null) {
-          fullName_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
+          fullName_ = UserFullNamePatch.getDefaultInstance();
           onChanged();
         } else {
           fullNameBuilder_.clear();
@@ -674,7 +674,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder getFullNameBuilder() {
+      public UserFullNamePatch.Builder getFullNameBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getFullNameFieldBuilder().getBuilder();
@@ -682,7 +682,7 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
+      public UserFullNamePatchOrBuilder getFullNameOrBuilder() {
         if (fullNameBuilder_ != null) {
           return fullNameBuilder_.getMessageOrBuilder();
         } else {
@@ -693,11 +693,11 @@ public final class UserToUpdateProtos {
        * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder> 
+          UserFullNamePatch, UserFullNamePatch.Builder, UserFullNamePatchOrBuilder>
           getFullNameFieldBuilder() {
         if (fullNameBuilder_ == null) {
           fullNameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder>(
+              UserFullNamePatch, UserFullNamePatch.Builder, UserFullNamePatchOrBuilder>(
                   getFullName(),
                   getParentForChildren(),
                   isClean());
@@ -728,7 +728,7 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional string Login = 1;</code>
      */
-    java.lang.String getLogin();
+    String getLogin();
     /**
      * <code>optional string Login = 1;</code>
      */
@@ -759,7 +759,7 @@ public final class UserToUpdateProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -807,14 +807,14 @@ public final class UserToUpdateProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_fieldAccessorTable
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder.class);
+              UserLoginPatch.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<UserLoginPatch> PARSER =
@@ -827,14 +827,14 @@ public final class UserToUpdateProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<UserLoginPatch> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int LOGIN_FIELD_NUMBER = 1;
-    private java.lang.Object login_;
+    private Object login_;
     /**
      * <code>optional string Login = 1;</code>
      */
@@ -844,14 +844,14 @@ public final class UserToUpdateProtos {
     /**
      * <code>optional string Login = 1;</code>
      */
-    public java.lang.String getLogin() {
-      java.lang.Object ref = login_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLogin() {
+      Object ref = login_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           login_ = s;
         }
@@ -863,11 +863,11 @@ public final class UserToUpdateProtos {
      */
     public com.google.protobuf.ByteString
         getLoginBytes() {
-      java.lang.Object ref = login_;
-      if (ref instanceof java.lang.String) {
+      Object ref = login_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         login_ = b;
         return b;
       } else {
@@ -913,59 +913,59 @@ public final class UserToUpdateProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(byte[] data)
+    public static UserLoginPatch parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(java.io.InputStream input)
+    public static UserLoginPatch parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseDelimitedFrom(java.io.InputStream input)
+    public static UserLoginPatch parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseDelimitedFrom(
+    public static UserLoginPatch parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parseFrom(
+    public static UserLoginPatch parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -974,14 +974,14 @@ public final class UserToUpdateProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch prototype) {
+    public static Builder newBuilder(UserLoginPatch prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -991,17 +991,17 @@ public final class UserToUpdateProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Users.UserLoginPatch)
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder {
+        UserLoginPatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_fieldAccessorTable
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder.class);
+                UserLoginPatch.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.newBuilder()
@@ -1010,7 +1010,7 @@ public final class UserToUpdateProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1035,23 +1035,23 @@ public final class UserToUpdateProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
+      public UserLoginPatch getDefaultInstanceForType() {
+        return UserLoginPatch.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch build() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch result = buildPartial();
+      public UserLoginPatch build() {
+        UserLoginPatch result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch buildPartial() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch result = new Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch(this);
+      public UserLoginPatch buildPartial() {
+        UserLoginPatch result = new UserLoginPatch(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1064,16 +1064,16 @@ public final class UserToUpdateProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch) {
-          return mergeFrom((Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch)other);
+        if (other instanceof UserLoginPatch) {
+          return mergeFrom((UserLoginPatch)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch other) {
-        if (other == Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(UserLoginPatch other) {
+        if (other == UserLoginPatch.getDefaultInstance()) return this;
         if (other.hasLogin()) {
           bitField0_ |= 0x00000001;
           login_ = other.login_;
@@ -1091,11 +1091,11 @@ public final class UserToUpdateProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch parsedMessage = null;
+        UserLoginPatch parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch) e.getUnfinishedMessage();
+          parsedMessage = (UserLoginPatch) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1106,7 +1106,7 @@ public final class UserToUpdateProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object login_ = "";
+      private Object login_ = "";
       /**
        * <code>optional string Login = 1;</code>
        */
@@ -1116,18 +1116,18 @@ public final class UserToUpdateProtos {
       /**
        * <code>optional string Login = 1;</code>
        */
-      public java.lang.String getLogin() {
-        java.lang.Object ref = login_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLogin() {
+        Object ref = login_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             login_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1135,11 +1135,11 @@ public final class UserToUpdateProtos {
        */
       public com.google.protobuf.ByteString
           getLoginBytes() {
-        java.lang.Object ref = login_;
+        Object ref = login_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           login_ = b;
           return b;
         } else {
@@ -1150,7 +1150,7 @@ public final class UserToUpdateProtos {
        * <code>optional string Login = 1;</code>
        */
       public Builder setLogin(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1234,7 +1234,7 @@ public final class UserToUpdateProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1289,14 +1289,14 @@ public final class UserToUpdateProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_fieldAccessorTable
+      return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder.class);
+              UserFullNamePatch.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<UserFullNamePatch> PARSER =
@@ -1309,7 +1309,7 @@ public final class UserToUpdateProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<UserFullNamePatch> getParserForType() {
       return PARSER;
     }
@@ -1380,59 +1380,59 @@ public final class UserToUpdateProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(byte[] data)
+    public static UserFullNamePatch parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(java.io.InputStream input)
+    public static UserFullNamePatch parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseDelimitedFrom(java.io.InputStream input)
+    public static UserFullNamePatch parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseDelimitedFrom(
+    public static UserFullNamePatch parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parseFrom(
+    public static UserFullNamePatch parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1441,14 +1441,14 @@ public final class UserToUpdateProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch prototype) {
+    public static Builder newBuilder(UserFullNamePatch prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1458,17 +1458,17 @@ public final class UserToUpdateProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Users.UserFullNamePatch)
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder {
+        UserFullNamePatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_fieldAccessorTable
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.class, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder.class);
+                UserFullNamePatch.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.newBuilder()
@@ -1477,7 +1477,7 @@ public final class UserToUpdateProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1507,23 +1507,23 @@ public final class UserToUpdateProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
+        return UserToUpdateProtos.internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
+      public UserFullNamePatch getDefaultInstanceForType() {
+        return UserFullNamePatch.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch build() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch result = buildPartial();
+      public UserFullNamePatch build() {
+        UserFullNamePatch result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch buildPartial() {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch result = new Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch(this);
+      public UserFullNamePatch buildPartial() {
+        UserFullNamePatch result = new UserFullNamePatch(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1540,16 +1540,16 @@ public final class UserToUpdateProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch) {
-          return mergeFrom((Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch)other);
+        if (other instanceof UserFullNamePatch) {
+          return mergeFrom((UserFullNamePatch)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch other) {
-        if (other == Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(UserFullNamePatch other) {
+        if (other == UserFullNamePatch.getDefaultInstance()) return this;
         if (other.hasFullName()) {
           mergeFullName(other.getFullName());
         }
@@ -1571,11 +1571,11 @@ public final class UserToUpdateProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch parsedMessage = null;
+        UserFullNamePatch parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch) e.getUnfinishedMessage();
+          parsedMessage = (UserFullNamePatch) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1736,7 +1736,7 @@ public final class UserToUpdateProtos {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\030Users/UserToUpdate.proto\022\026Diadoc.Api.P" +
       "roto.Users\032\nUser.proto\"\202\001\n\014UserToUpdate\022" +
       "5\n\005Login\030\001 \001(\0132&.Diadoc.Api.Proto.Users." +
@@ -1764,19 +1764,19 @@ public final class UserToUpdateProtos {
     internal_static_Diadoc_Api_Proto_Users_UserToUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Users_UserToUpdate_descriptor,
-        new java.lang.String[] { "Login", "FullName", });
+        new String[] { "Login", "FullName", });
     internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Users_UserLoginPatch_descriptor,
-        new java.lang.String[] { "Login", });
+        new String[] { "Login", });
     internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Users_UserFullNamePatch_descriptor,
-        new java.lang.String[] { "FullName", });
+        new String[] { "FullName", });
     Diadoc.Api.Proto.UserProtos.getDescriptor();
   }
 

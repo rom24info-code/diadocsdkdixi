@@ -1,4 +1,4 @@
-package xmlclasses
+package ru.dixi.Diadoc.Api
 
 import Diadoc.Api.Proto.Employees.EmployeeProtos.Employee
 import com.fasterxml.jackson.annotation.JacksonInject

@@ -19,7 +19,7 @@ public final class CancellationInfoProtos {
     /**
      * <code>required string Author = 1;</code>
      */
-    java.lang.String getAuthor();
+    String getAuthor();
     /**
      * <code>required string Author = 1;</code>
      */
@@ -50,7 +50,7 @@ public final class CancellationInfoProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -98,14 +98,14 @@ public final class CancellationInfoProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
+      return CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_fieldAccessorTable
+      return CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.class, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder.class);
+              CancellationInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<CancellationInfo> PARSER =
@@ -118,14 +118,14 @@ public final class CancellationInfoProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<CancellationInfo> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int AUTHOR_FIELD_NUMBER = 1;
-    private java.lang.Object author_;
+    private Object author_;
     /**
      * <code>required string Author = 1;</code>
      */
@@ -135,14 +135,14 @@ public final class CancellationInfoProtos {
     /**
      * <code>required string Author = 1;</code>
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthor() {
+      Object ref = author_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           author_ = s;
         }
@@ -154,11 +154,11 @@ public final class CancellationInfoProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
+      Object ref = author_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         author_ = b;
         return b;
       } else {
@@ -208,59 +208,59 @@ public final class CancellationInfoProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(byte[] data)
+    public static CancellationInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(java.io.InputStream input)
+    public static CancellationInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseDelimitedFrom(java.io.InputStream input)
+    public static CancellationInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseDelimitedFrom(
+    public static CancellationInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parseFrom(
+    public static CancellationInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -269,14 +269,14 @@ public final class CancellationInfoProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo prototype) {
+    public static Builder newBuilder(CancellationInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -286,17 +286,17 @@ public final class CancellationInfoProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.CancellationInfo)
-        Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder {
+        CancellationInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
+        return CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_fieldAccessorTable
+        return CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.class, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder.class);
+                CancellationInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.newBuilder()
@@ -305,7 +305,7 @@ public final class CancellationInfoProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -330,23 +330,23 @@ public final class CancellationInfoProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
+        return CancellationInfoProtos.internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance();
+      public CancellationInfo getDefaultInstanceForType() {
+        return CancellationInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo build() {
-        Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo result = buildPartial();
+      public CancellationInfo build() {
+        CancellationInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo buildPartial() {
-        Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo result = new Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo(this);
+      public CancellationInfo buildPartial() {
+        CancellationInfo result = new CancellationInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -359,16 +359,16 @@ public final class CancellationInfoProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo)other);
+        if (other instanceof CancellationInfo) {
+          return mergeFrom((CancellationInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo other) {
-        if (other == Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(CancellationInfo other) {
+        if (other == CancellationInfo.getDefaultInstance()) return this;
         if (other.hasAuthor()) {
           bitField0_ |= 0x00000001;
           author_ = other.author_;
@@ -390,11 +390,11 @@ public final class CancellationInfoProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo parsedMessage = null;
+        CancellationInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo) e.getUnfinishedMessage();
+          parsedMessage = (CancellationInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -405,7 +405,7 @@ public final class CancellationInfoProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object author_ = "";
+      private Object author_ = "";
       /**
        * <code>required string Author = 1;</code>
        */
@@ -415,18 +415,18 @@ public final class CancellationInfoProtos {
       /**
        * <code>required string Author = 1;</code>
        */
-      public java.lang.String getAuthor() {
-        java.lang.Object ref = author_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAuthor() {
+        Object ref = author_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             author_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -434,11 +434,11 @@ public final class CancellationInfoProtos {
        */
       public com.google.protobuf.ByteString
           getAuthorBytes() {
-        java.lang.Object ref = author_;
+        Object ref = author_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           author_ = b;
           return b;
         } else {
@@ -449,7 +449,7 @@ public final class CancellationInfoProtos {
        * <code>required string Author = 1;</code>
        */
       public Builder setAuthor(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -505,7 +505,7 @@ public final class CancellationInfoProtos {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\035Events/CancellationInfo.proto\022\027Diadoc." +
       "Api.Proto.Events\"\"\n\020CancellationInfo\022\016\n\006" +
       "Author\030\001 \002(\tB\030B\026CancellationInfoProtos"
@@ -527,7 +527,7 @@ public final class CancellationInfoProtos {
     internal_static_Diadoc_Api_Proto_Events_CancellationInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Events_CancellationInfo_descriptor,
-        new java.lang.String[] { "Author", });
+        new String[] { "Author", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

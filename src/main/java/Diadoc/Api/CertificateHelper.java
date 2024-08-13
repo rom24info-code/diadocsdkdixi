@@ -6,7 +6,9 @@ import org.apache.commons.codec.binary.Hex;
 import ru.CryptoPro.JCP.ASN.CryptographicMessageSyntax.*;
 import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.CertificateSerialNumber;
 import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.Name;
+import ru.CryptoPro.JCP.Util.JCPInit;
 import ru.CryptoPro.JCP.params.OID;
+import ru.CryptoPro.JCSP.JCSP;
 
 import java.io.ByteArrayInputStream;
 import java.security.MessageDigest;
@@ -110,7 +112,7 @@ public class CertificateHelper {
 
     public static PrivateKey getPrivateKey(X509Certificate cert, char[] password) {
         try {
-            KeyStore keystore = KeyStore.getInstance("HDImageStore");
+            KeyStore keystore = KeyStore.getInstance(JCSP.MY_STORE_NAME, JCSP.PROVIDER_NAME);
             keystore.load(null, null);
             for (Enumeration<String> en = keystore.aliases(); en.hasMoreElements(); ) {
                 String s = en.nextElement();
@@ -160,7 +162,8 @@ public class CertificateHelper {
     public static List<X509Certificate> getCertificatesFromPersonalStore() {
         List<X509Certificate> certs = new ArrayList<X509Certificate>();
         try {
-            KeyStore keystore = KeyStore.getInstance("HDImageStore");
+            JCPInit.initProviders(true);
+            KeyStore keystore = KeyStore.getInstance(JCSP.MY_STORE_NAME, JCSP.PROVIDER_NAME);
             keystore.load(null, null);
             for (Enumeration<String> en = keystore.aliases(); en.hasMoreElements(); ) {
                 String s = en.nextElement();

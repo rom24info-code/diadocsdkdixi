@@ -74,7 +74,7 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(0);
+      return DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final TemplateRefusalType[] VALUES = values();
@@ -82,7 +82,7 @@ public final class DiadocMessage_GetApiProtos {
     public static TemplateRefusalType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       return VALUES[desc.getIndex()];
@@ -181,7 +181,7 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(1);
+      return DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final EntityType[] VALUES = values();
@@ -189,7 +189,7 @@ public final class DiadocMessage_GetApiProtos {
     public static EntityType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       return VALUES[desc.getIndex()];
@@ -792,7 +792,7 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(2);
+      return DiadocMessage_GetApiProtos.getDescriptor().getEnumTypes().get(2);
     }
 
     private static final AttachmentType[] VALUES = values();
@@ -800,7 +800,7 @@ public final class DiadocMessage_GetApiProtos {
     public static AttachmentType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       return VALUES[desc.getIndex()];
@@ -824,12 +824,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> 
+    java.util.List<BoxEvent>
         getEventsList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent getEvents(int index);
+    BoxEvent getEvents(int index);
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
@@ -837,12 +837,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder> 
+    java.util.List<? extends BoxEventOrBuilder>
         getEventsOrBuilderList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder getEventsOrBuilder(
+    BoxEventOrBuilder getEventsOrBuilder(
         int index);
 
     /**
@@ -887,7 +887,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -917,10 +917,10 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                events_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent>();
+                events_ = new java.util.ArrayList<BoxEvent>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              events_.add(input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.PARSER, extensionRegistry));
+              events_.add(input.readMessage(BoxEvent.PARSER, extensionRegistry));
               break;
             }
             case 16: {
@@ -956,14 +956,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.Builder.class);
+              BoxEventList.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<BoxEventList> PARSER =
@@ -976,24 +976,24 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<BoxEventList> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int EVENTS_FIELD_NUMBER = 1;
-    private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> events_;
+    private java.util.List<BoxEvent> events_;
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> getEventsList() {
+    public java.util.List<BoxEvent> getEventsList() {
       return events_;
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder> 
+    public java.util.List<? extends BoxEventOrBuilder>
         getEventsOrBuilderList() {
       return events_;
     }
@@ -1006,13 +1006,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent getEvents(int index) {
+    public BoxEvent getEvents(int index) {
       return events_.get(index);
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder getEventsOrBuilder(
+    public BoxEventOrBuilder getEventsOrBuilder(
         int index) {
       return events_.get(index);
     }
@@ -1111,59 +1111,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(byte[] data)
+    public static BoxEventList parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(java.io.InputStream input)
+    public static BoxEventList parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseDelimitedFrom(java.io.InputStream input)
+    public static BoxEventList parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseDelimitedFrom(
+    public static BoxEventList parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parseFrom(
+    public static BoxEventList parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1172,14 +1172,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList prototype) {
+    public static Builder newBuilder(BoxEventList prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1189,17 +1189,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.BoxEventList)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventListOrBuilder {
+        BoxEventListOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.Builder.class);
+                BoxEventList.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.newBuilder()
@@ -1208,7 +1208,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1242,23 +1242,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEventList_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.getDefaultInstance();
+      public BoxEventList getDefaultInstanceForType() {
+        return BoxEventList.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList result = buildPartial();
+      public BoxEventList build() {
+        BoxEventList result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList(this);
+      public BoxEventList buildPartial() {
+        BoxEventList result = new BoxEventList(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (eventsBuilder_ == null) {
@@ -1284,16 +1284,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList)other);
+        if (other instanceof BoxEventList) {
+          return mergeFrom((BoxEventList)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList.getDefaultInstance()) return this;
+      public Builder mergeFrom(BoxEventList other) {
+        if (other == BoxEventList.getDefaultInstance()) return this;
         if (eventsBuilder_ == null) {
           if (!other.events_.isEmpty()) {
             if (events_.isEmpty()) {
@@ -1348,11 +1348,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList parsedMessage = null;
+        BoxEventList parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventList) e.getUnfinishedMessage();
+          parsedMessage = (BoxEventList) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1363,22 +1363,22 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> events_ =
+      private java.util.List<BoxEvent> events_ =
         java.util.Collections.emptyList();
       private void ensureEventsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          events_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent>(events_);
+          events_ = new java.util.ArrayList<BoxEvent>(events_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder> eventsBuilder_;
+          BoxEvent, BoxEvent.Builder, BoxEventOrBuilder> eventsBuilder_;
 
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> getEventsList() {
+      public java.util.List<BoxEvent> getEventsList() {
         if (eventsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(events_);
         } else {
@@ -1398,7 +1398,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent getEvents(int index) {
+      public BoxEvent getEvents(int index) {
         if (eventsBuilder_ == null) {
           return events_.get(index);
         } else {
@@ -1409,7 +1409,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder setEvents(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent value) {
+          int index, BoxEvent value) {
         if (eventsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1426,7 +1426,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder setEvents(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder builderForValue) {
+          int index, BoxEvent.Builder builderForValue) {
         if (eventsBuilder_ == null) {
           ensureEventsIsMutable();
           events_.set(index, builderForValue.build());
@@ -1439,7 +1439,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Builder addEvents(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent value) {
+      public Builder addEvents(BoxEvent value) {
         if (eventsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1456,7 +1456,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder addEvents(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent value) {
+          int index, BoxEvent value) {
         if (eventsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1473,7 +1473,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder addEvents(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder builderForValue) {
+          BoxEvent.Builder builderForValue) {
         if (eventsBuilder_ == null) {
           ensureEventsIsMutable();
           events_.add(builderForValue.build());
@@ -1487,7 +1487,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder addEvents(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder builderForValue) {
+          int index, BoxEvent.Builder builderForValue) {
         if (eventsBuilder_ == null) {
           ensureEventsIsMutable();
           events_.add(index, builderForValue.build());
@@ -1501,7 +1501,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
       public Builder addAllEvents(
-          java.lang.Iterable<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent> values) {
+          Iterable<? extends BoxEvent> values) {
         if (eventsBuilder_ == null) {
           ensureEventsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1541,14 +1541,14 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder getEventsBuilder(
+      public BoxEvent.Builder getEventsBuilder(
           int index) {
         return getEventsFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder getEventsOrBuilder(
+      public BoxEventOrBuilder getEventsOrBuilder(
           int index) {
         if (eventsBuilder_ == null) {
           return events_.get(index);  } else {
@@ -1558,7 +1558,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder> 
+      public java.util.List<? extends BoxEventOrBuilder>
            getEventsOrBuilderList() {
         if (eventsBuilder_ != null) {
           return eventsBuilder_.getMessageOrBuilderList();
@@ -1569,31 +1569,31 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder addEventsBuilder() {
+      public BoxEvent.Builder addEventsBuilder() {
         return getEventsFieldBuilder().addBuilder(
-            Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.getDefaultInstance());
+            BoxEvent.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder addEventsBuilder(
+      public BoxEvent.Builder addEventsBuilder(
           int index) {
         return getEventsFieldBuilder().addBuilder(
-            index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.getDefaultInstance());
+            index, BoxEvent.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.BoxEvent Events = 1;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder> 
+      public java.util.List<BoxEvent.Builder>
            getEventsBuilderList() {
         return getEventsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder> 
+          BoxEvent, BoxEvent.Builder, BoxEventOrBuilder>
           getEventsFieldBuilder() {
         if (eventsBuilder_ == null) {
           eventsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder>(
+              BoxEvent, BoxEvent.Builder, BoxEventOrBuilder>(
                   events_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -1692,7 +1692,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EventId = 1;</code>
      */
-    java.lang.String getEventId();
+    String getEventId();
     /**
      * <code>required string EventId = 1;</code>
      */
@@ -1706,11 +1706,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message getMessage();
+    Message getMessage();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder getMessageOrBuilder();
+    MessageOrBuilder getMessageOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
@@ -1719,11 +1719,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch getPatch();
+    MessagePatch getPatch();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder getPatchOrBuilder();
+    MessagePatchOrBuilder getPatchOrBuilder();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Events.BoxEvent}
@@ -1749,7 +1749,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1784,11 +1784,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 18: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder subBuilder = null;
+              Message.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = message_.toBuilder();
               }
-              message_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.PARSER, extensionRegistry);
+              message_ = input.readMessage(Message.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(message_);
                 message_ = subBuilder.buildPartial();
@@ -1797,11 +1797,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 26: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder subBuilder = null;
+              MessagePatch.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = patch_.toBuilder();
               }
-              patch_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.PARSER, extensionRegistry);
+              patch_ = input.readMessage(MessagePatch.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(patch_);
                 patch_ = subBuilder.buildPartial();
@@ -1823,14 +1823,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder.class);
+              BoxEvent.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<BoxEvent> PARSER =
@@ -1843,14 +1843,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<BoxEvent> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int EVENTID_FIELD_NUMBER = 1;
-    private java.lang.Object eventId_;
+    private Object eventId_;
     /**
      * <code>required string EventId = 1;</code>
      */
@@ -1860,14 +1860,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EventId = 1;</code>
      */
-    public java.lang.String getEventId() {
-      java.lang.Object ref = eventId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEventId() {
+      Object ref = eventId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           eventId_ = s;
         }
@@ -1879,11 +1879,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getEventIdBytes() {
-      java.lang.Object ref = eventId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = eventId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         eventId_ = b;
         return b;
       } else {
@@ -1892,7 +1892,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGE_FIELD_NUMBER = 2;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message message_;
+    private Message message_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
      */
@@ -1902,18 +1902,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message getMessage() {
+    public Message getMessage() {
       return message_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder getMessageOrBuilder() {
+    public MessageOrBuilder getMessageOrBuilder() {
       return message_;
     }
 
     public static final int PATCH_FIELD_NUMBER = 3;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch patch_;
+    private MessagePatch patch_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
      */
@@ -1923,20 +1923,20 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch getPatch() {
+    public MessagePatch getPatch() {
       return patch_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder getPatchOrBuilder() {
+    public MessagePatchOrBuilder getPatchOrBuilder() {
       return patch_;
     }
 
     private void initFields() {
       eventId_ = "";
-      message_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance();
-      patch_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance();
+      message_ = Message.getDefaultInstance();
+      patch_ = MessagePatch.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2003,59 +2003,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(byte[] data)
+    public static BoxEvent parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(java.io.InputStream input)
+    public static BoxEvent parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseDelimitedFrom(java.io.InputStream input)
+    public static BoxEvent parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseDelimitedFrom(
+    public static BoxEvent parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parseFrom(
+    public static BoxEvent parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2064,14 +2064,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent prototype) {
+    public static Builder newBuilder(BoxEvent prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2081,17 +2081,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.BoxEvent)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEventOrBuilder {
+        BoxEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.Builder.class);
+                BoxEvent.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.newBuilder()
@@ -2100,7 +2100,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2119,13 +2119,13 @@ public final class DiadocMessage_GetApiProtos {
         eventId_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         if (messageBuilder_ == null) {
-          message_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance();
+          message_ = Message.getDefaultInstance();
         } else {
           messageBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
         if (patchBuilder_ == null) {
-          patch_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance();
+          patch_ = MessagePatch.getDefaultInstance();
         } else {
           patchBuilder_.clear();
         }
@@ -2139,23 +2139,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_BoxEvent_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.getDefaultInstance();
+      public BoxEvent getDefaultInstanceForType() {
+        return BoxEvent.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent result = buildPartial();
+      public BoxEvent build() {
+        BoxEvent result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent(this);
+      public BoxEvent buildPartial() {
+        BoxEvent result = new BoxEvent(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2184,16 +2184,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent)other);
+        if (other instanceof BoxEvent) {
+          return mergeFrom((BoxEvent)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent.getDefaultInstance()) return this;
+      public Builder mergeFrom(BoxEvent other) {
+        if (other == BoxEvent.getDefaultInstance()) return this;
         if (other.hasEventId()) {
           bitField0_ |= 0x00000001;
           eventId_ = other.eventId_;
@@ -2233,11 +2233,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent parsedMessage = null;
+        BoxEvent parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.BoxEvent) e.getUnfinishedMessage();
+          parsedMessage = (BoxEvent) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2248,7 +2248,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object eventId_ = "";
+      private Object eventId_ = "";
       /**
        * <code>required string EventId = 1;</code>
        */
@@ -2258,18 +2258,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string EventId = 1;</code>
        */
-      public java.lang.String getEventId() {
-        java.lang.Object ref = eventId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEventId() {
+        Object ref = eventId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             eventId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -2277,11 +2277,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getEventIdBytes() {
-        java.lang.Object ref = eventId_;
+        Object ref = eventId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           eventId_ = b;
           return b;
         } else {
@@ -2292,7 +2292,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string EventId = 1;</code>
        */
       public Builder setEventId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2324,9 +2324,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message message_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance();
+      private Message message_ = Message.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder> messageBuilder_;
+          Message, Message.Builder, MessageOrBuilder> messageBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
@@ -2336,7 +2336,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message getMessage() {
+      public Message getMessage() {
         if (messageBuilder_ == null) {
           return message_;
         } else {
@@ -2346,7 +2346,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
-      public Builder setMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message value) {
+      public Builder setMessage(Message value) {
         if (messageBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2363,7 +2363,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
       public Builder setMessage(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder builderForValue) {
+          Message.Builder builderForValue) {
         if (messageBuilder_ == null) {
           message_ = builderForValue.build();
           onChanged();
@@ -2376,12 +2376,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
-      public Builder mergeMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message value) {
+      public Builder mergeMessage(Message value) {
         if (messageBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              message_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance()) {
+              message_ != Message.getDefaultInstance()) {
             message_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.newBuilder(message_).mergeFrom(value).buildPartial();
+              Message.newBuilder(message_).mergeFrom(value).buildPartial();
           } else {
             message_ = value;
           }
@@ -2397,7 +2397,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearMessage() {
         if (messageBuilder_ == null) {
-          message_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance();
+          message_ = Message.getDefaultInstance();
           onChanged();
         } else {
           messageBuilder_.clear();
@@ -2408,7 +2408,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder getMessageBuilder() {
+      public Message.Builder getMessageBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMessageFieldBuilder().getBuilder();
@@ -2416,7 +2416,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder getMessageOrBuilder() {
+      public MessageOrBuilder getMessageOrBuilder() {
         if (messageBuilder_ != null) {
           return messageBuilder_.getMessageOrBuilder();
         } else {
@@ -2427,11 +2427,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.Message Message = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder> 
+          Message, Message.Builder, MessageOrBuilder>
           getMessageFieldBuilder() {
         if (messageBuilder_ == null) {
           messageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder>(
+              Message, Message.Builder, MessageOrBuilder>(
                   getMessage(),
                   getParentForChildren(),
                   isClean());
@@ -2440,9 +2440,9 @@ public final class DiadocMessage_GetApiProtos {
         return messageBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch patch_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance();
+      private MessagePatch patch_ = MessagePatch.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder> patchBuilder_;
+          MessagePatch, MessagePatch.Builder, MessagePatchOrBuilder> patchBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
@@ -2452,7 +2452,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch getPatch() {
+      public MessagePatch getPatch() {
         if (patchBuilder_ == null) {
           return patch_;
         } else {
@@ -2462,7 +2462,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
-      public Builder setPatch(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch value) {
+      public Builder setPatch(MessagePatch value) {
         if (patchBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2479,7 +2479,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
       public Builder setPatch(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder builderForValue) {
+          MessagePatch.Builder builderForValue) {
         if (patchBuilder_ == null) {
           patch_ = builderForValue.build();
           onChanged();
@@ -2492,12 +2492,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
-      public Builder mergePatch(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch value) {
+      public Builder mergePatch(MessagePatch value) {
         if (patchBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              patch_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance()) {
+              patch_ != MessagePatch.getDefaultInstance()) {
             patch_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.newBuilder(patch_).mergeFrom(value).buildPartial();
+              MessagePatch.newBuilder(patch_).mergeFrom(value).buildPartial();
           } else {
             patch_ = value;
           }
@@ -2513,7 +2513,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearPatch() {
         if (patchBuilder_ == null) {
-          patch_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance();
+          patch_ = MessagePatch.getDefaultInstance();
           onChanged();
         } else {
           patchBuilder_.clear();
@@ -2524,7 +2524,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder getPatchBuilder() {
+      public MessagePatch.Builder getPatchBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getPatchFieldBuilder().getBuilder();
@@ -2532,7 +2532,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder getPatchOrBuilder() {
+      public MessagePatchOrBuilder getPatchOrBuilder() {
         if (patchBuilder_ != null) {
           return patchBuilder_.getMessageOrBuilder();
         } else {
@@ -2543,11 +2543,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.MessagePatch Patch = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder> 
+          MessagePatch, MessagePatch.Builder, MessagePatchOrBuilder>
           getPatchFieldBuilder() {
         if (patchBuilder_ == null) {
           patchBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder>(
+              MessagePatch, MessagePatch.Builder, MessagePatchOrBuilder>(
                   getPatch(),
                   getParentForChildren(),
                   isClean());
@@ -2578,7 +2578,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    java.lang.String getMessageId();
+    String getMessageId();
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -2626,7 +2626,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromBoxId = 4;</code>
      */
-    java.lang.String getFromBoxId();
+    String getFromBoxId();
     /**
      * <code>required string FromBoxId = 4;</code>
      */
@@ -2640,7 +2640,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromTitle = 5;</code>
      */
-    java.lang.String getFromTitle();
+    String getFromTitle();
     /**
      * <code>required string FromTitle = 5;</code>
      */
@@ -2654,7 +2654,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ToBoxId = 6;</code>
      */
-    java.lang.String getToBoxId();
+    String getToBoxId();
     /**
      * <code>optional string ToBoxId = 6;</code>
      */
@@ -2668,7 +2668,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ToTitle = 7;</code>
      */
-    java.lang.String getToTitle();
+    String getToTitle();
     /**
      * <code>optional string ToTitle = 7;</code>
      */
@@ -2678,12 +2678,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> 
+    java.util.List<Entity>
         getEntitiesList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index);
+    Entity getEntities(int index);
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
@@ -2691,12 +2691,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    EntityOrBuilder getEntitiesOrBuilder(
         int index);
 
     /**
@@ -2733,7 +2733,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string CreatedFromDraftId = 12;</code>
      */
-    java.lang.String getCreatedFromDraftId();
+    String getCreatedFromDraftId();
     /**
      * <code>optional string CreatedFromDraftId = 12;</code>
      */
@@ -2752,7 +2752,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
      */
-    java.lang.String getDraftIsTransformedToMessageIdList(int index);
+    String getDraftIsTransformedToMessageIdList(int index);
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
      */
@@ -2802,7 +2802,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ProxyBoxId = 18;</code>
      */
-    java.lang.String getProxyBoxId();
+    String getProxyBoxId();
     /**
      * <code>optional string ProxyBoxId = 18;</code>
      */
@@ -2816,7 +2816,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ProxyTitle = 19;</code>
      */
-    java.lang.String getProxyTitle();
+    String getProxyTitle();
     /**
      * <code>optional string ProxyTitle = 19;</code>
      */
@@ -2857,11 +2857,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo();
+    TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder();
+    TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder();
 
     /**
      * <code>optional bool IsReusable = 24 [default = false];</code>
@@ -2896,7 +2896,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -2966,10 +2966,10 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-                entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>();
+                entities_ = new java.util.ArrayList<Entity>();
                 mutable_bitField0_ |= 0x00000080;
               }
-              entities_.add(input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.PARSER, extensionRegistry));
+              entities_.add(input.readMessage(Entity.PARSER, extensionRegistry));
               break;
             }
             case 72: {
@@ -3062,11 +3062,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 186: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder subBuilder = null;
+              TemplateToLetterTransformationInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00100000) == 0x00100000)) {
                 subBuilder = templateToLetterTransformationInfo_.toBuilder();
               }
-              templateToLetterTransformationInfo_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.PARSER, extensionRegistry);
+              templateToLetterTransformationInfo_ = input.readMessage(TemplateToLetterTransformationInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(templateToLetterTransformationInfo_);
                 templateToLetterTransformationInfo_ = subBuilder.buildPartial();
@@ -3099,14 +3099,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder.class);
+              Message.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<Message> PARSER =
@@ -3119,14 +3119,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Message> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int MESSAGEID_FIELD_NUMBER = 1;
-    private java.lang.Object messageId_;
+    private Object messageId_;
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -3136,14 +3136,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    public java.lang.String getMessageId() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageId() {
+      Object ref = messageId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageId_ = s;
         }
@@ -3155,11 +3155,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageIdBytes() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageId_ = b;
         return b;
       } else {
@@ -3214,7 +3214,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int FROMBOXID_FIELD_NUMBER = 4;
-    private java.lang.Object fromBoxId_;
+    private Object fromBoxId_;
     /**
      * <code>required string FromBoxId = 4;</code>
      */
@@ -3224,14 +3224,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromBoxId = 4;</code>
      */
-    public java.lang.String getFromBoxId() {
-      java.lang.Object ref = fromBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getFromBoxId() {
+      Object ref = fromBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fromBoxId_ = s;
         }
@@ -3243,11 +3243,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getFromBoxIdBytes() {
-      java.lang.Object ref = fromBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = fromBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         fromBoxId_ = b;
         return b;
       } else {
@@ -3256,7 +3256,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int FROMTITLE_FIELD_NUMBER = 5;
-    private java.lang.Object fromTitle_;
+    private Object fromTitle_;
     /**
      * <code>required string FromTitle = 5;</code>
      */
@@ -3266,14 +3266,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromTitle = 5;</code>
      */
-    public java.lang.String getFromTitle() {
-      java.lang.Object ref = fromTitle_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getFromTitle() {
+      Object ref = fromTitle_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fromTitle_ = s;
         }
@@ -3285,11 +3285,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getFromTitleBytes() {
-      java.lang.Object ref = fromTitle_;
-      if (ref instanceof java.lang.String) {
+      Object ref = fromTitle_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         fromTitle_ = b;
         return b;
       } else {
@@ -3298,7 +3298,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int TOBOXID_FIELD_NUMBER = 6;
-    private java.lang.Object toBoxId_;
+    private Object toBoxId_;
     /**
      * <code>optional string ToBoxId = 6;</code>
      */
@@ -3308,14 +3308,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ToBoxId = 6;</code>
      */
-    public java.lang.String getToBoxId() {
-      java.lang.Object ref = toBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getToBoxId() {
+      Object ref = toBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           toBoxId_ = s;
         }
@@ -3327,11 +3327,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getToBoxIdBytes() {
-      java.lang.Object ref = toBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = toBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         toBoxId_ = b;
         return b;
       } else {
@@ -3340,7 +3340,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int TOTITLE_FIELD_NUMBER = 7;
-    private java.lang.Object toTitle_;
+    private Object toTitle_;
     /**
      * <code>optional string ToTitle = 7;</code>
      */
@@ -3350,14 +3350,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ToTitle = 7;</code>
      */
-    public java.lang.String getToTitle() {
-      java.lang.Object ref = toTitle_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getToTitle() {
+      Object ref = toTitle_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           toTitle_ = s;
         }
@@ -3369,11 +3369,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getToTitleBytes() {
-      java.lang.Object ref = toTitle_;
-      if (ref instanceof java.lang.String) {
+      Object ref = toTitle_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         toTitle_ = b;
         return b;
       } else {
@@ -3382,17 +3382,17 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ENTITIES_FIELD_NUMBER = 8;
-    private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_;
+    private java.util.List<Entity> entities_;
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+    public java.util.List<Entity> getEntitiesList() {
       return entities_;
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    public java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList() {
       return entities_;
     }
@@ -3405,13 +3405,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+    public Entity getEntities(int index) {
       return entities_.get(index);
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    public EntityOrBuilder getEntitiesOrBuilder(
         int index) {
       return entities_.get(index);
     }
@@ -3462,7 +3462,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int CREATEDFROMDRAFTID_FIELD_NUMBER = 12;
-    private java.lang.Object createdFromDraftId_;
+    private Object createdFromDraftId_;
     /**
      * <code>optional string CreatedFromDraftId = 12;</code>
      */
@@ -3472,14 +3472,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string CreatedFromDraftId = 12;</code>
      */
-    public java.lang.String getCreatedFromDraftId() {
-      java.lang.Object ref = createdFromDraftId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getCreatedFromDraftId() {
+      Object ref = createdFromDraftId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           createdFromDraftId_ = s;
         }
@@ -3491,11 +3491,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getCreatedFromDraftIdBytes() {
-      java.lang.Object ref = createdFromDraftId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = createdFromDraftId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         createdFromDraftId_ = b;
         return b;
       } else {
@@ -3521,7 +3521,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
      */
-    public java.lang.String getDraftIsTransformedToMessageIdList(int index) {
+    public String getDraftIsTransformedToMessageIdList(int index) {
       return draftIsTransformedToMessageIdList_.get(index);
     }
     /**
@@ -3593,7 +3593,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int PROXYBOXID_FIELD_NUMBER = 18;
-    private java.lang.Object proxyBoxId_;
+    private Object proxyBoxId_;
     /**
      * <code>optional string ProxyBoxId = 18;</code>
      */
@@ -3603,14 +3603,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ProxyBoxId = 18;</code>
      */
-    public java.lang.String getProxyBoxId() {
-      java.lang.Object ref = proxyBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getProxyBoxId() {
+      Object ref = proxyBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           proxyBoxId_ = s;
         }
@@ -3622,11 +3622,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getProxyBoxIdBytes() {
-      java.lang.Object ref = proxyBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = proxyBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         proxyBoxId_ = b;
         return b;
       } else {
@@ -3635,7 +3635,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int PROXYTITLE_FIELD_NUMBER = 19;
-    private java.lang.Object proxyTitle_;
+    private Object proxyTitle_;
     /**
      * <code>optional string ProxyTitle = 19;</code>
      */
@@ -3645,14 +3645,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ProxyTitle = 19;</code>
      */
-    public java.lang.String getProxyTitle() {
-      java.lang.Object ref = proxyTitle_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getProxyTitle() {
+      Object ref = proxyTitle_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           proxyTitle_ = s;
         }
@@ -3664,11 +3664,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getProxyTitleBytes() {
-      java.lang.Object ref = proxyTitle_;
-      if (ref instanceof java.lang.String) {
+      Object ref = proxyTitle_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         proxyTitle_ = b;
         return b;
       } else {
@@ -3722,7 +3722,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int TEMPLATETOLETTERTRANSFORMATIONINFO_FIELD_NUMBER = 23;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo templateToLetterTransformationInfo_;
+    private TemplateToLetterTransformationInfo templateToLetterTransformationInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
      */
@@ -3732,13 +3732,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo() {
+    public TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo() {
       return templateToLetterTransformationInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder() {
+    public TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder() {
       return templateToLetterTransformationInfo_;
     }
 
@@ -3780,7 +3780,7 @@ public final class DiadocMessage_GetApiProtos {
       packetIsLocked_ = false;
       lockMode_ = Diadoc.Api.Proto.LockModeProtos.LockMode.None;
       messageType_ = Diadoc.Api.Proto.Documents.DocumentProtos.MessageType.Unknown;
-      templateToLetterTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance();
+      templateToLetterTransformationInfo_ = TemplateToLetterTransformationInfo.getDefaultInstance();
       isReusable_ = false;
     }
     private byte memoizedIsInitialized = -1;
@@ -4024,59 +4024,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(byte[] data)
+    public static Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(java.io.InputStream input)
+    public static Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseDelimitedFrom(java.io.InputStream input)
+    public static Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseDelimitedFrom(
+    public static Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4085,14 +4085,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message prototype) {
+    public static Builder newBuilder(Message prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4102,17 +4102,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.Message)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessageOrBuilder {
+        MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.Builder.class);
+                Message.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.newBuilder()
@@ -4121,7 +4121,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4186,7 +4186,7 @@ public final class DiadocMessage_GetApiProtos {
         messageType_ = Diadoc.Api.Proto.Documents.DocumentProtos.MessageType.Unknown;
         bitField0_ = (bitField0_ & ~0x00200000);
         if (templateToLetterTransformationInfoBuilder_ == null) {
-          templateToLetterTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance();
+          templateToLetterTransformationInfo_ = TemplateToLetterTransformationInfo.getDefaultInstance();
         } else {
           templateToLetterTransformationInfoBuilder_.clear();
         }
@@ -4202,23 +4202,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Message_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance();
+      public Message getDefaultInstanceForType() {
+        return Message.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message result = buildPartial();
+      public Message build() {
+        Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message(this);
+      public Message buildPartial() {
+        Message result = new Message(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4333,16 +4333,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message)other);
+        if (other instanceof Message) {
+          return mergeFrom((Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(Message other) {
+        if (other == Message.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           bitField0_ |= 0x00000001;
           messageId_ = other.messageId_;
@@ -4513,11 +4513,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message parsedMessage = null;
+        Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Message) e.getUnfinishedMessage();
+          parsedMessage = (Message) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4528,7 +4528,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object messageId_ = "";
+      private Object messageId_ = "";
       /**
        * <code>required string MessageId = 1;</code>
        */
@@ -4538,18 +4538,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string MessageId = 1;</code>
        */
-      public java.lang.String getMessageId() {
-        java.lang.Object ref = messageId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageId() {
+        Object ref = messageId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4557,11 +4557,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageIdBytes() {
-        java.lang.Object ref = messageId_;
+        Object ref = messageId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageId_ = b;
           return b;
         } else {
@@ -4572,7 +4572,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string MessageId = 1;</code>
        */
       public Builder setMessageId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4700,7 +4700,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object fromBoxId_ = "";
+      private Object fromBoxId_ = "";
       /**
        * <code>required string FromBoxId = 4;</code>
        */
@@ -4710,18 +4710,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string FromBoxId = 4;</code>
        */
-      public java.lang.String getFromBoxId() {
-        java.lang.Object ref = fromBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getFromBoxId() {
+        Object ref = fromBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fromBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4729,11 +4729,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getFromBoxIdBytes() {
-        java.lang.Object ref = fromBoxId_;
+        Object ref = fromBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           fromBoxId_ = b;
           return b;
         } else {
@@ -4744,7 +4744,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string FromBoxId = 4;</code>
        */
       public Builder setFromBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4776,7 +4776,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object fromTitle_ = "";
+      private Object fromTitle_ = "";
       /**
        * <code>required string FromTitle = 5;</code>
        */
@@ -4786,18 +4786,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string FromTitle = 5;</code>
        */
-      public java.lang.String getFromTitle() {
-        java.lang.Object ref = fromTitle_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getFromTitle() {
+        Object ref = fromTitle_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fromTitle_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4805,11 +4805,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getFromTitleBytes() {
-        java.lang.Object ref = fromTitle_;
+        Object ref = fromTitle_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           fromTitle_ = b;
           return b;
         } else {
@@ -4820,7 +4820,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string FromTitle = 5;</code>
        */
       public Builder setFromTitle(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4852,7 +4852,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object toBoxId_ = "";
+      private Object toBoxId_ = "";
       /**
        * <code>optional string ToBoxId = 6;</code>
        */
@@ -4862,18 +4862,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ToBoxId = 6;</code>
        */
-      public java.lang.String getToBoxId() {
-        java.lang.Object ref = toBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getToBoxId() {
+        Object ref = toBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             toBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4881,11 +4881,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getToBoxIdBytes() {
-        java.lang.Object ref = toBoxId_;
+        Object ref = toBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           toBoxId_ = b;
           return b;
         } else {
@@ -4896,7 +4896,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ToBoxId = 6;</code>
        */
       public Builder setToBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4928,7 +4928,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object toTitle_ = "";
+      private Object toTitle_ = "";
       /**
        * <code>optional string ToTitle = 7;</code>
        */
@@ -4938,18 +4938,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ToTitle = 7;</code>
        */
-      public java.lang.String getToTitle() {
-        java.lang.Object ref = toTitle_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getToTitle() {
+        Object ref = toTitle_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             toTitle_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4957,11 +4957,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getToTitleBytes() {
-        java.lang.Object ref = toTitle_;
+        Object ref = toTitle_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           toTitle_ = b;
           return b;
         } else {
@@ -4972,7 +4972,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ToTitle = 7;</code>
        */
       public Builder setToTitle(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5004,22 +5004,22 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_ =
+      private java.util.List<Entity> entities_ =
         java.util.Collections.emptyList();
       private void ensureEntitiesIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
-          entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>(entities_);
+          entities_ = new java.util.ArrayList<Entity>(entities_);
           bitField0_ |= 0x00000080;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> entitiesBuilder_;
+          Entity, Entity.Builder, EntityOrBuilder> entitiesBuilder_;
 
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+      public java.util.List<Entity> getEntitiesList() {
         if (entitiesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(entities_);
         } else {
@@ -5039,7 +5039,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+      public Entity getEntities(int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);
         } else {
@@ -5050,7 +5050,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5067,7 +5067,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.set(index, builderForValue.build());
@@ -5080,7 +5080,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Builder addEntities(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+      public Builder addEntities(Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5097,7 +5097,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5114,7 +5114,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder addEntities(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(builderForValue.build());
@@ -5128,7 +5128,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(index, builderForValue.build());
@@ -5142,7 +5142,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
       public Builder addAllEntities(
-          java.lang.Iterable<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> values) {
+          Iterable<? extends Entity> values) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -5182,14 +5182,14 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder getEntitiesBuilder(
+      public Entity.Builder getEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+      public EntityOrBuilder getEntitiesOrBuilder(
           int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);  } else {
@@ -5199,7 +5199,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+      public java.util.List<? extends EntityOrBuilder>
            getEntitiesOrBuilderList() {
         if (entitiesBuilder_ != null) {
           return entitiesBuilder_.getMessageOrBuilderList();
@@ -5210,31 +5210,31 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder() {
+      public Entity.Builder addEntitiesBuilder() {
         return getEntitiesFieldBuilder().addBuilder(
-            Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder(
+      public Entity.Builder addEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().addBuilder(
-            index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            index, Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 8;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder> 
+      public java.util.List<Entity.Builder>
            getEntitiesBuilderList() {
         return getEntitiesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+          Entity, Entity.Builder, EntityOrBuilder>
           getEntitiesFieldBuilder() {
         if (entitiesBuilder_ == null) {
           entitiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder>(
+              Entity, Entity.Builder, EntityOrBuilder>(
                   entities_,
                   ((bitField0_ & 0x00000080) == 0x00000080),
                   getParentForChildren(),
@@ -5340,7 +5340,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object createdFromDraftId_ = "";
+      private Object createdFromDraftId_ = "";
       /**
        * <code>optional string CreatedFromDraftId = 12;</code>
        */
@@ -5350,18 +5350,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string CreatedFromDraftId = 12;</code>
        */
-      public java.lang.String getCreatedFromDraftId() {
-        java.lang.Object ref = createdFromDraftId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCreatedFromDraftId() {
+        Object ref = createdFromDraftId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             createdFromDraftId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -5369,11 +5369,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getCreatedFromDraftIdBytes() {
-        java.lang.Object ref = createdFromDraftId_;
+        Object ref = createdFromDraftId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           createdFromDraftId_ = b;
           return b;
         } else {
@@ -5384,7 +5384,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string CreatedFromDraftId = 12;</code>
        */
       public Builder setCreatedFromDraftId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5439,7 +5439,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
        */
-      public java.lang.String getDraftIsTransformedToMessageIdList(int index) {
+      public String getDraftIsTransformedToMessageIdList(int index) {
         return draftIsTransformedToMessageIdList_.get(index);
       }
       /**
@@ -5453,7 +5453,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
        */
       public Builder setDraftIsTransformedToMessageIdList(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5466,7 +5466,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
        */
       public Builder addDraftIsTransformedToMessageIdList(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5479,7 +5479,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 13;</code>
        */
       public Builder addAllDraftIsTransformedToMessageIdList(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureDraftIsTransformedToMessageIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, draftIsTransformedToMessageIdList_);
@@ -5637,7 +5637,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object proxyBoxId_ = "";
+      private Object proxyBoxId_ = "";
       /**
        * <code>optional string ProxyBoxId = 18;</code>
        */
@@ -5647,18 +5647,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ProxyBoxId = 18;</code>
        */
-      public java.lang.String getProxyBoxId() {
-        java.lang.Object ref = proxyBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getProxyBoxId() {
+        Object ref = proxyBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             proxyBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -5666,11 +5666,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getProxyBoxIdBytes() {
-        java.lang.Object ref = proxyBoxId_;
+        Object ref = proxyBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           proxyBoxId_ = b;
           return b;
         } else {
@@ -5681,7 +5681,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ProxyBoxId = 18;</code>
        */
       public Builder setProxyBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5713,7 +5713,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object proxyTitle_ = "";
+      private Object proxyTitle_ = "";
       /**
        * <code>optional string ProxyTitle = 19;</code>
        */
@@ -5723,18 +5723,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ProxyTitle = 19;</code>
        */
-      public java.lang.String getProxyTitle() {
-        java.lang.Object ref = proxyTitle_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getProxyTitle() {
+        Object ref = proxyTitle_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             proxyTitle_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -5742,11 +5742,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getProxyTitleBytes() {
-        java.lang.Object ref = proxyTitle_;
+        Object ref = proxyTitle_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           proxyTitle_ = b;
           return b;
         } else {
@@ -5757,7 +5757,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ProxyTitle = 19;</code>
        */
       public Builder setProxyTitle(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5891,9 +5891,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo templateToLetterTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance();
+      private TemplateToLetterTransformationInfo templateToLetterTransformationInfo_ = TemplateToLetterTransformationInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder> templateToLetterTransformationInfoBuilder_;
+          TemplateToLetterTransformationInfo, TemplateToLetterTransformationInfo.Builder, TemplateToLetterTransformationInfoOrBuilder> templateToLetterTransformationInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
@@ -5903,7 +5903,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo() {
+      public TemplateToLetterTransformationInfo getTemplateToLetterTransformationInfo() {
         if (templateToLetterTransformationInfoBuilder_ == null) {
           return templateToLetterTransformationInfo_;
         } else {
@@ -5913,7 +5913,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
-      public Builder setTemplateToLetterTransformationInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo value) {
+      public Builder setTemplateToLetterTransformationInfo(TemplateToLetterTransformationInfo value) {
         if (templateToLetterTransformationInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5930,7 +5930,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
       public Builder setTemplateToLetterTransformationInfo(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder builderForValue) {
+          TemplateToLetterTransformationInfo.Builder builderForValue) {
         if (templateToLetterTransformationInfoBuilder_ == null) {
           templateToLetterTransformationInfo_ = builderForValue.build();
           onChanged();
@@ -5943,12 +5943,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
-      public Builder mergeTemplateToLetterTransformationInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo value) {
+      public Builder mergeTemplateToLetterTransformationInfo(TemplateToLetterTransformationInfo value) {
         if (templateToLetterTransformationInfoBuilder_ == null) {
           if (((bitField0_ & 0x00400000) == 0x00400000) &&
-              templateToLetterTransformationInfo_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance()) {
+              templateToLetterTransformationInfo_ != TemplateToLetterTransformationInfo.getDefaultInstance()) {
             templateToLetterTransformationInfo_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.newBuilder(templateToLetterTransformationInfo_).mergeFrom(value).buildPartial();
+              TemplateToLetterTransformationInfo.newBuilder(templateToLetterTransformationInfo_).mergeFrom(value).buildPartial();
           } else {
             templateToLetterTransformationInfo_ = value;
           }
@@ -5964,7 +5964,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearTemplateToLetterTransformationInfo() {
         if (templateToLetterTransformationInfoBuilder_ == null) {
-          templateToLetterTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance();
+          templateToLetterTransformationInfo_ = TemplateToLetterTransformationInfo.getDefaultInstance();
           onChanged();
         } else {
           templateToLetterTransformationInfoBuilder_.clear();
@@ -5975,7 +5975,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder getTemplateToLetterTransformationInfoBuilder() {
+      public TemplateToLetterTransformationInfo.Builder getTemplateToLetterTransformationInfoBuilder() {
         bitField0_ |= 0x00400000;
         onChanged();
         return getTemplateToLetterTransformationInfoFieldBuilder().getBuilder();
@@ -5983,7 +5983,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder() {
+      public TemplateToLetterTransformationInfoOrBuilder getTemplateToLetterTransformationInfoOrBuilder() {
         if (templateToLetterTransformationInfoBuilder_ != null) {
           return templateToLetterTransformationInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -5994,11 +5994,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo TemplateToLetterTransformationInfo = 23;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder> 
+          TemplateToLetterTransformationInfo, TemplateToLetterTransformationInfo.Builder, TemplateToLetterTransformationInfoOrBuilder>
           getTemplateToLetterTransformationInfoFieldBuilder() {
         if (templateToLetterTransformationInfoBuilder_ == null) {
           templateToLetterTransformationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder>(
+              TemplateToLetterTransformationInfo, TemplateToLetterTransformationInfo.Builder, TemplateToLetterTransformationInfoOrBuilder>(
                   getTemplateToLetterTransformationInfo(),
                   getParentForChildren(),
                   isClean());
@@ -6061,7 +6061,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    java.lang.String getMessageId();
+    String getMessageId();
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -6084,7 +6084,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromBoxId = 3;</code>
      */
-    java.lang.String getFromBoxId();
+    String getFromBoxId();
     /**
      * <code>required string FromBoxId = 3;</code>
      */
@@ -6098,7 +6098,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string ToBoxId = 4;</code>
      */
-    java.lang.String getToBoxId();
+    String getToBoxId();
     /**
      * <code>required string ToBoxId = 4;</code>
      */
@@ -6112,7 +6112,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageFromBoxId = 5;</code>
      */
-    java.lang.String getMessageFromBoxId();
+    String getMessageFromBoxId();
     /**
      * <code>required string MessageFromBoxId = 5;</code>
      */
@@ -6126,7 +6126,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageToBoxId = 6;</code>
      */
-    java.lang.String getMessageToBoxId();
+    String getMessageToBoxId();
     /**
      * <code>required string MessageToBoxId = 6;</code>
      */
@@ -6136,12 +6136,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> 
+    java.util.List<Entity>
         getEntitiesList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index);
+    Entity getEntities(int index);
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
@@ -6149,12 +6149,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    EntityOrBuilder getEntitiesOrBuilder(
         int index);
 
     /**
@@ -6173,7 +6173,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageToDepartmentId = 9;</code>
      */
-    java.lang.String getMessageToDepartmentId();
+    String getMessageToDepartmentId();
     /**
      * <code>optional string MessageToDepartmentId = 9;</code>
      */
@@ -6196,7 +6196,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageProxyBoxId = 11;</code>
      */
-    java.lang.String getMessageProxyBoxId();
+    String getMessageProxyBoxId();
     /**
      * <code>optional string MessageProxyBoxId = 11;</code>
      */
@@ -6210,7 +6210,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageProxyDepartmentId = 12;</code>
      */
-    java.lang.String getMessageProxyDepartmentId();
+    String getMessageProxyDepartmentId();
     /**
      * <code>optional string MessageProxyDepartmentId = 12;</code>
      */
@@ -6250,7 +6250,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -6315,10 +6315,10 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
-                entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>();
+                entities_ = new java.util.ArrayList<Entity>();
                 mutable_bitField0_ |= 0x00000040;
               }
-              entities_.add(input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.PARSER, extensionRegistry));
+              entities_.add(input.readMessage(Entity.PARSER, extensionRegistry));
               break;
             }
             case 64: {
@@ -6377,14 +6377,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.Builder.class);
+              Template.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<Template> PARSER =
@@ -6397,14 +6397,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Template> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int MESSAGEID_FIELD_NUMBER = 1;
-    private java.lang.Object messageId_;
+    private Object messageId_;
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -6414,14 +6414,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    public java.lang.String getMessageId() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageId() {
+      Object ref = messageId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageId_ = s;
         }
@@ -6433,11 +6433,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageIdBytes() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageId_ = b;
         return b;
       } else {
@@ -6461,7 +6461,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int FROMBOXID_FIELD_NUMBER = 3;
-    private java.lang.Object fromBoxId_;
+    private Object fromBoxId_;
     /**
      * <code>required string FromBoxId = 3;</code>
      */
@@ -6471,14 +6471,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string FromBoxId = 3;</code>
      */
-    public java.lang.String getFromBoxId() {
-      java.lang.Object ref = fromBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getFromBoxId() {
+      Object ref = fromBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fromBoxId_ = s;
         }
@@ -6490,11 +6490,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getFromBoxIdBytes() {
-      java.lang.Object ref = fromBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = fromBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         fromBoxId_ = b;
         return b;
       } else {
@@ -6503,7 +6503,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int TOBOXID_FIELD_NUMBER = 4;
-    private java.lang.Object toBoxId_;
+    private Object toBoxId_;
     /**
      * <code>required string ToBoxId = 4;</code>
      */
@@ -6513,14 +6513,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string ToBoxId = 4;</code>
      */
-    public java.lang.String getToBoxId() {
-      java.lang.Object ref = toBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getToBoxId() {
+      Object ref = toBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           toBoxId_ = s;
         }
@@ -6532,11 +6532,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getToBoxIdBytes() {
-      java.lang.Object ref = toBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = toBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         toBoxId_ = b;
         return b;
       } else {
@@ -6545,7 +6545,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGEFROMBOXID_FIELD_NUMBER = 5;
-    private java.lang.Object messageFromBoxId_;
+    private Object messageFromBoxId_;
     /**
      * <code>required string MessageFromBoxId = 5;</code>
      */
@@ -6555,14 +6555,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageFromBoxId = 5;</code>
      */
-    public java.lang.String getMessageFromBoxId() {
-      java.lang.Object ref = messageFromBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageFromBoxId() {
+      Object ref = messageFromBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageFromBoxId_ = s;
         }
@@ -6574,11 +6574,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageFromBoxIdBytes() {
-      java.lang.Object ref = messageFromBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageFromBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageFromBoxId_ = b;
         return b;
       } else {
@@ -6587,7 +6587,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGETOBOXID_FIELD_NUMBER = 6;
-    private java.lang.Object messageToBoxId_;
+    private Object messageToBoxId_;
     /**
      * <code>required string MessageToBoxId = 6;</code>
      */
@@ -6597,14 +6597,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageToBoxId = 6;</code>
      */
-    public java.lang.String getMessageToBoxId() {
-      java.lang.Object ref = messageToBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageToBoxId() {
+      Object ref = messageToBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageToBoxId_ = s;
         }
@@ -6616,11 +6616,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageToBoxIdBytes() {
-      java.lang.Object ref = messageToBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageToBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageToBoxId_ = b;
         return b;
       } else {
@@ -6629,17 +6629,17 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ENTITIES_FIELD_NUMBER = 7;
-    private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_;
+    private java.util.List<Entity> entities_;
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+    public java.util.List<Entity> getEntitiesList() {
       return entities_;
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    public java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList() {
       return entities_;
     }
@@ -6652,13 +6652,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+    public Entity getEntities(int index) {
       return entities_.get(index);
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    public EntityOrBuilder getEntitiesOrBuilder(
         int index) {
       return entities_.get(index);
     }
@@ -6679,7 +6679,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGETODEPARTMENTID_FIELD_NUMBER = 9;
-    private java.lang.Object messageToDepartmentId_;
+    private Object messageToDepartmentId_;
     /**
      * <code>optional string MessageToDepartmentId = 9;</code>
      */
@@ -6689,14 +6689,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageToDepartmentId = 9;</code>
      */
-    public java.lang.String getMessageToDepartmentId() {
-      java.lang.Object ref = messageToDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageToDepartmentId() {
+      Object ref = messageToDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageToDepartmentId_ = s;
         }
@@ -6708,11 +6708,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageToDepartmentIdBytes() {
-      java.lang.Object ref = messageToDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageToDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageToDepartmentId_ = b;
         return b;
       } else {
@@ -6736,7 +6736,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGEPROXYBOXID_FIELD_NUMBER = 11;
-    private java.lang.Object messageProxyBoxId_;
+    private Object messageProxyBoxId_;
     /**
      * <code>optional string MessageProxyBoxId = 11;</code>
      */
@@ -6746,14 +6746,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageProxyBoxId = 11;</code>
      */
-    public java.lang.String getMessageProxyBoxId() {
-      java.lang.Object ref = messageProxyBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageProxyBoxId() {
+      Object ref = messageProxyBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageProxyBoxId_ = s;
         }
@@ -6765,11 +6765,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageProxyBoxIdBytes() {
-      java.lang.Object ref = messageProxyBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageProxyBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageProxyBoxId_ = b;
         return b;
       } else {
@@ -6778,7 +6778,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MESSAGEPROXYDEPARTMENTID_FIELD_NUMBER = 12;
-    private java.lang.Object messageProxyDepartmentId_;
+    private Object messageProxyDepartmentId_;
     /**
      * <code>optional string MessageProxyDepartmentId = 12;</code>
      */
@@ -6788,14 +6788,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MessageProxyDepartmentId = 12;</code>
      */
-    public java.lang.String getMessageProxyDepartmentId() {
-      java.lang.Object ref = messageProxyDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageProxyDepartmentId() {
+      Object ref = messageProxyDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageProxyDepartmentId_ = s;
         }
@@ -6807,11 +6807,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageProxyDepartmentIdBytes() {
-      java.lang.Object ref = messageProxyDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageProxyDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageProxyDepartmentId_ = b;
         return b;
       } else {
@@ -7002,59 +7002,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(byte[] data)
+    public static Template parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(java.io.InputStream input)
+    public static Template parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseDelimitedFrom(java.io.InputStream input)
+    public static Template parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseDelimitedFrom(
+    public static Template parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parseFrom(
+    public static Template parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7063,14 +7063,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template prototype) {
+    public static Builder newBuilder(Template prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -7080,17 +7080,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.Template)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateOrBuilder {
+        TemplateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.Builder.class);
+                Template.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.newBuilder()
@@ -7099,7 +7099,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7153,23 +7153,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Template_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.getDefaultInstance();
+      public Template getDefaultInstanceForType() {
+        return Template.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template result = buildPartial();
+      public Template build() {
+        Template result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template(this);
+      public Template buildPartial() {
+        Template result = new Template(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -7235,16 +7235,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template)other);
+        if (other instanceof Template) {
+          return mergeFrom((Template)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template.getDefaultInstance()) return this;
+      public Builder mergeFrom(Template other) {
+        if (other == Template.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           bitField0_ |= 0x00000001;
           messageId_ = other.messageId_;
@@ -7369,11 +7369,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template parsedMessage = null;
+        Template parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Template) e.getUnfinishedMessage();
+          parsedMessage = (Template) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7384,7 +7384,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object messageId_ = "";
+      private Object messageId_ = "";
       /**
        * <code>required string MessageId = 1;</code>
        */
@@ -7394,18 +7394,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string MessageId = 1;</code>
        */
-      public java.lang.String getMessageId() {
-        java.lang.Object ref = messageId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageId() {
+        Object ref = messageId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7413,11 +7413,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageIdBytes() {
-        java.lang.Object ref = messageId_;
+        Object ref = messageId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageId_ = b;
           return b;
         } else {
@@ -7428,7 +7428,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string MessageId = 1;</code>
        */
       public Builder setMessageId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7492,7 +7492,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object fromBoxId_ = "";
+      private Object fromBoxId_ = "";
       /**
        * <code>required string FromBoxId = 3;</code>
        */
@@ -7502,18 +7502,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string FromBoxId = 3;</code>
        */
-      public java.lang.String getFromBoxId() {
-        java.lang.Object ref = fromBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getFromBoxId() {
+        Object ref = fromBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fromBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7521,11 +7521,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getFromBoxIdBytes() {
-        java.lang.Object ref = fromBoxId_;
+        Object ref = fromBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           fromBoxId_ = b;
           return b;
         } else {
@@ -7536,7 +7536,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string FromBoxId = 3;</code>
        */
       public Builder setFromBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7568,7 +7568,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object toBoxId_ = "";
+      private Object toBoxId_ = "";
       /**
        * <code>required string ToBoxId = 4;</code>
        */
@@ -7578,18 +7578,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string ToBoxId = 4;</code>
        */
-      public java.lang.String getToBoxId() {
-        java.lang.Object ref = toBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getToBoxId() {
+        Object ref = toBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             toBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7597,11 +7597,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getToBoxIdBytes() {
-        java.lang.Object ref = toBoxId_;
+        Object ref = toBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           toBoxId_ = b;
           return b;
         } else {
@@ -7612,7 +7612,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string ToBoxId = 4;</code>
        */
       public Builder setToBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7644,7 +7644,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object messageFromBoxId_ = "";
+      private Object messageFromBoxId_ = "";
       /**
        * <code>required string MessageFromBoxId = 5;</code>
        */
@@ -7654,18 +7654,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string MessageFromBoxId = 5;</code>
        */
-      public java.lang.String getMessageFromBoxId() {
-        java.lang.Object ref = messageFromBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageFromBoxId() {
+        Object ref = messageFromBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageFromBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7673,11 +7673,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageFromBoxIdBytes() {
-        java.lang.Object ref = messageFromBoxId_;
+        Object ref = messageFromBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageFromBoxId_ = b;
           return b;
         } else {
@@ -7688,7 +7688,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string MessageFromBoxId = 5;</code>
        */
       public Builder setMessageFromBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7720,7 +7720,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object messageToBoxId_ = "";
+      private Object messageToBoxId_ = "";
       /**
        * <code>required string MessageToBoxId = 6;</code>
        */
@@ -7730,18 +7730,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string MessageToBoxId = 6;</code>
        */
-      public java.lang.String getMessageToBoxId() {
-        java.lang.Object ref = messageToBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageToBoxId() {
+        Object ref = messageToBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageToBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7749,11 +7749,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageToBoxIdBytes() {
-        java.lang.Object ref = messageToBoxId_;
+        Object ref = messageToBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageToBoxId_ = b;
           return b;
         } else {
@@ -7764,7 +7764,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string MessageToBoxId = 6;</code>
        */
       public Builder setMessageToBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7796,22 +7796,22 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_ =
+      private java.util.List<Entity> entities_ =
         java.util.Collections.emptyList();
       private void ensureEntitiesIsMutable() {
         if (!((bitField0_ & 0x00000040) == 0x00000040)) {
-          entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>(entities_);
+          entities_ = new java.util.ArrayList<Entity>(entities_);
           bitField0_ |= 0x00000040;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> entitiesBuilder_;
+          Entity, Entity.Builder, EntityOrBuilder> entitiesBuilder_;
 
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+      public java.util.List<Entity> getEntitiesList() {
         if (entitiesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(entities_);
         } else {
@@ -7831,7 +7831,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+      public Entity getEntities(int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);
         } else {
@@ -7842,7 +7842,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7859,7 +7859,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.set(index, builderForValue.build());
@@ -7872,7 +7872,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Builder addEntities(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+      public Builder addEntities(Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7889,7 +7889,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7906,7 +7906,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder addEntities(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(builderForValue.build());
@@ -7920,7 +7920,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(index, builderForValue.build());
@@ -7934,7 +7934,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
       public Builder addAllEntities(
-          java.lang.Iterable<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> values) {
+          Iterable<? extends Entity> values) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -7974,14 +7974,14 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder getEntitiesBuilder(
+      public Entity.Builder getEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+      public EntityOrBuilder getEntitiesOrBuilder(
           int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);  } else {
@@ -7991,7 +7991,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+      public java.util.List<? extends EntityOrBuilder>
            getEntitiesOrBuilderList() {
         if (entitiesBuilder_ != null) {
           return entitiesBuilder_.getMessageOrBuilderList();
@@ -8002,31 +8002,31 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder() {
+      public Entity.Builder addEntitiesBuilder() {
         return getEntitiesFieldBuilder().addBuilder(
-            Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder(
+      public Entity.Builder addEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().addBuilder(
-            index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            index, Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 7;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder> 
+      public java.util.List<Entity.Builder>
            getEntitiesBuilderList() {
         return getEntitiesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+          Entity, Entity.Builder, EntityOrBuilder>
           getEntitiesFieldBuilder() {
         if (entitiesBuilder_ == null) {
           entitiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder>(
+              Entity, Entity.Builder, EntityOrBuilder>(
                   entities_,
                   ((bitField0_ & 0x00000040) == 0x00000040),
                   getParentForChildren(),
@@ -8068,7 +8068,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object messageToDepartmentId_ = "";
+      private Object messageToDepartmentId_ = "";
       /**
        * <code>optional string MessageToDepartmentId = 9;</code>
        */
@@ -8078,18 +8078,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string MessageToDepartmentId = 9;</code>
        */
-      public java.lang.String getMessageToDepartmentId() {
-        java.lang.Object ref = messageToDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageToDepartmentId() {
+        Object ref = messageToDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageToDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8097,11 +8097,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageToDepartmentIdBytes() {
-        java.lang.Object ref = messageToDepartmentId_;
+        Object ref = messageToDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageToDepartmentId_ = b;
           return b;
         } else {
@@ -8112,7 +8112,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string MessageToDepartmentId = 9;</code>
        */
       public Builder setMessageToDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8179,7 +8179,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object messageProxyBoxId_ = "";
+      private Object messageProxyBoxId_ = "";
       /**
        * <code>optional string MessageProxyBoxId = 11;</code>
        */
@@ -8189,18 +8189,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string MessageProxyBoxId = 11;</code>
        */
-      public java.lang.String getMessageProxyBoxId() {
-        java.lang.Object ref = messageProxyBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageProxyBoxId() {
+        Object ref = messageProxyBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageProxyBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8208,11 +8208,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageProxyBoxIdBytes() {
-        java.lang.Object ref = messageProxyBoxId_;
+        Object ref = messageProxyBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageProxyBoxId_ = b;
           return b;
         } else {
@@ -8223,7 +8223,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string MessageProxyBoxId = 11;</code>
        */
       public Builder setMessageProxyBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8255,7 +8255,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object messageProxyDepartmentId_ = "";
+      private Object messageProxyDepartmentId_ = "";
       /**
        * <code>optional string MessageProxyDepartmentId = 12;</code>
        */
@@ -8265,18 +8265,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string MessageProxyDepartmentId = 12;</code>
        */
-      public java.lang.String getMessageProxyDepartmentId() {
-        java.lang.Object ref = messageProxyDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageProxyDepartmentId() {
+        Object ref = messageProxyDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageProxyDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8284,11 +8284,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageProxyDepartmentIdBytes() {
-        java.lang.Object ref = messageProxyDepartmentId_;
+        Object ref = messageProxyDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageProxyDepartmentId_ = b;
           return b;
         } else {
@@ -8299,7 +8299,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string MessageProxyDepartmentId = 12;</code>
        */
       public Builder setMessageProxyDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8385,7 +8385,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    java.lang.String getMessageId();
+    String getMessageId();
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -8412,12 +8412,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> 
+    java.util.List<Entity>
         getEntitiesList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index);
+    Entity getEntities(int index);
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
@@ -8425,12 +8425,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    EntityOrBuilder getEntitiesOrBuilder(
         int index);
 
     /**
@@ -8463,7 +8463,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
      */
-    java.lang.String getDraftIsTransformedToMessageIdList(int index);
+    String getDraftIsTransformedToMessageIdList(int index);
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
      */
@@ -8491,12 +8491,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> 
+    java.util.List<EntityPatch>
         getEntityPatchesList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch getEntityPatches(int index);
+    EntityPatch getEntityPatches(int index);
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
@@ -8504,12 +8504,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder> 
+    java.util.List<? extends EntityPatchOrBuilder>
         getEntityPatchesOrBuilderList();
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder getEntityPatchesOrBuilder(
+    EntityPatchOrBuilder getEntityPatchesOrBuilder(
         int index);
 
     /**
@@ -8537,7 +8537,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string DeliveredPatchId = 12;</code>
      */
-    java.lang.String getDeliveredPatchId();
+    String getDeliveredPatchId();
     /**
      * <code>optional string DeliveredPatchId = 12;</code>
      */
@@ -8551,7 +8551,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string PatchId = 13;</code>
      */
-    java.lang.String getPatchId();
+    String getPatchId();
     /**
      * <code>required string PatchId = 13;</code>
      */
@@ -8591,7 +8591,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -8632,10 +8632,10 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>();
+                entities_ = new java.util.ArrayList<Entity>();
                 mutable_bitField0_ |= 0x00000004;
               }
-              entities_.add(input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.PARSER, extensionRegistry));
+              entities_.add(input.readMessage(Entity.PARSER, extensionRegistry));
               break;
             }
             case 32: {
@@ -8669,10 +8669,10 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 74: {
               if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
-                entityPatches_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch>();
+                entityPatches_ = new java.util.ArrayList<EntityPatch>();
                 mutable_bitField0_ |= 0x00000100;
               }
-              entityPatches_.add(input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.PARSER, extensionRegistry));
+              entityPatches_.add(input.readMessage(EntityPatch.PARSER, extensionRegistry));
               break;
             }
             case 80: {
@@ -8731,14 +8731,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder.class);
+              MessagePatch.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<MessagePatch> PARSER =
@@ -8751,14 +8751,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<MessagePatch> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int MESSAGEID_FIELD_NUMBER = 1;
-    private java.lang.Object messageId_;
+    private Object messageId_;
     /**
      * <code>required string MessageId = 1;</code>
      */
@@ -8768,14 +8768,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string MessageId = 1;</code>
      */
-    public java.lang.String getMessageId() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMessageId() {
+      Object ref = messageId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           messageId_ = s;
         }
@@ -8787,11 +8787,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMessageIdBytes() {
-      java.lang.Object ref = messageId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = messageId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         messageId_ = b;
         return b;
       } else {
@@ -8823,17 +8823,17 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ENTITIES_FIELD_NUMBER = 3;
-    private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_;
+    private java.util.List<Entity> entities_;
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+    public java.util.List<Entity> getEntitiesList() {
       return entities_;
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+    public java.util.List<? extends EntityOrBuilder>
         getEntitiesOrBuilderList() {
       return entities_;
     }
@@ -8846,13 +8846,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+    public Entity getEntities(int index) {
       return entities_.get(index);
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+    public EntityOrBuilder getEntitiesOrBuilder(
         int index) {
       return entities_.get(index);
     }
@@ -8905,7 +8905,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
      */
-    public java.lang.String getDraftIsTransformedToMessageIdList(int index) {
+    public String getDraftIsTransformedToMessageIdList(int index) {
       return draftIsTransformedToMessageIdList_.get(index);
     }
     /**
@@ -8947,17 +8947,17 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ENTITYPATCHES_FIELD_NUMBER = 9;
-    private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> entityPatches_;
+    private java.util.List<EntityPatch> entityPatches_;
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> getEntityPatchesList() {
+    public java.util.List<EntityPatch> getEntityPatchesList() {
       return entityPatches_;
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder> 
+    public java.util.List<? extends EntityPatchOrBuilder>
         getEntityPatchesOrBuilderList() {
       return entityPatches_;
     }
@@ -8970,13 +8970,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch getEntityPatches(int index) {
+    public EntityPatch getEntityPatches(int index) {
       return entityPatches_.get(index);
     }
     /**
      * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder getEntityPatchesOrBuilder(
+    public EntityPatchOrBuilder getEntityPatchesOrBuilder(
         int index) {
       return entityPatches_.get(index);
     }
@@ -9012,7 +9012,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int DELIVEREDPATCHID_FIELD_NUMBER = 12;
-    private java.lang.Object deliveredPatchId_;
+    private Object deliveredPatchId_;
     /**
      * <code>optional string DeliveredPatchId = 12;</code>
      */
@@ -9022,14 +9022,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string DeliveredPatchId = 12;</code>
      */
-    public java.lang.String getDeliveredPatchId() {
-      java.lang.Object ref = deliveredPatchId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getDeliveredPatchId() {
+      Object ref = deliveredPatchId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           deliveredPatchId_ = s;
         }
@@ -9041,11 +9041,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getDeliveredPatchIdBytes() {
-      java.lang.Object ref = deliveredPatchId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = deliveredPatchId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         deliveredPatchId_ = b;
         return b;
       } else {
@@ -9054,7 +9054,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int PATCHID_FIELD_NUMBER = 13;
-    private java.lang.Object patchId_;
+    private Object patchId_;
     /**
      * <code>required string PatchId = 13;</code>
      */
@@ -9064,14 +9064,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string PatchId = 13;</code>
      */
-    public java.lang.String getPatchId() {
-      java.lang.Object ref = patchId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getPatchId() {
+      Object ref = patchId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           patchId_ = s;
         }
@@ -9083,11 +9083,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getPatchIdBytes() {
-      java.lang.Object ref = patchId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = patchId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         patchId_ = b;
         return b;
       } else {
@@ -9285,59 +9285,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(byte[] data)
+    public static MessagePatch parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(java.io.InputStream input)
+    public static MessagePatch parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseDelimitedFrom(java.io.InputStream input)
+    public static MessagePatch parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseDelimitedFrom(
+    public static MessagePatch parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parseFrom(
+    public static MessagePatch parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -9346,14 +9346,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch prototype) {
+    public static Builder newBuilder(MessagePatch prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -9363,17 +9363,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.MessagePatch)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatchOrBuilder {
+        MessagePatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.Builder.class);
+                MessagePatch.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.newBuilder()
@@ -9382,7 +9382,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9443,23 +9443,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_MessagePatch_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance();
+      public MessagePatch getDefaultInstanceForType() {
+        return MessagePatch.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch result = buildPartial();
+      public MessagePatch build() {
+        MessagePatch result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch(this);
+      public MessagePatch buildPartial() {
+        MessagePatch result = new MessagePatch(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -9535,16 +9535,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch)other);
+        if (other instanceof MessagePatch) {
+          return mergeFrom((MessagePatch)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(MessagePatch other) {
+        if (other == MessagePatch.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           bitField0_ |= 0x00000001;
           messageId_ = other.messageId_;
@@ -9686,11 +9686,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch parsedMessage = null;
+        MessagePatch parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MessagePatch) e.getUnfinishedMessage();
+          parsedMessage = (MessagePatch) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -9701,7 +9701,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object messageId_ = "";
+      private Object messageId_ = "";
       /**
        * <code>required string MessageId = 1;</code>
        */
@@ -9711,18 +9711,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string MessageId = 1;</code>
        */
-      public java.lang.String getMessageId() {
-        java.lang.Object ref = messageId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMessageId() {
+        Object ref = messageId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             messageId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -9730,11 +9730,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMessageIdBytes() {
-        java.lang.Object ref = messageId_;
+        Object ref = messageId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           messageId_ = b;
           return b;
         } else {
@@ -9745,7 +9745,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string MessageId = 1;</code>
        */
       public Builder setMessageId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9825,22 +9825,22 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> entities_ =
+      private java.util.List<Entity> entities_ =
         java.util.Collections.emptyList();
       private void ensureEntitiesIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          entities_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity>(entities_);
+          entities_ = new java.util.ArrayList<Entity>(entities_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> entitiesBuilder_;
+          Entity, Entity.Builder, EntityOrBuilder> entitiesBuilder_;
 
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> getEntitiesList() {
+      public java.util.List<Entity> getEntitiesList() {
         if (entitiesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(entities_);
         } else {
@@ -9860,7 +9860,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getEntities(int index) {
+      public Entity getEntities(int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);
         } else {
@@ -9871,7 +9871,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9888,7 +9888,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder setEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.set(index, builderForValue.build());
@@ -9901,7 +9901,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Builder addEntities(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+      public Builder addEntities(Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9918,7 +9918,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity value) {
+          int index, Entity value) {
         if (entitiesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9935,7 +9935,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder addEntities(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(builderForValue.build());
@@ -9949,7 +9949,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder addEntities(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder builderForValue) {
+          int index, Entity.Builder builderForValue) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           entities_.add(index, builderForValue.build());
@@ -9963,7 +9963,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
       public Builder addAllEntities(
-          java.lang.Iterable<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity> values) {
+          Iterable<? extends Entity> values) {
         if (entitiesBuilder_ == null) {
           ensureEntitiesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -10003,14 +10003,14 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder getEntitiesBuilder(
+      public Entity.Builder getEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder getEntitiesOrBuilder(
+      public EntityOrBuilder getEntitiesOrBuilder(
           int index) {
         if (entitiesBuilder_ == null) {
           return entities_.get(index);  } else {
@@ -10020,7 +10020,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+      public java.util.List<? extends EntityOrBuilder>
            getEntitiesOrBuilderList() {
         if (entitiesBuilder_ != null) {
           return entitiesBuilder_.getMessageOrBuilderList();
@@ -10031,31 +10031,31 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder() {
+      public Entity.Builder addEntitiesBuilder() {
         return getEntitiesFieldBuilder().addBuilder(
-            Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder addEntitiesBuilder(
+      public Entity.Builder addEntitiesBuilder(
           int index) {
         return getEntitiesFieldBuilder().addBuilder(
-            index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance());
+            index, Entity.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.Entity Entities = 3;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder> 
+      public java.util.List<Entity.Builder>
            getEntitiesBuilderList() {
         return getEntitiesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder> 
+          Entity, Entity.Builder, EntityOrBuilder>
           getEntitiesFieldBuilder() {
         if (entitiesBuilder_ == null) {
           entitiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder>(
+              Entity, Entity.Builder, EntityOrBuilder>(
                   entities_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
@@ -10152,7 +10152,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
        */
-      public java.lang.String getDraftIsTransformedToMessageIdList(int index) {
+      public String getDraftIsTransformedToMessageIdList(int index) {
         return draftIsTransformedToMessageIdList_.get(index);
       }
       /**
@@ -10166,7 +10166,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
        */
       public Builder setDraftIsTransformedToMessageIdList(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10179,7 +10179,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
        */
       public Builder addDraftIsTransformedToMessageIdList(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10192,7 +10192,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string DraftIsTransformedToMessageIdList = 6;</code>
        */
       public Builder addAllDraftIsTransformedToMessageIdList(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureDraftIsTransformedToMessageIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, draftIsTransformedToMessageIdList_);
@@ -10286,22 +10286,22 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> entityPatches_ =
+      private java.util.List<EntityPatch> entityPatches_ =
         java.util.Collections.emptyList();
       private void ensureEntityPatchesIsMutable() {
         if (!((bitField0_ & 0x00000100) == 0x00000100)) {
-          entityPatches_ = new java.util.ArrayList<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch>(entityPatches_);
+          entityPatches_ = new java.util.ArrayList<EntityPatch>(entityPatches_);
           bitField0_ |= 0x00000100;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder> entityPatchesBuilder_;
+          EntityPatch, EntityPatch.Builder, EntityPatchOrBuilder> entityPatchesBuilder_;
 
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> getEntityPatchesList() {
+      public java.util.List<EntityPatch> getEntityPatchesList() {
         if (entityPatchesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(entityPatches_);
         } else {
@@ -10321,7 +10321,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch getEntityPatches(int index) {
+      public EntityPatch getEntityPatches(int index) {
         if (entityPatchesBuilder_ == null) {
           return entityPatches_.get(index);
         } else {
@@ -10332,7 +10332,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder setEntityPatches(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch value) {
+          int index, EntityPatch value) {
         if (entityPatchesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -10349,7 +10349,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder setEntityPatches(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder builderForValue) {
+          int index, EntityPatch.Builder builderForValue) {
         if (entityPatchesBuilder_ == null) {
           ensureEntityPatchesIsMutable();
           entityPatches_.set(index, builderForValue.build());
@@ -10362,7 +10362,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Builder addEntityPatches(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch value) {
+      public Builder addEntityPatches(EntityPatch value) {
         if (entityPatchesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -10379,7 +10379,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder addEntityPatches(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch value) {
+          int index, EntityPatch value) {
         if (entityPatchesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -10396,7 +10396,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder addEntityPatches(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder builderForValue) {
+          EntityPatch.Builder builderForValue) {
         if (entityPatchesBuilder_ == null) {
           ensureEntityPatchesIsMutable();
           entityPatches_.add(builderForValue.build());
@@ -10410,7 +10410,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder addEntityPatches(
-          int index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder builderForValue) {
+          int index, EntityPatch.Builder builderForValue) {
         if (entityPatchesBuilder_ == null) {
           ensureEntityPatchesIsMutable();
           entityPatches_.add(index, builderForValue.build());
@@ -10424,7 +10424,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
       public Builder addAllEntityPatches(
-          java.lang.Iterable<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch> values) {
+          Iterable<? extends EntityPatch> values) {
         if (entityPatchesBuilder_ == null) {
           ensureEntityPatchesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -10464,14 +10464,14 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder getEntityPatchesBuilder(
+      public EntityPatch.Builder getEntityPatchesBuilder(
           int index) {
         return getEntityPatchesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder getEntityPatchesOrBuilder(
+      public EntityPatchOrBuilder getEntityPatchesOrBuilder(
           int index) {
         if (entityPatchesBuilder_ == null) {
           return entityPatches_.get(index);  } else {
@@ -10481,7 +10481,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder> 
+      public java.util.List<? extends EntityPatchOrBuilder>
            getEntityPatchesOrBuilderList() {
         if (entityPatchesBuilder_ != null) {
           return entityPatchesBuilder_.getMessageOrBuilderList();
@@ -10492,31 +10492,31 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder addEntityPatchesBuilder() {
+      public EntityPatch.Builder addEntityPatchesBuilder() {
         return getEntityPatchesFieldBuilder().addBuilder(
-            Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.getDefaultInstance());
+            EntityPatch.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder addEntityPatchesBuilder(
+      public EntityPatch.Builder addEntityPatchesBuilder(
           int index) {
         return getEntityPatchesFieldBuilder().addBuilder(
-            index, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.getDefaultInstance());
+            index, EntityPatch.getDefaultInstance());
       }
       /**
        * <code>repeated .Diadoc.Api.Proto.Events.EntityPatch EntityPatches = 9;</code>
        */
-      public java.util.List<Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder> 
+      public java.util.List<EntityPatch.Builder>
            getEntityPatchesBuilderList() {
         return getEntityPatchesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder> 
+          EntityPatch, EntityPatch.Builder, EntityPatchOrBuilder>
           getEntityPatchesFieldBuilder() {
         if (entityPatchesBuilder_ == null) {
           entityPatchesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder>(
+              EntityPatch, EntityPatch.Builder, EntityPatchOrBuilder>(
                   entityPatches_,
                   ((bitField0_ & 0x00000100) == 0x00000100),
                   getParentForChildren(),
@@ -10590,7 +10590,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object deliveredPatchId_ = "";
+      private Object deliveredPatchId_ = "";
       /**
        * <code>optional string DeliveredPatchId = 12;</code>
        */
@@ -10600,18 +10600,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string DeliveredPatchId = 12;</code>
        */
-      public java.lang.String getDeliveredPatchId() {
-        java.lang.Object ref = deliveredPatchId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getDeliveredPatchId() {
+        Object ref = deliveredPatchId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             deliveredPatchId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -10619,11 +10619,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getDeliveredPatchIdBytes() {
-        java.lang.Object ref = deliveredPatchId_;
+        Object ref = deliveredPatchId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           deliveredPatchId_ = b;
           return b;
         } else {
@@ -10634,7 +10634,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string DeliveredPatchId = 12;</code>
        */
       public Builder setDeliveredPatchId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10666,7 +10666,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object patchId_ = "";
+      private Object patchId_ = "";
       /**
        * <code>required string PatchId = 13;</code>
        */
@@ -10676,18 +10676,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string PatchId = 13;</code>
        */
-      public java.lang.String getPatchId() {
-        java.lang.Object ref = patchId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getPatchId() {
+        Object ref = patchId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             patchId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -10695,11 +10695,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getPatchIdBytes() {
-        java.lang.Object ref = patchId_;
+        Object ref = patchId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           patchId_ = b;
           return b;
         } else {
@@ -10710,7 +10710,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string PatchId = 13;</code>
        */
       public Builder setPatchId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10799,7 +10799,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType getEntityType();
+    EntityType getEntityType();
 
     /**
      * <code>required string EntityId = 2;</code>
@@ -10808,7 +10808,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EntityId = 2;</code>
      */
-    java.lang.String getEntityId();
+    String getEntityId();
     /**
      * <code>required string EntityId = 2;</code>
      */
@@ -10822,7 +10822,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string AuthorUserId = 33;</code>
      */
-    java.lang.String getAuthorUserId();
+    String getAuthorUserId();
     /**
      * <code>optional string AuthorUserId = 33;</code>
      */
@@ -10836,7 +10836,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ParentEntityId = 3;</code>
      */
-    java.lang.String getParentEntityId();
+    String getParentEntityId();
     /**
      * <code>optional string ParentEntityId = 3;</code>
      */
@@ -10883,7 +10883,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Attachment
      * </pre>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType getAttachmentType();
+    AttachmentType getAttachmentType();
 
     /**
      * <code>optional string FileName = 6;</code>
@@ -10900,7 +10900,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Attachment
      * </pre>
      */
-    java.lang.String getFileName();
+    String getFileName();
     /**
      * <code>optional string FileName = 6;</code>
      *
@@ -10943,7 +10943,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Signature
      * </pre>
      */
-    java.lang.String getSignerBoxId();
+    String getSignerBoxId();
     /**
      * <code>optional string SignerBoxId = 8;</code>
      *
@@ -10969,7 +10969,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for Attachment/DeliveryFailureNotification
      * </pre>
      */
-    java.lang.String getNotDeliveredEventId();
+    String getNotDeliveredEventId();
     /**
      * <code>optional string NotDeliveredEventId = 10;</code>
      *
@@ -11021,11 +11021,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo getResolutionInfo();
+    ResolutionInfoProtos.ResolutionInfo getResolutionInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder();
+    ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder();
 
     /**
      * <code>optional string SignerDepartmentId = 14;</code>
@@ -11042,7 +11042,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Signature
      * </pre>
      */
-    java.lang.String getSignerDepartmentId();
+    String getSignerDepartmentId();
     /**
      * <code>optional string SignerDepartmentId = 14;</code>
      *
@@ -11060,11 +11060,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo();
+    ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder();
+    ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
@@ -11073,11 +11073,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo();
+    ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
      */
-    Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder();
+    ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder();
 
     /**
      * <code>optional bool NeedReceipt = 17 [default = false];</code>
@@ -11103,7 +11103,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string PacketId = 18;</code>
      */
-    java.lang.String getPacketId();
+    String getPacketId();
     /**
      * <code>optional string PacketId = 18;</code>
      */
@@ -11143,7 +11143,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string AttachmentVersion = 21;</code>
      */
-    java.lang.String getAttachmentVersion();
+    String getAttachmentVersion();
     /**
      * <code>optional string AttachmentVersion = 21;</code>
      */
@@ -11165,7 +11165,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteAssignmentAttachment
      * </pre>
      */
-    Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo();
+    ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteAssignmentInfo ResolutionRouteAssignmentInfo = 22;</code>
      *
@@ -11173,7 +11173,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteAssignmentAttachment
      * </pre>
      */
-    Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder();
+    ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteRemovalInfo ResolutionRouteRemovalInfo = 23;</code>
@@ -11190,7 +11190,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteRemovalAttachment
      * </pre>
      */
-    Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo();
+    ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteRemovalInfo ResolutionRouteRemovalInfo = 23;</code>
      *
@@ -11198,7 +11198,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteRemovalAttachment
      * </pre>
      */
-    Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder();
+    ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.CancellationInfo CancellationInfo = 24;</code>
@@ -11215,7 +11215,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.Cancellation
      * </pre>
      */
-    Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo getCancellationInfo();
+    CancellationInfoProtos.CancellationInfo getCancellationInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.CancellationInfo CancellationInfo = 24;</code>
      *
@@ -11223,7 +11223,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.Cancellation
      * </pre>
      */
-    Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder();
+    CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder();
 
     /**
      * <code>repeated string Labels = 25;</code>
@@ -11237,7 +11237,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string Labels = 25;</code>
      */
-    java.lang.String getLabels(int index);
+    String getLabels(int index);
     /**
      * <code>repeated string Labels = 25;</code>
      */
@@ -11251,7 +11251,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Version = 26;</code>
      */
-    java.lang.String getVersion();
+    String getVersion();
     /**
      * <code>optional string Version = 26;</code>
      */
@@ -11265,11 +11265,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo getTemplateTransformationInfo();
+    TemplateTransformationInfo getTemplateTransformationInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder();
+    TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
@@ -11278,11 +11278,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo getTemplateRefusalInfo();
+    TemplateRefusalInfo getTemplateRefusalInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder();
+    TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.OuterDocflows.OuterDocflowInfo OuterDocflow = 29;</code>
@@ -11304,11 +11304,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
      */
-    Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo();
+    RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
      */
-    Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder();
+    RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder();
 
     /**
      * <code>optional string ContentTypeId = 31;</code>
@@ -11317,7 +11317,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ContentTypeId = 31;</code>
      */
-    java.lang.String getContentTypeId();
+    String getContentTypeId();
     /**
      * <code>optional string ContentTypeId = 31;</code>
      */
@@ -11331,11 +11331,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
      */
-    Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo();
+    PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
      */
-    Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder();
+    PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
@@ -11344,11 +11344,11 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo getMoveDocumentInfo();
+    MoveDocumentInfo getMoveDocumentInfo();
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder();
+    MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder();
 
     /**
      * <code>optional .Diadoc.Api.Proto.Docflow.PowerOfAttorneyAttachmentStatus PowerOfAttorneyAttachmentStatus = 35;</code>
@@ -11399,7 +11399,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -11430,7 +11430,7 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 8: {
               int rawValue = input.readEnum();
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType value = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType.valueOf(rawValue);
+              EntityType value = EntityType.valueOf(rawValue);
               if (value == null) {
                 unknownFields.mergeVarintField(1, rawValue);
               } else {
@@ -11466,7 +11466,7 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 40: {
               int rawValue = input.readEnum();
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType value = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType.valueOf(rawValue);
+              AttachmentType value = AttachmentType.valueOf(rawValue);
               if (value == null) {
                 unknownFields.mergeVarintField(5, rawValue);
               } else {
@@ -11517,11 +11517,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 106: {
-              Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder subBuilder = null;
+              ResolutionInfoProtos.ResolutionInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00001000) == 0x00001000)) {
                 subBuilder = resolutionInfo_.toBuilder();
               }
-              resolutionInfo_ = input.readMessage(Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.PARSER, extensionRegistry);
+              resolutionInfo_ = input.readMessage(ResolutionInfoProtos.ResolutionInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(resolutionInfo_);
                 resolutionInfo_ = subBuilder.buildPartial();
@@ -11536,11 +11536,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 122: {
-              Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder subBuilder = null;
+              ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00004000) == 0x00004000)) {
                 subBuilder = resolutionRequestInfo_.toBuilder();
               }
-              resolutionRequestInfo_ = input.readMessage(Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.PARSER, extensionRegistry);
+              resolutionRequestInfo_ = input.readMessage(ResolutionRequestInfoProtos.ResolutionRequestInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(resolutionRequestInfo_);
                 resolutionRequestInfo_ = subBuilder.buildPartial();
@@ -11549,11 +11549,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 130: {
-              Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder subBuilder = null;
+              ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00008000) == 0x00008000)) {
                 subBuilder = resolutionRequestDenialInfo_.toBuilder();
               }
-              resolutionRequestDenialInfo_ = input.readMessage(Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.PARSER, extensionRegistry);
+              resolutionRequestDenialInfo_ = input.readMessage(ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(resolutionRequestDenialInfo_);
                 resolutionRequestDenialInfo_ = subBuilder.buildPartial();
@@ -11589,11 +11589,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 178: {
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder subBuilder = null;
+              ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00200000) == 0x00200000)) {
                 subBuilder = resolutionRouteAssignmentInfo_.toBuilder();
               }
-              resolutionRouteAssignmentInfo_ = input.readMessage(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.PARSER, extensionRegistry);
+              resolutionRouteAssignmentInfo_ = input.readMessage(ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(resolutionRouteAssignmentInfo_);
                 resolutionRouteAssignmentInfo_ = subBuilder.buildPartial();
@@ -11602,11 +11602,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 186: {
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder subBuilder = null;
+              ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00400000) == 0x00400000)) {
                 subBuilder = resolutionRouteRemovalInfo_.toBuilder();
               }
-              resolutionRouteRemovalInfo_ = input.readMessage(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.PARSER, extensionRegistry);
+              resolutionRouteRemovalInfo_ = input.readMessage(ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(resolutionRouteRemovalInfo_);
                 resolutionRouteRemovalInfo_ = subBuilder.buildPartial();
@@ -11615,11 +11615,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 194: {
-              Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder subBuilder = null;
+              CancellationInfoProtos.CancellationInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00800000) == 0x00800000)) {
                 subBuilder = cancellationInfo_.toBuilder();
               }
-              cancellationInfo_ = input.readMessage(Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.PARSER, extensionRegistry);
+              cancellationInfo_ = input.readMessage(CancellationInfoProtos.CancellationInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(cancellationInfo_);
                 cancellationInfo_ = subBuilder.buildPartial();
@@ -11643,11 +11643,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 218: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder subBuilder = null;
+              TemplateTransformationInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x02000000) == 0x02000000)) {
                 subBuilder = templateTransformationInfo_.toBuilder();
               }
-              templateTransformationInfo_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.PARSER, extensionRegistry);
+              templateTransformationInfo_ = input.readMessage(TemplateTransformationInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(templateTransformationInfo_);
                 templateTransformationInfo_ = subBuilder.buildPartial();
@@ -11656,11 +11656,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 226: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder subBuilder = null;
+              TemplateRefusalInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x04000000) == 0x04000000)) {
                 subBuilder = templateRefusalInfo_.toBuilder();
               }
-              templateRefusalInfo_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.PARSER, extensionRegistry);
+              templateRefusalInfo_ = input.readMessage(TemplateRefusalInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(templateRefusalInfo_);
                 templateRefusalInfo_ = subBuilder.buildPartial();
@@ -11682,11 +11682,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 242: {
-              Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder subBuilder = null;
+              RevocationRequestInfoProtos.RevocationRequestInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x10000000) == 0x10000000)) {
                 subBuilder = revocationRequestInfo_.toBuilder();
               }
-              revocationRequestInfo_ = input.readMessage(Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.PARSER, extensionRegistry);
+              revocationRequestInfo_ = input.readMessage(RevocationRequestInfoProtos.RevocationRequestInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(revocationRequestInfo_);
                 revocationRequestInfo_ = subBuilder.buildPartial();
@@ -11701,11 +11701,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 258: {
-              Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder subBuilder = null;
+              PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x40000000) == 0x40000000)) {
                 subBuilder = powerOfAttorneyInfo_.toBuilder();
               }
-              powerOfAttorneyInfo_ = input.readMessage(Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.PARSER, extensionRegistry);
+              powerOfAttorneyInfo_ = input.readMessage(PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(powerOfAttorneyInfo_);
                 powerOfAttorneyInfo_ = subBuilder.buildPartial();
@@ -11720,11 +11720,11 @@ public final class DiadocMessage_GetApiProtos {
               break;
             }
             case 274: {
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder subBuilder = null;
+              MoveDocumentInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x80000000) == 0x80000000)) {
                 subBuilder = moveDocumentInfo_.toBuilder();
               }
-              moveDocumentInfo_ = input.readMessage(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.PARSER, extensionRegistry);
+              moveDocumentInfo_ = input.readMessage(MoveDocumentInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(moveDocumentInfo_);
                 moveDocumentInfo_ = subBuilder.buildPartial();
@@ -11762,14 +11762,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder.class);
+              Entity.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<Entity> PARSER =
@@ -11782,7 +11782,7 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Entity> getParserForType() {
       return PARSER;
     }
@@ -11790,7 +11790,7 @@ public final class DiadocMessage_GetApiProtos {
     private int bitField0_;
     private int bitField1_;
     public static final int ENTITYTYPE_FIELD_NUMBER = 1;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType entityType_;
+    private EntityType entityType_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
      */
@@ -11800,12 +11800,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType getEntityType() {
+    public EntityType getEntityType() {
       return entityType_;
     }
 
     public static final int ENTITYID_FIELD_NUMBER = 2;
-    private java.lang.Object entityId_;
+    private Object entityId_;
     /**
      * <code>required string EntityId = 2;</code>
      */
@@ -11815,14 +11815,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EntityId = 2;</code>
      */
-    public java.lang.String getEntityId() {
-      java.lang.Object ref = entityId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEntityId() {
+      Object ref = entityId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           entityId_ = s;
         }
@@ -11834,11 +11834,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getEntityIdBytes() {
-      java.lang.Object ref = entityId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = entityId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         entityId_ = b;
         return b;
       } else {
@@ -11847,7 +11847,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int AUTHORUSERID_FIELD_NUMBER = 33;
-    private java.lang.Object authorUserId_;
+    private Object authorUserId_;
     /**
      * <code>optional string AuthorUserId = 33;</code>
      */
@@ -11857,14 +11857,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string AuthorUserId = 33;</code>
      */
-    public java.lang.String getAuthorUserId() {
-      java.lang.Object ref = authorUserId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthorUserId() {
+      Object ref = authorUserId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           authorUserId_ = s;
         }
@@ -11876,11 +11876,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorUserIdBytes() {
-      java.lang.Object ref = authorUserId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = authorUserId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         authorUserId_ = b;
         return b;
       } else {
@@ -11889,7 +11889,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int PARENTENTITYID_FIELD_NUMBER = 3;
-    private java.lang.Object parentEntityId_;
+    private Object parentEntityId_;
     /**
      * <code>optional string ParentEntityId = 3;</code>
      */
@@ -11899,14 +11899,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ParentEntityId = 3;</code>
      */
-    public java.lang.String getParentEntityId() {
-      java.lang.Object ref = parentEntityId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getParentEntityId() {
+      Object ref = parentEntityId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           parentEntityId_ = s;
         }
@@ -11918,11 +11918,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getParentEntityIdBytes() {
-      java.lang.Object ref = parentEntityId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = parentEntityId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         parentEntityId_ = b;
         return b;
       } else {
@@ -11964,7 +11964,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ATTACHMENTTYPE_FIELD_NUMBER = 5;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType attachmentType_;
+    private AttachmentType attachmentType_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.AttachmentType AttachmentType = 5 [default = UnknownAttachmentType];</code>
      *
@@ -11982,12 +11982,12 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Attachment
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType getAttachmentType() {
+    public AttachmentType getAttachmentType() {
       return attachmentType_;
     }
 
     public static final int FILENAME_FIELD_NUMBER = 6;
-    private java.lang.Object fileName_;
+    private Object fileName_;
     /**
      * <code>optional string FileName = 6;</code>
      *
@@ -12005,14 +12005,14 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Attachment
      * </pre>
      */
-    public java.lang.String getFileName() {
-      java.lang.Object ref = fileName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getFileName() {
+      Object ref = fileName_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fileName_ = s;
         }
@@ -12028,11 +12028,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getFileNameBytes() {
-      java.lang.Object ref = fileName_;
-      if (ref instanceof java.lang.String) {
+      Object ref = fileName_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         fileName_ = b;
         return b;
       } else {
@@ -12064,7 +12064,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int SIGNERBOXID_FIELD_NUMBER = 8;
-    private java.lang.Object signerBoxId_;
+    private Object signerBoxId_;
     /**
      * <code>optional string SignerBoxId = 8;</code>
      *
@@ -12082,14 +12082,14 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Signature
      * </pre>
      */
-    public java.lang.String getSignerBoxId() {
-      java.lang.Object ref = signerBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getSignerBoxId() {
+      Object ref = signerBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           signerBoxId_ = s;
         }
@@ -12105,11 +12105,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getSignerBoxIdBytes() {
-      java.lang.Object ref = signerBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = signerBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         signerBoxId_ = b;
         return b;
       } else {
@@ -12118,7 +12118,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int NOTDELIVEREDEVENTID_FIELD_NUMBER = 10;
-    private java.lang.Object notDeliveredEventId_;
+    private Object notDeliveredEventId_;
     /**
      * <code>optional string NotDeliveredEventId = 10;</code>
      *
@@ -12136,14 +12136,14 @@ public final class DiadocMessage_GetApiProtos {
      * only for Attachment/DeliveryFailureNotification
      * </pre>
      */
-    public java.lang.String getNotDeliveredEventId() {
-      java.lang.Object ref = notDeliveredEventId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getNotDeliveredEventId() {
+      Object ref = notDeliveredEventId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           notDeliveredEventId_ = s;
         }
@@ -12159,11 +12159,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getNotDeliveredEventIdBytes() {
-      java.lang.Object ref = notDeliveredEventId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = notDeliveredEventId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         notDeliveredEventId_ = b;
         return b;
       } else {
@@ -12220,7 +12220,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int RESOLUTIONINFO_FIELD_NUMBER = 13;
-    private Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo resolutionInfo_;
+    private ResolutionInfoProtos.ResolutionInfo resolutionInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
      */
@@ -12230,18 +12230,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo getResolutionInfo() {
+    public ResolutionInfoProtos.ResolutionInfo getResolutionInfo() {
       return resolutionInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder() {
+    public ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder() {
       return resolutionInfo_;
     }
 
     public static final int SIGNERDEPARTMENTID_FIELD_NUMBER = 14;
-    private java.lang.Object signerDepartmentId_;
+    private Object signerDepartmentId_;
     /**
      * <code>optional string SignerDepartmentId = 14;</code>
      *
@@ -12259,14 +12259,14 @@ public final class DiadocMessage_GetApiProtos {
      * only for EntityType.Signature
      * </pre>
      */
-    public java.lang.String getSignerDepartmentId() {
-      java.lang.Object ref = signerDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getSignerDepartmentId() {
+      Object ref = signerDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           signerDepartmentId_ = s;
         }
@@ -12282,11 +12282,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getSignerDepartmentIdBytes() {
-      java.lang.Object ref = signerDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = signerDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         signerDepartmentId_ = b;
         return b;
       } else {
@@ -12295,7 +12295,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int RESOLUTIONREQUESTINFO_FIELD_NUMBER = 15;
-    private Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo resolutionRequestInfo_;
+    private ResolutionRequestInfoProtos.ResolutionRequestInfo resolutionRequestInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
      */
@@ -12305,18 +12305,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo() {
+    public ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo() {
       return resolutionRequestInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder() {
+    public ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder() {
       return resolutionRequestInfo_;
     }
 
     public static final int RESOLUTIONREQUESTDENIALINFO_FIELD_NUMBER = 16;
-    private Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo resolutionRequestDenialInfo_;
+    private ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo resolutionRequestDenialInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
      */
@@ -12326,13 +12326,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo() {
+    public ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo() {
       return resolutionRequestDenialInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder() {
+    public ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder() {
       return resolutionRequestDenialInfo_;
     }
 
@@ -12360,7 +12360,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int PACKETID_FIELD_NUMBER = 18;
-    private java.lang.Object packetId_;
+    private Object packetId_;
     /**
      * <code>optional string PacketId = 18;</code>
      */
@@ -12370,14 +12370,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string PacketId = 18;</code>
      */
-    public java.lang.String getPacketId() {
-      java.lang.Object ref = packetId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getPacketId() {
+      Object ref = packetId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           packetId_ = s;
         }
@@ -12389,11 +12389,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getPacketIdBytes() {
-      java.lang.Object ref = packetId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = packetId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         packetId_ = b;
         return b;
       } else {
@@ -12440,7 +12440,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int ATTACHMENTVERSION_FIELD_NUMBER = 21;
-    private java.lang.Object attachmentVersion_;
+    private Object attachmentVersion_;
     /**
      * <code>optional string AttachmentVersion = 21;</code>
      */
@@ -12450,14 +12450,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string AttachmentVersion = 21;</code>
      */
-    public java.lang.String getAttachmentVersion() {
-      java.lang.Object ref = attachmentVersion_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAttachmentVersion() {
+      Object ref = attachmentVersion_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           attachmentVersion_ = s;
         }
@@ -12469,11 +12469,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getAttachmentVersionBytes() {
-      java.lang.Object ref = attachmentVersion_;
-      if (ref instanceof java.lang.String) {
+      Object ref = attachmentVersion_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         attachmentVersion_ = b;
         return b;
       } else {
@@ -12482,7 +12482,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int RESOLUTIONROUTEASSIGNMENTINFO_FIELD_NUMBER = 22;
-    private Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo resolutionRouteAssignmentInfo_;
+    private ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo resolutionRouteAssignmentInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteAssignmentInfo ResolutionRouteAssignmentInfo = 22;</code>
      *
@@ -12500,7 +12500,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteAssignmentAttachment
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo() {
+    public ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo() {
       return resolutionRouteAssignmentInfo_;
     }
     /**
@@ -12510,12 +12510,12 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteAssignmentAttachment
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder() {
+    public ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder() {
       return resolutionRouteAssignmentInfo_;
     }
 
     public static final int RESOLUTIONROUTEREMOVALINFO_FIELD_NUMBER = 23;
-    private Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo resolutionRouteRemovalInfo_;
+    private ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo resolutionRouteRemovalInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteRemovalInfo ResolutionRouteRemovalInfo = 23;</code>
      *
@@ -12533,7 +12533,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteRemovalAttachment
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo() {
+    public ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo() {
       return resolutionRouteRemovalInfo_;
     }
     /**
@@ -12543,12 +12543,12 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.ResolutionRouteRemovalAttachment
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder() {
+    public ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder() {
       return resolutionRouteRemovalInfo_;
     }
 
     public static final int CANCELLATIONINFO_FIELD_NUMBER = 24;
-    private Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo cancellationInfo_;
+    private CancellationInfoProtos.CancellationInfo cancellationInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.CancellationInfo CancellationInfo = 24;</code>
      *
@@ -12566,7 +12566,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.Cancellation
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo getCancellationInfo() {
+    public CancellationInfoProtos.CancellationInfo getCancellationInfo() {
       return cancellationInfo_;
     }
     /**
@@ -12576,7 +12576,7 @@ public final class DiadocMessage_GetApiProtos {
      * only for AttachmentType.Cancellation
      * </pre>
      */
-    public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder() {
+    public CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder() {
       return cancellationInfo_;
     }
 
@@ -12598,7 +12598,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>repeated string Labels = 25;</code>
      */
-    public java.lang.String getLabels(int index) {
+    public String getLabels(int index) {
       return labels_.get(index);
     }
     /**
@@ -12610,7 +12610,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int VERSION_FIELD_NUMBER = 26;
-    private java.lang.Object version_;
+    private Object version_;
     /**
      * <code>optional string Version = 26;</code>
      */
@@ -12620,14 +12620,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Version = 26;</code>
      */
-    public java.lang.String getVersion() {
-      java.lang.Object ref = version_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getVersion() {
+      Object ref = version_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           version_ = s;
         }
@@ -12639,11 +12639,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
-      java.lang.Object ref = version_;
-      if (ref instanceof java.lang.String) {
+      Object ref = version_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         version_ = b;
         return b;
       } else {
@@ -12652,7 +12652,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int TEMPLATETRANSFORMATIONINFO_FIELD_NUMBER = 27;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo templateTransformationInfo_;
+    private TemplateTransformationInfo templateTransformationInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
      */
@@ -12662,18 +12662,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo getTemplateTransformationInfo() {
+    public TemplateTransformationInfo getTemplateTransformationInfo() {
       return templateTransformationInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder() {
+    public TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder() {
       return templateTransformationInfo_;
     }
 
     public static final int TEMPLATEREFUSALINFO_FIELD_NUMBER = 28;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo templateRefusalInfo_;
+    private TemplateRefusalInfo templateRefusalInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
      */
@@ -12683,13 +12683,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo getTemplateRefusalInfo() {
+    public TemplateRefusalInfo getTemplateRefusalInfo() {
       return templateRefusalInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder() {
+    public TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder() {
       return templateRefusalInfo_;
     }
 
@@ -12715,7 +12715,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int REVOCATIONREQUESTINFO_FIELD_NUMBER = 30;
-    private Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo revocationRequestInfo_;
+    private RevocationRequestInfoProtos.RevocationRequestInfo revocationRequestInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
      */
@@ -12725,18 +12725,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
      */
-    public Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo() {
+    public RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo() {
       return revocationRequestInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
      */
-    public Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder() {
+    public RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder() {
       return revocationRequestInfo_;
     }
 
     public static final int CONTENTTYPEID_FIELD_NUMBER = 31;
-    private java.lang.Object contentTypeId_;
+    private Object contentTypeId_;
     /**
      * <code>optional string ContentTypeId = 31;</code>
      */
@@ -12746,14 +12746,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ContentTypeId = 31;</code>
      */
-    public java.lang.String getContentTypeId() {
-      java.lang.Object ref = contentTypeId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getContentTypeId() {
+      Object ref = contentTypeId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           contentTypeId_ = s;
         }
@@ -12765,11 +12765,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getContentTypeIdBytes() {
-      java.lang.Object ref = contentTypeId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = contentTypeId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         contentTypeId_ = b;
         return b;
       } else {
@@ -12778,7 +12778,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int POWEROFATTORNEYINFO_FIELD_NUMBER = 32;
-    private Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo powerOfAttorneyInfo_;
+    private PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo powerOfAttorneyInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
      */
@@ -12788,18 +12788,18 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
      */
-    public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo() {
+    public PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo() {
       return powerOfAttorneyInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
      */
-    public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder() {
+    public PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder() {
       return powerOfAttorneyInfo_;
     }
 
     public static final int MOVEDOCUMENTINFO_FIELD_NUMBER = 34;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo moveDocumentInfo_;
+    private MoveDocumentInfo moveDocumentInfo_;
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
      */
@@ -12809,13 +12809,13 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo getMoveDocumentInfo() {
+    public MoveDocumentInfo getMoveDocumentInfo() {
       return moveDocumentInfo_;
     }
     /**
      * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder() {
+    public MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder() {
       return moveDocumentInfo_;
     }
 
@@ -12853,39 +12853,39 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private void initFields() {
-      entityType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType.UnknownEntityType;
+      entityType_ = EntityType.UnknownEntityType;
       entityId_ = "";
       authorUserId_ = "";
       parentEntityId_ = "";
       content_ = Diadoc.Api.Proto.ContentProtos.Content.getDefaultInstance();
-      attachmentType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType.UnknownAttachmentType;
+      attachmentType_ = AttachmentType.UnknownAttachmentType;
       fileName_ = "";
       needRecipientSignature_ = false;
       signerBoxId_ = "";
       notDeliveredEventId_ = "";
       documentInfo_ = Diadoc.Api.Proto.Documents.DocumentProtos.Document.getDefaultInstance();
       rawCreationDate_ = 0L;
-      resolutionInfo_ = Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
+      resolutionInfo_ = ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
       signerDepartmentId_ = "";
-      resolutionRequestInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
-      resolutionRequestDenialInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
+      resolutionRequestInfo_ = ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
+      resolutionRequestDenialInfo_ = ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
       needReceipt_ = false;
       packetId_ = "";
       isApprovementSignature_ = false;
       isEncryptedContent_ = false;
       attachmentVersion_ = "";
-      resolutionRouteAssignmentInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
-      resolutionRouteRemovalInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
-      cancellationInfo_ = Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance();
+      resolutionRouteAssignmentInfo_ = ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
+      resolutionRouteRemovalInfo_ = ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
+      cancellationInfo_ = CancellationInfoProtos.CancellationInfo.getDefaultInstance();
       labels_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       version_ = "";
-      templateTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance();
-      templateRefusalInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance();
+      templateTransformationInfo_ = TemplateTransformationInfo.getDefaultInstance();
+      templateRefusalInfo_ = TemplateRefusalInfo.getDefaultInstance();
       outerDocflow_ = Diadoc.Api.Proto.OuterDocflows.OuterDocflowProtos.OuterDocflowInfo.getDefaultInstance();
-      revocationRequestInfo_ = Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
+      revocationRequestInfo_ = RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
       contentTypeId_ = "";
-      powerOfAttorneyInfo_ = Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
-      moveDocumentInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.getDefaultInstance();
+      powerOfAttorneyInfo_ = PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
+      moveDocumentInfo_ = MoveDocumentInfo.getDefaultInstance();
       powerOfAttorneyAttachmentStatus_ = Diadoc.Api.Proto.Docflow.PowerOfAttorneyAttachmentStatusProtos.PowerOfAttorneyAttachmentStatus.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
@@ -13253,59 +13253,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(byte[] data)
+    public static Entity parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(java.io.InputStream input)
+    public static Entity parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseDelimitedFrom(java.io.InputStream input)
+    public static Entity parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseDelimitedFrom(
+    public static Entity parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parseFrom(
+    public static Entity parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -13314,14 +13314,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity prototype) {
+    public static Builder newBuilder(Entity prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -13331,17 +13331,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.Entity)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityOrBuilder {
+        EntityOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.Builder.class);
+                Entity.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.newBuilder()
@@ -13350,7 +13350,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13379,7 +13379,7 @@ public final class DiadocMessage_GetApiProtos {
 
       public Builder clear() {
         super.clear();
-        entityType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType.UnknownEntityType;
+        entityType_ = EntityType.UnknownEntityType;
         bitField0_ = (bitField0_ & ~0x00000001);
         entityId_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -13393,7 +13393,7 @@ public final class DiadocMessage_GetApiProtos {
           contentBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000010);
-        attachmentType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType.UnknownAttachmentType;
+        attachmentType_ = AttachmentType.UnknownAttachmentType;
         bitField0_ = (bitField0_ & ~0x00000020);
         fileName_ = "";
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -13412,7 +13412,7 @@ public final class DiadocMessage_GetApiProtos {
         rawCreationDate_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000800);
         if (resolutionInfoBuilder_ == null) {
-          resolutionInfo_ = Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
+          resolutionInfo_ = ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
         } else {
           resolutionInfoBuilder_.clear();
         }
@@ -13420,13 +13420,13 @@ public final class DiadocMessage_GetApiProtos {
         signerDepartmentId_ = "";
         bitField0_ = (bitField0_ & ~0x00002000);
         if (resolutionRequestInfoBuilder_ == null) {
-          resolutionRequestInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
+          resolutionRequestInfo_ = ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
         } else {
           resolutionRequestInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00004000);
         if (resolutionRequestDenialInfoBuilder_ == null) {
-          resolutionRequestDenialInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
+          resolutionRequestDenialInfo_ = ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
         } else {
           resolutionRequestDenialInfoBuilder_.clear();
         }
@@ -13442,19 +13442,19 @@ public final class DiadocMessage_GetApiProtos {
         attachmentVersion_ = "";
         bitField0_ = (bitField0_ & ~0x00100000);
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
-          resolutionRouteAssignmentInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
+          resolutionRouteAssignmentInfo_ = ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
         } else {
           resolutionRouteAssignmentInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00200000);
         if (resolutionRouteRemovalInfoBuilder_ == null) {
-          resolutionRouteRemovalInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
+          resolutionRouteRemovalInfo_ = ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
         } else {
           resolutionRouteRemovalInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00400000);
         if (cancellationInfoBuilder_ == null) {
-          cancellationInfo_ = Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance();
+          cancellationInfo_ = CancellationInfoProtos.CancellationInfo.getDefaultInstance();
         } else {
           cancellationInfoBuilder_.clear();
         }
@@ -13464,13 +13464,13 @@ public final class DiadocMessage_GetApiProtos {
         version_ = "";
         bitField0_ = (bitField0_ & ~0x02000000);
         if (templateTransformationInfoBuilder_ == null) {
-          templateTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance();
+          templateTransformationInfo_ = TemplateTransformationInfo.getDefaultInstance();
         } else {
           templateTransformationInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x04000000);
         if (templateRefusalInfoBuilder_ == null) {
-          templateRefusalInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance();
+          templateRefusalInfo_ = TemplateRefusalInfo.getDefaultInstance();
         } else {
           templateRefusalInfoBuilder_.clear();
         }
@@ -13482,7 +13482,7 @@ public final class DiadocMessage_GetApiProtos {
         }
         bitField0_ = (bitField0_ & ~0x10000000);
         if (revocationRequestInfoBuilder_ == null) {
-          revocationRequestInfo_ = Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
+          revocationRequestInfo_ = RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
         } else {
           revocationRequestInfoBuilder_.clear();
         }
@@ -13490,13 +13490,13 @@ public final class DiadocMessage_GetApiProtos {
         contentTypeId_ = "";
         bitField0_ = (bitField0_ & ~0x40000000);
         if (powerOfAttorneyInfoBuilder_ == null) {
-          powerOfAttorneyInfo_ = Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
+          powerOfAttorneyInfo_ = PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
         } else {
           powerOfAttorneyInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x80000000);
         if (moveDocumentInfoBuilder_ == null) {
-          moveDocumentInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.getDefaultInstance();
+          moveDocumentInfo_ = MoveDocumentInfo.getDefaultInstance();
         } else {
           moveDocumentInfoBuilder_.clear();
         }
@@ -13516,23 +13516,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_Entity_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance();
+      public Entity getDefaultInstanceForType() {
+        return Entity.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity result = buildPartial();
+      public Entity build() {
+        Entity result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity(this);
+      public Entity buildPartial() {
+        Entity result = new Entity(this);
         int from_bitField0_ = bitField0_;
         int from_bitField1_ = bitField1_;
         int to_bitField0_ = 0;
@@ -13741,16 +13741,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity)other);
+        if (other instanceof Entity) {
+          return mergeFrom((Entity)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity.getDefaultInstance()) return this;
+      public Builder mergeFrom(Entity other) {
+        if (other == Entity.getDefaultInstance()) return this;
         if (other.hasEntityType()) {
           setEntityType(other.getEntityType());
         }
@@ -13988,11 +13988,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity parsedMessage = null;
+        Entity parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.Entity) e.getUnfinishedMessage();
+          parsedMessage = (Entity) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -14004,7 +14004,7 @@ public final class DiadocMessage_GetApiProtos {
       private int bitField0_;
       private int bitField1_;
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType entityType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType.UnknownEntityType;
+      private EntityType entityType_ = EntityType.UnknownEntityType;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
        */
@@ -14014,13 +14014,13 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType getEntityType() {
+      public EntityType getEntityType() {
         return entityType_;
       }
       /**
        * <code>optional .Diadoc.Api.Proto.Events.EntityType EntityType = 1 [default = UnknownEntityType];</code>
        */
-      public Builder setEntityType(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType value) {
+      public Builder setEntityType(EntityType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -14034,12 +14034,12 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearEntityType() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        entityType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityType.UnknownEntityType;
+        entityType_ = EntityType.UnknownEntityType;
         onChanged();
         return this;
       }
 
-      private java.lang.Object entityId_ = "";
+      private Object entityId_ = "";
       /**
        * <code>required string EntityId = 2;</code>
        */
@@ -14049,18 +14049,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string EntityId = 2;</code>
        */
-      public java.lang.String getEntityId() {
-        java.lang.Object ref = entityId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEntityId() {
+        Object ref = entityId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             entityId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14068,11 +14068,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getEntityIdBytes() {
-        java.lang.Object ref = entityId_;
+        Object ref = entityId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           entityId_ = b;
           return b;
         } else {
@@ -14083,7 +14083,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string EntityId = 2;</code>
        */
       public Builder setEntityId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14115,7 +14115,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object authorUserId_ = "";
+      private Object authorUserId_ = "";
       /**
        * <code>optional string AuthorUserId = 33;</code>
        */
@@ -14125,18 +14125,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string AuthorUserId = 33;</code>
        */
-      public java.lang.String getAuthorUserId() {
-        java.lang.Object ref = authorUserId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAuthorUserId() {
+        Object ref = authorUserId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             authorUserId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14144,11 +14144,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getAuthorUserIdBytes() {
-        java.lang.Object ref = authorUserId_;
+        Object ref = authorUserId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           authorUserId_ = b;
           return b;
         } else {
@@ -14159,7 +14159,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string AuthorUserId = 33;</code>
        */
       public Builder setAuthorUserId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14191,7 +14191,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object parentEntityId_ = "";
+      private Object parentEntityId_ = "";
       /**
        * <code>optional string ParentEntityId = 3;</code>
        */
@@ -14201,18 +14201,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ParentEntityId = 3;</code>
        */
-      public java.lang.String getParentEntityId() {
-        java.lang.Object ref = parentEntityId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getParentEntityId() {
+        Object ref = parentEntityId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             parentEntityId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14220,11 +14220,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getParentEntityIdBytes() {
-        java.lang.Object ref = parentEntityId_;
+        Object ref = parentEntityId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           parentEntityId_ = b;
           return b;
         } else {
@@ -14235,7 +14235,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ParentEntityId = 3;</code>
        */
       public Builder setParentEntityId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14419,7 +14419,7 @@ public final class DiadocMessage_GetApiProtos {
         return contentBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType attachmentType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType.UnknownAttachmentType;
+      private AttachmentType attachmentType_ = AttachmentType.UnknownAttachmentType;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.AttachmentType AttachmentType = 5 [default = UnknownAttachmentType];</code>
        *
@@ -14437,7 +14437,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for EntityType.Attachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType getAttachmentType() {
+      public AttachmentType getAttachmentType() {
         return attachmentType_;
       }
       /**
@@ -14447,7 +14447,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for EntityType.Attachment
        * </pre>
        */
-      public Builder setAttachmentType(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType value) {
+      public Builder setAttachmentType(AttachmentType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -14465,12 +14465,12 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearAttachmentType() {
         bitField0_ = (bitField0_ & ~0x00000020);
-        attachmentType_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.AttachmentType.UnknownAttachmentType;
+        attachmentType_ = AttachmentType.UnknownAttachmentType;
         onChanged();
         return this;
       }
 
-      private java.lang.Object fileName_ = "";
+      private Object fileName_ = "";
       /**
        * <code>optional string FileName = 6;</code>
        *
@@ -14488,18 +14488,18 @@ public final class DiadocMessage_GetApiProtos {
        * only for EntityType.Attachment
        * </pre>
        */
-      public java.lang.String getFileName() {
-        java.lang.Object ref = fileName_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getFileName() {
+        Object ref = fileName_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fileName_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14511,11 +14511,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getFileNameBytes() {
-        java.lang.Object ref = fileName_;
+        Object ref = fileName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           fileName_ = b;
           return b;
         } else {
@@ -14530,7 +14530,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setFileName(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14618,7 +14618,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object signerBoxId_ = "";
+      private Object signerBoxId_ = "";
       /**
        * <code>optional string SignerBoxId = 8;</code>
        *
@@ -14636,18 +14636,18 @@ public final class DiadocMessage_GetApiProtos {
        * only for EntityType.Signature
        * </pre>
        */
-      public java.lang.String getSignerBoxId() {
-        java.lang.Object ref = signerBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getSignerBoxId() {
+        Object ref = signerBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             signerBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14659,11 +14659,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getSignerBoxIdBytes() {
-        java.lang.Object ref = signerBoxId_;
+        Object ref = signerBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           signerBoxId_ = b;
           return b;
         } else {
@@ -14678,7 +14678,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setSignerBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14718,7 +14718,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object notDeliveredEventId_ = "";
+      private Object notDeliveredEventId_ = "";
       /**
        * <code>optional string NotDeliveredEventId = 10;</code>
        *
@@ -14736,18 +14736,18 @@ public final class DiadocMessage_GetApiProtos {
        * only for Attachment/DeliveryFailureNotification
        * </pre>
        */
-      public java.lang.String getNotDeliveredEventId() {
-        java.lang.Object ref = notDeliveredEventId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getNotDeliveredEventId() {
+        Object ref = notDeliveredEventId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             notDeliveredEventId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -14759,11 +14759,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getNotDeliveredEventIdBytes() {
-        java.lang.Object ref = notDeliveredEventId_;
+        Object ref = notDeliveredEventId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           notDeliveredEventId_ = b;
           return b;
         } else {
@@ -14778,7 +14778,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setNotDeliveredEventId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15002,9 +15002,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo resolutionInfo_ = Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
+      private ResolutionInfoProtos.ResolutionInfo resolutionInfo_ = ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder> resolutionInfoBuilder_;
+          ResolutionInfoProtos.ResolutionInfo, ResolutionInfoProtos.ResolutionInfo.Builder, ResolutionInfoProtos.ResolutionInfoOrBuilder> resolutionInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
@@ -15014,7 +15014,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo getResolutionInfo() {
+      public ResolutionInfoProtos.ResolutionInfo getResolutionInfo() {
         if (resolutionInfoBuilder_ == null) {
           return resolutionInfo_;
         } else {
@@ -15024,7 +15024,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
-      public Builder setResolutionInfo(Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo value) {
+      public Builder setResolutionInfo(ResolutionInfoProtos.ResolutionInfo value) {
         if (resolutionInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15041,7 +15041,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
       public Builder setResolutionInfo(
-          Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder builderForValue) {
+          ResolutionInfoProtos.ResolutionInfo.Builder builderForValue) {
         if (resolutionInfoBuilder_ == null) {
           resolutionInfo_ = builderForValue.build();
           onChanged();
@@ -15054,12 +15054,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
-      public Builder mergeResolutionInfo(Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo value) {
+      public Builder mergeResolutionInfo(ResolutionInfoProtos.ResolutionInfo value) {
         if (resolutionInfoBuilder_ == null) {
           if (((bitField0_ & 0x00001000) == 0x00001000) &&
-              resolutionInfo_ != Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.getDefaultInstance()) {
+              resolutionInfo_ != ResolutionInfoProtos.ResolutionInfo.getDefaultInstance()) {
             resolutionInfo_ =
-              Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.newBuilder(resolutionInfo_).mergeFrom(value).buildPartial();
+              ResolutionInfoProtos.ResolutionInfo.newBuilder(resolutionInfo_).mergeFrom(value).buildPartial();
           } else {
             resolutionInfo_ = value;
           }
@@ -15075,7 +15075,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearResolutionInfo() {
         if (resolutionInfoBuilder_ == null) {
-          resolutionInfo_ = Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
+          resolutionInfo_ = ResolutionInfoProtos.ResolutionInfo.getDefaultInstance();
           onChanged();
         } else {
           resolutionInfoBuilder_.clear();
@@ -15086,7 +15086,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder getResolutionInfoBuilder() {
+      public ResolutionInfoProtos.ResolutionInfo.Builder getResolutionInfoBuilder() {
         bitField0_ |= 0x00001000;
         onChanged();
         return getResolutionInfoFieldBuilder().getBuilder();
@@ -15094,7 +15094,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder() {
+      public ResolutionInfoProtos.ResolutionInfoOrBuilder getResolutionInfoOrBuilder() {
         if (resolutionInfoBuilder_ != null) {
           return resolutionInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -15105,11 +15105,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionInfo ResolutionInfo = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder> 
+          ResolutionInfoProtos.ResolutionInfo, ResolutionInfoProtos.ResolutionInfo.Builder, ResolutionInfoProtos.ResolutionInfoOrBuilder>
           getResolutionInfoFieldBuilder() {
         if (resolutionInfoBuilder_ == null) {
           resolutionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfo.Builder, Diadoc.Api.Proto.Events.ResolutionInfoProtos.ResolutionInfoOrBuilder>(
+              ResolutionInfoProtos.ResolutionInfo, ResolutionInfoProtos.ResolutionInfo.Builder, ResolutionInfoProtos.ResolutionInfoOrBuilder>(
                   getResolutionInfo(),
                   getParentForChildren(),
                   isClean());
@@ -15118,7 +15118,7 @@ public final class DiadocMessage_GetApiProtos {
         return resolutionInfoBuilder_;
       }
 
-      private java.lang.Object signerDepartmentId_ = "";
+      private Object signerDepartmentId_ = "";
       /**
        * <code>optional string SignerDepartmentId = 14;</code>
        *
@@ -15136,18 +15136,18 @@ public final class DiadocMessage_GetApiProtos {
        * only for EntityType.Signature
        * </pre>
        */
-      public java.lang.String getSignerDepartmentId() {
-        java.lang.Object ref = signerDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getSignerDepartmentId() {
+        Object ref = signerDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             signerDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -15159,11 +15159,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getSignerDepartmentIdBytes() {
-        java.lang.Object ref = signerDepartmentId_;
+        Object ref = signerDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           signerDepartmentId_ = b;
           return b;
         } else {
@@ -15178,7 +15178,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setSignerDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15218,9 +15218,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo resolutionRequestInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
+      private ResolutionRequestInfoProtos.ResolutionRequestInfo resolutionRequestInfo_ = ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder> resolutionRequestInfoBuilder_;
+          ResolutionRequestInfoProtos.ResolutionRequestInfo, ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder> resolutionRequestInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
@@ -15230,7 +15230,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo() {
+      public ResolutionRequestInfoProtos.ResolutionRequestInfo getResolutionRequestInfo() {
         if (resolutionRequestInfoBuilder_ == null) {
           return resolutionRequestInfo_;
         } else {
@@ -15240,7 +15240,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
-      public Builder setResolutionRequestInfo(Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo value) {
+      public Builder setResolutionRequestInfo(ResolutionRequestInfoProtos.ResolutionRequestInfo value) {
         if (resolutionRequestInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15257,7 +15257,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
       public Builder setResolutionRequestInfo(
-          Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder builderForValue) {
+          ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder builderForValue) {
         if (resolutionRequestInfoBuilder_ == null) {
           resolutionRequestInfo_ = builderForValue.build();
           onChanged();
@@ -15270,12 +15270,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
-      public Builder mergeResolutionRequestInfo(Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo value) {
+      public Builder mergeResolutionRequestInfo(ResolutionRequestInfoProtos.ResolutionRequestInfo value) {
         if (resolutionRequestInfoBuilder_ == null) {
           if (((bitField0_ & 0x00004000) == 0x00004000) &&
-              resolutionRequestInfo_ != Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance()) {
+              resolutionRequestInfo_ != ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance()) {
             resolutionRequestInfo_ =
-              Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.newBuilder(resolutionRequestInfo_).mergeFrom(value).buildPartial();
+              ResolutionRequestInfoProtos.ResolutionRequestInfo.newBuilder(resolutionRequestInfo_).mergeFrom(value).buildPartial();
           } else {
             resolutionRequestInfo_ = value;
           }
@@ -15291,7 +15291,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearResolutionRequestInfo() {
         if (resolutionRequestInfoBuilder_ == null) {
-          resolutionRequestInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
+          resolutionRequestInfo_ = ResolutionRequestInfoProtos.ResolutionRequestInfo.getDefaultInstance();
           onChanged();
         } else {
           resolutionRequestInfoBuilder_.clear();
@@ -15302,7 +15302,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder getResolutionRequestInfoBuilder() {
+      public ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder getResolutionRequestInfoBuilder() {
         bitField0_ |= 0x00004000;
         onChanged();
         return getResolutionRequestInfoFieldBuilder().getBuilder();
@@ -15310,7 +15310,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder() {
+      public ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder getResolutionRequestInfoOrBuilder() {
         if (resolutionRequestInfoBuilder_ != null) {
           return resolutionRequestInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -15321,11 +15321,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestInfo ResolutionRequestInfo = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder> 
+          ResolutionRequestInfoProtos.ResolutionRequestInfo, ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder>
           getResolutionRequestInfoFieldBuilder() {
         if (resolutionRequestInfoBuilder_ == null) {
           resolutionRequestInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder>(
+              ResolutionRequestInfoProtos.ResolutionRequestInfo, ResolutionRequestInfoProtos.ResolutionRequestInfo.Builder, ResolutionRequestInfoProtos.ResolutionRequestInfoOrBuilder>(
                   getResolutionRequestInfo(),
                   getParentForChildren(),
                   isClean());
@@ -15334,9 +15334,9 @@ public final class DiadocMessage_GetApiProtos {
         return resolutionRequestInfoBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo resolutionRequestDenialInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
+      private ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo resolutionRequestDenialInfo_ = ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder> resolutionRequestDenialInfoBuilder_;
+          ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder> resolutionRequestDenialInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
@@ -15346,7 +15346,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo() {
+      public ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo getResolutionRequestDenialInfo() {
         if (resolutionRequestDenialInfoBuilder_ == null) {
           return resolutionRequestDenialInfo_;
         } else {
@@ -15356,7 +15356,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
-      public Builder setResolutionRequestDenialInfo(Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo value) {
+      public Builder setResolutionRequestDenialInfo(ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo value) {
         if (resolutionRequestDenialInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15373,7 +15373,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
       public Builder setResolutionRequestDenialInfo(
-          Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder builderForValue) {
+          ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder builderForValue) {
         if (resolutionRequestDenialInfoBuilder_ == null) {
           resolutionRequestDenialInfo_ = builderForValue.build();
           onChanged();
@@ -15386,12 +15386,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
-      public Builder mergeResolutionRequestDenialInfo(Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo value) {
+      public Builder mergeResolutionRequestDenialInfo(ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo value) {
         if (resolutionRequestDenialInfoBuilder_ == null) {
           if (((bitField0_ & 0x00008000) == 0x00008000) &&
-              resolutionRequestDenialInfo_ != Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance()) {
+              resolutionRequestDenialInfo_ != ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance()) {
             resolutionRequestDenialInfo_ =
-              Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.newBuilder(resolutionRequestDenialInfo_).mergeFrom(value).buildPartial();
+              ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.newBuilder(resolutionRequestDenialInfo_).mergeFrom(value).buildPartial();
           } else {
             resolutionRequestDenialInfo_ = value;
           }
@@ -15407,7 +15407,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearResolutionRequestDenialInfo() {
         if (resolutionRequestDenialInfoBuilder_ == null) {
-          resolutionRequestDenialInfo_ = Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
+          resolutionRequestDenialInfo_ = ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.getDefaultInstance();
           onChanged();
         } else {
           resolutionRequestDenialInfoBuilder_.clear();
@@ -15418,7 +15418,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder getResolutionRequestDenialInfoBuilder() {
+      public ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder getResolutionRequestDenialInfoBuilder() {
         bitField0_ |= 0x00008000;
         onChanged();
         return getResolutionRequestDenialInfoFieldBuilder().getBuilder();
@@ -15426,7 +15426,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder() {
+      public ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder getResolutionRequestDenialInfoOrBuilder() {
         if (resolutionRequestDenialInfoBuilder_ != null) {
           return resolutionRequestDenialInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -15437,11 +15437,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRequestDenialInfo ResolutionRequestDenialInfo = 16;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder> 
+          ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder>
           getResolutionRequestDenialInfoFieldBuilder() {
         if (resolutionRequestDenialInfoBuilder_ == null) {
           resolutionRequestDenialInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder>(
+              ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfo.Builder, ResolutionRequestDenialInfoProtos.ResolutionRequestDenialInfoOrBuilder>(
                   getResolutionRequestDenialInfo(),
                   getParentForChildren(),
                   isClean());
@@ -15498,7 +15498,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object packetId_ = "";
+      private Object packetId_ = "";
       /**
        * <code>optional string PacketId = 18;</code>
        */
@@ -15508,18 +15508,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string PacketId = 18;</code>
        */
-      public java.lang.String getPacketId() {
-        java.lang.Object ref = packetId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getPacketId() {
+        Object ref = packetId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             packetId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -15527,11 +15527,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getPacketIdBytes() {
-        java.lang.Object ref = packetId_;
+        Object ref = packetId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           packetId_ = b;
           return b;
         } else {
@@ -15542,7 +15542,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string PacketId = 18;</code>
        */
       public Builder setPacketId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15654,7 +15654,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object attachmentVersion_ = "";
+      private Object attachmentVersion_ = "";
       /**
        * <code>optional string AttachmentVersion = 21;</code>
        */
@@ -15664,18 +15664,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string AttachmentVersion = 21;</code>
        */
-      public java.lang.String getAttachmentVersion() {
-        java.lang.Object ref = attachmentVersion_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAttachmentVersion() {
+        Object ref = attachmentVersion_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             attachmentVersion_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -15683,11 +15683,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getAttachmentVersionBytes() {
-        java.lang.Object ref = attachmentVersion_;
+        Object ref = attachmentVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           attachmentVersion_ = b;
           return b;
         } else {
@@ -15698,7 +15698,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string AttachmentVersion = 21;</code>
        */
       public Builder setAttachmentVersion(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15730,9 +15730,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo resolutionRouteAssignmentInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
+      private ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo resolutionRouteAssignmentInfo_ = ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder> resolutionRouteAssignmentInfoBuilder_;
+          ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder> resolutionRouteAssignmentInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteAssignmentInfo ResolutionRouteAssignmentInfo = 22;</code>
        *
@@ -15750,7 +15750,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteAssignmentAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo() {
+      public ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getResolutionRouteAssignmentInfo() {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
           return resolutionRouteAssignmentInfo_;
         } else {
@@ -15764,7 +15764,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteAssignmentAttachment
        * </pre>
        */
-      public Builder setResolutionRouteAssignmentInfo(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo value) {
+      public Builder setResolutionRouteAssignmentInfo(ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo value) {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15785,7 +15785,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setResolutionRouteAssignmentInfo(
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder builderForValue) {
+          ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder builderForValue) {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
           resolutionRouteAssignmentInfo_ = builderForValue.build();
           onChanged();
@@ -15802,12 +15802,12 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteAssignmentAttachment
        * </pre>
        */
-      public Builder mergeResolutionRouteAssignmentInfo(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo value) {
+      public Builder mergeResolutionRouteAssignmentInfo(ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo value) {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
           if (((bitField0_ & 0x00200000) == 0x00200000) &&
-              resolutionRouteAssignmentInfo_ != Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance()) {
+              resolutionRouteAssignmentInfo_ != ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance()) {
             resolutionRouteAssignmentInfo_ =
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.newBuilder(resolutionRouteAssignmentInfo_).mergeFrom(value).buildPartial();
+              ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.newBuilder(resolutionRouteAssignmentInfo_).mergeFrom(value).buildPartial();
           } else {
             resolutionRouteAssignmentInfo_ = value;
           }
@@ -15827,7 +15827,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearResolutionRouteAssignmentInfo() {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
-          resolutionRouteAssignmentInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
+          resolutionRouteAssignmentInfo_ = ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
           onChanged();
         } else {
           resolutionRouteAssignmentInfoBuilder_.clear();
@@ -15842,7 +15842,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteAssignmentAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder getResolutionRouteAssignmentInfoBuilder() {
+      public ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder getResolutionRouteAssignmentInfoBuilder() {
         bitField0_ |= 0x00200000;
         onChanged();
         return getResolutionRouteAssignmentInfoFieldBuilder().getBuilder();
@@ -15854,7 +15854,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteAssignmentAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder() {
+      public ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder getResolutionRouteAssignmentInfoOrBuilder() {
         if (resolutionRouteAssignmentInfoBuilder_ != null) {
           return resolutionRouteAssignmentInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -15869,11 +15869,11 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder> 
+          ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder>
           getResolutionRouteAssignmentInfoFieldBuilder() {
         if (resolutionRouteAssignmentInfoBuilder_ == null) {
           resolutionRouteAssignmentInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder>(
+              ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder>(
                   getResolutionRouteAssignmentInfo(),
                   getParentForChildren(),
                   isClean());
@@ -15882,9 +15882,9 @@ public final class DiadocMessage_GetApiProtos {
         return resolutionRouteAssignmentInfoBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo resolutionRouteRemovalInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
+      private ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo resolutionRouteRemovalInfo_ = ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder> resolutionRouteRemovalInfoBuilder_;
+          ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder> resolutionRouteRemovalInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.ResolutionRouteRemovalInfo ResolutionRouteRemovalInfo = 23;</code>
        *
@@ -15902,7 +15902,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteRemovalAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo() {
+      public ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getResolutionRouteRemovalInfo() {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
           return resolutionRouteRemovalInfo_;
         } else {
@@ -15916,7 +15916,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteRemovalAttachment
        * </pre>
        */
-      public Builder setResolutionRouteRemovalInfo(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo value) {
+      public Builder setResolutionRouteRemovalInfo(ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo value) {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15937,7 +15937,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setResolutionRouteRemovalInfo(
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder builderForValue) {
+          ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder builderForValue) {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
           resolutionRouteRemovalInfo_ = builderForValue.build();
           onChanged();
@@ -15954,12 +15954,12 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteRemovalAttachment
        * </pre>
        */
-      public Builder mergeResolutionRouteRemovalInfo(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo value) {
+      public Builder mergeResolutionRouteRemovalInfo(ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo value) {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
           if (((bitField0_ & 0x00400000) == 0x00400000) &&
-              resolutionRouteRemovalInfo_ != Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance()) {
+              resolutionRouteRemovalInfo_ != ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance()) {
             resolutionRouteRemovalInfo_ =
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.newBuilder(resolutionRouteRemovalInfo_).mergeFrom(value).buildPartial();
+              ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.newBuilder(resolutionRouteRemovalInfo_).mergeFrom(value).buildPartial();
           } else {
             resolutionRouteRemovalInfo_ = value;
           }
@@ -15979,7 +15979,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearResolutionRouteRemovalInfo() {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
-          resolutionRouteRemovalInfo_ = Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
+          resolutionRouteRemovalInfo_ = ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
           onChanged();
         } else {
           resolutionRouteRemovalInfoBuilder_.clear();
@@ -15994,7 +15994,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteRemovalAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder getResolutionRouteRemovalInfoBuilder() {
+      public ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder getResolutionRouteRemovalInfoBuilder() {
         bitField0_ |= 0x00400000;
         onChanged();
         return getResolutionRouteRemovalInfoFieldBuilder().getBuilder();
@@ -16006,7 +16006,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.ResolutionRouteRemovalAttachment
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder() {
+      public ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder getResolutionRouteRemovalInfoOrBuilder() {
         if (resolutionRouteRemovalInfoBuilder_ != null) {
           return resolutionRouteRemovalInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16021,11 +16021,11 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder> 
+          ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder>
           getResolutionRouteRemovalInfoFieldBuilder() {
         if (resolutionRouteRemovalInfoBuilder_ == null) {
           resolutionRouteRemovalInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder>(
+              ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder, ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder>(
                   getResolutionRouteRemovalInfo(),
                   getParentForChildren(),
                   isClean());
@@ -16034,9 +16034,9 @@ public final class DiadocMessage_GetApiProtos {
         return resolutionRouteRemovalInfoBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo cancellationInfo_ = Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance();
+      private CancellationInfoProtos.CancellationInfo cancellationInfo_ = CancellationInfoProtos.CancellationInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder> cancellationInfoBuilder_;
+          CancellationInfoProtos.CancellationInfo, CancellationInfoProtos.CancellationInfo.Builder, CancellationInfoProtos.CancellationInfoOrBuilder> cancellationInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.CancellationInfo CancellationInfo = 24;</code>
        *
@@ -16054,7 +16054,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.Cancellation
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo getCancellationInfo() {
+      public CancellationInfoProtos.CancellationInfo getCancellationInfo() {
         if (cancellationInfoBuilder_ == null) {
           return cancellationInfo_;
         } else {
@@ -16068,7 +16068,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.Cancellation
        * </pre>
        */
-      public Builder setCancellationInfo(Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo value) {
+      public Builder setCancellationInfo(CancellationInfoProtos.CancellationInfo value) {
         if (cancellationInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16089,7 +16089,7 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       public Builder setCancellationInfo(
-          Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder builderForValue) {
+          CancellationInfoProtos.CancellationInfo.Builder builderForValue) {
         if (cancellationInfoBuilder_ == null) {
           cancellationInfo_ = builderForValue.build();
           onChanged();
@@ -16106,12 +16106,12 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.Cancellation
        * </pre>
        */
-      public Builder mergeCancellationInfo(Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo value) {
+      public Builder mergeCancellationInfo(CancellationInfoProtos.CancellationInfo value) {
         if (cancellationInfoBuilder_ == null) {
           if (((bitField0_ & 0x00800000) == 0x00800000) &&
-              cancellationInfo_ != Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance()) {
+              cancellationInfo_ != CancellationInfoProtos.CancellationInfo.getDefaultInstance()) {
             cancellationInfo_ =
-              Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.newBuilder(cancellationInfo_).mergeFrom(value).buildPartial();
+              CancellationInfoProtos.CancellationInfo.newBuilder(cancellationInfo_).mergeFrom(value).buildPartial();
           } else {
             cancellationInfo_ = value;
           }
@@ -16131,7 +16131,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearCancellationInfo() {
         if (cancellationInfoBuilder_ == null) {
-          cancellationInfo_ = Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.getDefaultInstance();
+          cancellationInfo_ = CancellationInfoProtos.CancellationInfo.getDefaultInstance();
           onChanged();
         } else {
           cancellationInfoBuilder_.clear();
@@ -16146,7 +16146,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.Cancellation
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder getCancellationInfoBuilder() {
+      public CancellationInfoProtos.CancellationInfo.Builder getCancellationInfoBuilder() {
         bitField0_ |= 0x00800000;
         onChanged();
         return getCancellationInfoFieldBuilder().getBuilder();
@@ -16158,7 +16158,7 @@ public final class DiadocMessage_GetApiProtos {
        * only for AttachmentType.Cancellation
        * </pre>
        */
-      public Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder() {
+      public CancellationInfoProtos.CancellationInfoOrBuilder getCancellationInfoOrBuilder() {
         if (cancellationInfoBuilder_ != null) {
           return cancellationInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16173,11 +16173,11 @@ public final class DiadocMessage_GetApiProtos {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder> 
+          CancellationInfoProtos.CancellationInfo, CancellationInfoProtos.CancellationInfo.Builder, CancellationInfoProtos.CancellationInfoOrBuilder>
           getCancellationInfoFieldBuilder() {
         if (cancellationInfoBuilder_ == null) {
           cancellationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfo.Builder, Diadoc.Api.Proto.Events.CancellationInfoProtos.CancellationInfoOrBuilder>(
+              CancellationInfoProtos.CancellationInfo, CancellationInfoProtos.CancellationInfo.Builder, CancellationInfoProtos.CancellationInfoOrBuilder>(
                   getCancellationInfo(),
                   getParentForChildren(),
                   isClean());
@@ -16209,7 +16209,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>repeated string Labels = 25;</code>
        */
-      public java.lang.String getLabels(int index) {
+      public String getLabels(int index) {
         return labels_.get(index);
       }
       /**
@@ -16223,7 +16223,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string Labels = 25;</code>
        */
       public Builder setLabels(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16236,7 +16236,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string Labels = 25;</code>
        */
       public Builder addLabels(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16249,7 +16249,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>repeated string Labels = 25;</code>
        */
       public Builder addAllLabels(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureLabelsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, labels_);
@@ -16279,7 +16279,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object version_ = "";
+      private Object version_ = "";
       /**
        * <code>optional string Version = 26;</code>
        */
@@ -16289,18 +16289,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string Version = 26;</code>
        */
-      public java.lang.String getVersion() {
-        java.lang.Object ref = version_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getVersion() {
+        Object ref = version_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             version_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -16308,11 +16308,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getVersionBytes() {
-        java.lang.Object ref = version_;
+        Object ref = version_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           version_ = b;
           return b;
         } else {
@@ -16323,7 +16323,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string Version = 26;</code>
        */
       public Builder setVersion(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16355,9 +16355,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo templateTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance();
+      private TemplateTransformationInfo templateTransformationInfo_ = TemplateTransformationInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder> templateTransformationInfoBuilder_;
+          TemplateTransformationInfo, TemplateTransformationInfo.Builder, TemplateTransformationInfoOrBuilder> templateTransformationInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
@@ -16367,7 +16367,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo getTemplateTransformationInfo() {
+      public TemplateTransformationInfo getTemplateTransformationInfo() {
         if (templateTransformationInfoBuilder_ == null) {
           return templateTransformationInfo_;
         } else {
@@ -16377,7 +16377,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
-      public Builder setTemplateTransformationInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo value) {
+      public Builder setTemplateTransformationInfo(TemplateTransformationInfo value) {
         if (templateTransformationInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16394,7 +16394,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
       public Builder setTemplateTransformationInfo(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder builderForValue) {
+          TemplateTransformationInfo.Builder builderForValue) {
         if (templateTransformationInfoBuilder_ == null) {
           templateTransformationInfo_ = builderForValue.build();
           onChanged();
@@ -16407,12 +16407,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
-      public Builder mergeTemplateTransformationInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo value) {
+      public Builder mergeTemplateTransformationInfo(TemplateTransformationInfo value) {
         if (templateTransformationInfoBuilder_ == null) {
           if (((bitField0_ & 0x04000000) == 0x04000000) &&
-              templateTransformationInfo_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance()) {
+              templateTransformationInfo_ != TemplateTransformationInfo.getDefaultInstance()) {
             templateTransformationInfo_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.newBuilder(templateTransformationInfo_).mergeFrom(value).buildPartial();
+              TemplateTransformationInfo.newBuilder(templateTransformationInfo_).mergeFrom(value).buildPartial();
           } else {
             templateTransformationInfo_ = value;
           }
@@ -16428,7 +16428,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearTemplateTransformationInfo() {
         if (templateTransformationInfoBuilder_ == null) {
-          templateTransformationInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance();
+          templateTransformationInfo_ = TemplateTransformationInfo.getDefaultInstance();
           onChanged();
         } else {
           templateTransformationInfoBuilder_.clear();
@@ -16439,7 +16439,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder getTemplateTransformationInfoBuilder() {
+      public TemplateTransformationInfo.Builder getTemplateTransformationInfoBuilder() {
         bitField0_ |= 0x04000000;
         onChanged();
         return getTemplateTransformationInfoFieldBuilder().getBuilder();
@@ -16447,7 +16447,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder() {
+      public TemplateTransformationInfoOrBuilder getTemplateTransformationInfoOrBuilder() {
         if (templateTransformationInfoBuilder_ != null) {
           return templateTransformationInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16458,11 +16458,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateTransformationInfo TemplateTransformationInfo = 27;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder> 
+          TemplateTransformationInfo, TemplateTransformationInfo.Builder, TemplateTransformationInfoOrBuilder>
           getTemplateTransformationInfoFieldBuilder() {
         if (templateTransformationInfoBuilder_ == null) {
           templateTransformationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder>(
+              TemplateTransformationInfo, TemplateTransformationInfo.Builder, TemplateTransformationInfoOrBuilder>(
                   getTemplateTransformationInfo(),
                   getParentForChildren(),
                   isClean());
@@ -16471,9 +16471,9 @@ public final class DiadocMessage_GetApiProtos {
         return templateTransformationInfoBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo templateRefusalInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance();
+      private TemplateRefusalInfo templateRefusalInfo_ = TemplateRefusalInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder> templateRefusalInfoBuilder_;
+          TemplateRefusalInfo, TemplateRefusalInfo.Builder, TemplateRefusalInfoOrBuilder> templateRefusalInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
@@ -16483,7 +16483,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo getTemplateRefusalInfo() {
+      public TemplateRefusalInfo getTemplateRefusalInfo() {
         if (templateRefusalInfoBuilder_ == null) {
           return templateRefusalInfo_;
         } else {
@@ -16493,7 +16493,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
-      public Builder setTemplateRefusalInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo value) {
+      public Builder setTemplateRefusalInfo(TemplateRefusalInfo value) {
         if (templateRefusalInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16510,7 +16510,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
       public Builder setTemplateRefusalInfo(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder builderForValue) {
+          TemplateRefusalInfo.Builder builderForValue) {
         if (templateRefusalInfoBuilder_ == null) {
           templateRefusalInfo_ = builderForValue.build();
           onChanged();
@@ -16523,12 +16523,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
-      public Builder mergeTemplateRefusalInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo value) {
+      public Builder mergeTemplateRefusalInfo(TemplateRefusalInfo value) {
         if (templateRefusalInfoBuilder_ == null) {
           if (((bitField0_ & 0x08000000) == 0x08000000) &&
-              templateRefusalInfo_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance()) {
+              templateRefusalInfo_ != TemplateRefusalInfo.getDefaultInstance()) {
             templateRefusalInfo_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.newBuilder(templateRefusalInfo_).mergeFrom(value).buildPartial();
+              TemplateRefusalInfo.newBuilder(templateRefusalInfo_).mergeFrom(value).buildPartial();
           } else {
             templateRefusalInfo_ = value;
           }
@@ -16544,7 +16544,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearTemplateRefusalInfo() {
         if (templateRefusalInfoBuilder_ == null) {
-          templateRefusalInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance();
+          templateRefusalInfo_ = TemplateRefusalInfo.getDefaultInstance();
           onChanged();
         } else {
           templateRefusalInfoBuilder_.clear();
@@ -16555,7 +16555,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder getTemplateRefusalInfoBuilder() {
+      public TemplateRefusalInfo.Builder getTemplateRefusalInfoBuilder() {
         bitField0_ |= 0x08000000;
         onChanged();
         return getTemplateRefusalInfoFieldBuilder().getBuilder();
@@ -16563,7 +16563,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder() {
+      public TemplateRefusalInfoOrBuilder getTemplateRefusalInfoOrBuilder() {
         if (templateRefusalInfoBuilder_ != null) {
           return templateRefusalInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16574,11 +16574,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.TemplateRefusalInfo TemplateRefusalInfo = 28;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder> 
+          TemplateRefusalInfo, TemplateRefusalInfo.Builder, TemplateRefusalInfoOrBuilder>
           getTemplateRefusalInfoFieldBuilder() {
         if (templateRefusalInfoBuilder_ == null) {
           templateRefusalInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder>(
+              TemplateRefusalInfo, TemplateRefusalInfo.Builder, TemplateRefusalInfoOrBuilder>(
                   getTemplateRefusalInfo(),
                   getParentForChildren(),
                   isClean());
@@ -16703,9 +16703,9 @@ public final class DiadocMessage_GetApiProtos {
         return outerDocflowBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo revocationRequestInfo_ = Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
+      private RevocationRequestInfoProtos.RevocationRequestInfo revocationRequestInfo_ = RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder> revocationRequestInfoBuilder_;
+          RevocationRequestInfoProtos.RevocationRequestInfo, RevocationRequestInfoProtos.RevocationRequestInfo.Builder, RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder> revocationRequestInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
@@ -16715,7 +16715,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
-      public Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo() {
+      public RevocationRequestInfoProtos.RevocationRequestInfo getRevocationRequestInfo() {
         if (revocationRequestInfoBuilder_ == null) {
           return revocationRequestInfo_;
         } else {
@@ -16725,7 +16725,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
-      public Builder setRevocationRequestInfo(Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo value) {
+      public Builder setRevocationRequestInfo(RevocationRequestInfoProtos.RevocationRequestInfo value) {
         if (revocationRequestInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16742,7 +16742,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
       public Builder setRevocationRequestInfo(
-          Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder builderForValue) {
+          RevocationRequestInfoProtos.RevocationRequestInfo.Builder builderForValue) {
         if (revocationRequestInfoBuilder_ == null) {
           revocationRequestInfo_ = builderForValue.build();
           onChanged();
@@ -16755,12 +16755,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
-      public Builder mergeRevocationRequestInfo(Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo value) {
+      public Builder mergeRevocationRequestInfo(RevocationRequestInfoProtos.RevocationRequestInfo value) {
         if (revocationRequestInfoBuilder_ == null) {
           if (((bitField0_ & 0x20000000) == 0x20000000) &&
-              revocationRequestInfo_ != Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance()) {
+              revocationRequestInfo_ != RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance()) {
             revocationRequestInfo_ =
-              Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.newBuilder(revocationRequestInfo_).mergeFrom(value).buildPartial();
+              RevocationRequestInfoProtos.RevocationRequestInfo.newBuilder(revocationRequestInfo_).mergeFrom(value).buildPartial();
           } else {
             revocationRequestInfo_ = value;
           }
@@ -16776,7 +16776,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearRevocationRequestInfo() {
         if (revocationRequestInfoBuilder_ == null) {
-          revocationRequestInfo_ = Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
+          revocationRequestInfo_ = RevocationRequestInfoProtos.RevocationRequestInfo.getDefaultInstance();
           onChanged();
         } else {
           revocationRequestInfoBuilder_.clear();
@@ -16787,7 +16787,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
-      public Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder getRevocationRequestInfoBuilder() {
+      public RevocationRequestInfoProtos.RevocationRequestInfo.Builder getRevocationRequestInfoBuilder() {
         bitField0_ |= 0x20000000;
         onChanged();
         return getRevocationRequestInfoFieldBuilder().getBuilder();
@@ -16795,7 +16795,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
-      public Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder() {
+      public RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder getRevocationRequestInfoOrBuilder() {
         if (revocationRequestInfoBuilder_ != null) {
           return revocationRequestInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16806,11 +16806,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.RevocationRequestInfo RevocationRequestInfo = 30;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder> 
+          RevocationRequestInfoProtos.RevocationRequestInfo, RevocationRequestInfoProtos.RevocationRequestInfo.Builder, RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder>
           getRevocationRequestInfoFieldBuilder() {
         if (revocationRequestInfoBuilder_ == null) {
           revocationRequestInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfo.Builder, Diadoc.Api.Proto.Events.RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder>(
+              RevocationRequestInfoProtos.RevocationRequestInfo, RevocationRequestInfoProtos.RevocationRequestInfo.Builder, RevocationRequestInfoProtos.RevocationRequestInfoOrBuilder>(
                   getRevocationRequestInfo(),
                   getParentForChildren(),
                   isClean());
@@ -16819,7 +16819,7 @@ public final class DiadocMessage_GetApiProtos {
         return revocationRequestInfoBuilder_;
       }
 
-      private java.lang.Object contentTypeId_ = "";
+      private Object contentTypeId_ = "";
       /**
        * <code>optional string ContentTypeId = 31;</code>
        */
@@ -16829,18 +16829,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ContentTypeId = 31;</code>
        */
-      public java.lang.String getContentTypeId() {
-        java.lang.Object ref = contentTypeId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getContentTypeId() {
+        Object ref = contentTypeId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             contentTypeId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -16848,11 +16848,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getContentTypeIdBytes() {
-        java.lang.Object ref = contentTypeId_;
+        Object ref = contentTypeId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           contentTypeId_ = b;
           return b;
         } else {
@@ -16863,7 +16863,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ContentTypeId = 31;</code>
        */
       public Builder setContentTypeId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16895,9 +16895,9 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo powerOfAttorneyInfo_ = Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
+      private PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo powerOfAttorneyInfo_ = PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder> powerOfAttorneyInfoBuilder_;
+          PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder> powerOfAttorneyInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
@@ -16907,7 +16907,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo() {
+      public PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getPowerOfAttorneyInfo() {
         if (powerOfAttorneyInfoBuilder_ == null) {
           return powerOfAttorneyInfo_;
         } else {
@@ -16917,7 +16917,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
-      public Builder setPowerOfAttorneyInfo(Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo value) {
+      public Builder setPowerOfAttorneyInfo(PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo value) {
         if (powerOfAttorneyInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16934,7 +16934,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
       public Builder setPowerOfAttorneyInfo(
-          Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder builderForValue) {
+          PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder builderForValue) {
         if (powerOfAttorneyInfoBuilder_ == null) {
           powerOfAttorneyInfo_ = builderForValue.build();
           onChanged();
@@ -16947,12 +16947,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
-      public Builder mergePowerOfAttorneyInfo(Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo value) {
+      public Builder mergePowerOfAttorneyInfo(PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo value) {
         if (powerOfAttorneyInfoBuilder_ == null) {
           if (((bitField0_ & 0x80000000) == 0x80000000) &&
-              powerOfAttorneyInfo_ != Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance()) {
+              powerOfAttorneyInfo_ != PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance()) {
             powerOfAttorneyInfo_ =
-              Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.newBuilder(powerOfAttorneyInfo_).mergeFrom(value).buildPartial();
+              PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.newBuilder(powerOfAttorneyInfo_).mergeFrom(value).buildPartial();
           } else {
             powerOfAttorneyInfo_ = value;
           }
@@ -16968,7 +16968,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearPowerOfAttorneyInfo() {
         if (powerOfAttorneyInfoBuilder_ == null) {
-          powerOfAttorneyInfo_ = Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
+          powerOfAttorneyInfo_ = PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
           onChanged();
         } else {
           powerOfAttorneyInfoBuilder_.clear();
@@ -16979,7 +16979,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder getPowerOfAttorneyInfoBuilder() {
+      public PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder getPowerOfAttorneyInfoBuilder() {
         bitField0_ |= 0x80000000;
         onChanged();
         return getPowerOfAttorneyInfoFieldBuilder().getBuilder();
@@ -16987,7 +16987,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder() {
+      public PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder getPowerOfAttorneyInfoOrBuilder() {
         if (powerOfAttorneyInfoBuilder_ != null) {
           return powerOfAttorneyInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -16998,11 +16998,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.PowerOfAttorneyInfo PowerOfAttorneyInfo = 32;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder> 
+          PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder>
           getPowerOfAttorneyInfoFieldBuilder() {
         if (powerOfAttorneyInfoBuilder_ == null) {
           powerOfAttorneyInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder>(
+              PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder, PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder>(
                   getPowerOfAttorneyInfo(),
                   getParentForChildren(),
                   isClean());
@@ -17011,9 +17011,9 @@ public final class DiadocMessage_GetApiProtos {
         return powerOfAttorneyInfoBuilder_;
       }
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo moveDocumentInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.getDefaultInstance();
+      private MoveDocumentInfo moveDocumentInfo_ = MoveDocumentInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder> moveDocumentInfoBuilder_;
+          MoveDocumentInfo, MoveDocumentInfo.Builder, MoveDocumentInfoOrBuilder> moveDocumentInfoBuilder_;
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
@@ -17023,7 +17023,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo getMoveDocumentInfo() {
+      public MoveDocumentInfo getMoveDocumentInfo() {
         if (moveDocumentInfoBuilder_ == null) {
           return moveDocumentInfo_;
         } else {
@@ -17033,7 +17033,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
-      public Builder setMoveDocumentInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo value) {
+      public Builder setMoveDocumentInfo(MoveDocumentInfo value) {
         if (moveDocumentInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -17050,7 +17050,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
       public Builder setMoveDocumentInfo(
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder builderForValue) {
+          MoveDocumentInfo.Builder builderForValue) {
         if (moveDocumentInfoBuilder_ == null) {
           moveDocumentInfo_ = builderForValue.build();
           onChanged();
@@ -17063,12 +17063,12 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
-      public Builder mergeMoveDocumentInfo(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo value) {
+      public Builder mergeMoveDocumentInfo(MoveDocumentInfo value) {
         if (moveDocumentInfoBuilder_ == null) {
           if (((bitField1_ & 0x00000001) == 0x00000001) &&
-              moveDocumentInfo_ != Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.getDefaultInstance()) {
+              moveDocumentInfo_ != MoveDocumentInfo.getDefaultInstance()) {
             moveDocumentInfo_ =
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.newBuilder(moveDocumentInfo_).mergeFrom(value).buildPartial();
+              MoveDocumentInfo.newBuilder(moveDocumentInfo_).mergeFrom(value).buildPartial();
           } else {
             moveDocumentInfo_ = value;
           }
@@ -17084,7 +17084,7 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearMoveDocumentInfo() {
         if (moveDocumentInfoBuilder_ == null) {
-          moveDocumentInfo_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.getDefaultInstance();
+          moveDocumentInfo_ = MoveDocumentInfo.getDefaultInstance();
           onChanged();
         } else {
           moveDocumentInfoBuilder_.clear();
@@ -17095,7 +17095,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder getMoveDocumentInfoBuilder() {
+      public MoveDocumentInfo.Builder getMoveDocumentInfoBuilder() {
         bitField1_ |= 0x00000001;
         onChanged();
         return getMoveDocumentInfoFieldBuilder().getBuilder();
@@ -17103,7 +17103,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder() {
+      public MoveDocumentInfoOrBuilder getMoveDocumentInfoOrBuilder() {
         if (moveDocumentInfoBuilder_ != null) {
           return moveDocumentInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -17114,11 +17114,11 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional .Diadoc.Api.Proto.Events.MoveDocumentInfo MoveDocumentInfo = 34;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder> 
+          MoveDocumentInfo, MoveDocumentInfo.Builder, MoveDocumentInfoOrBuilder>
           getMoveDocumentInfoFieldBuilder() {
         if (moveDocumentInfoBuilder_ == null) {
           moveDocumentInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfo.Builder, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.MoveDocumentInfoOrBuilder>(
+              MoveDocumentInfo, MoveDocumentInfo.Builder, MoveDocumentInfoOrBuilder>(
                   getMoveDocumentInfo(),
                   getParentForChildren(),
                   isClean());
@@ -17301,7 +17301,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EntityId = 1;</code>
      */
-    java.lang.String getEntityId();
+    String getEntityId();
     /**
      * <code>required string EntityId = 1;</code>
      */
@@ -17324,7 +17324,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MovedToDepartment = 3;</code>
      */
-    java.lang.String getMovedToDepartment();
+    String getMovedToDepartment();
     /**
      * <code>optional string MovedToDepartment = 3;</code>
      */
@@ -17356,7 +17356,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ForwardedToBoxId = 6;</code>
      */
-    java.lang.String getForwardedToBoxId();
+    String getForwardedToBoxId();
     /**
      * <code>optional string ForwardedToBoxId = 6;</code>
      */
@@ -17387,7 +17387,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -17462,14 +17462,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder.class);
+              EntityPatch.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<EntityPatch> PARSER =
@@ -17482,14 +17482,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<EntityPatch> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int ENTITYID_FIELD_NUMBER = 1;
-    private java.lang.Object entityId_;
+    private Object entityId_;
     /**
      * <code>required string EntityId = 1;</code>
      */
@@ -17499,14 +17499,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string EntityId = 1;</code>
      */
-    public java.lang.String getEntityId() {
-      java.lang.Object ref = entityId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEntityId() {
+      Object ref = entityId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           entityId_ = s;
         }
@@ -17518,11 +17518,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getEntityIdBytes() {
-      java.lang.Object ref = entityId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = entityId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         entityId_ = b;
         return b;
       } else {
@@ -17546,7 +17546,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int MOVEDTODEPARTMENT_FIELD_NUMBER = 3;
-    private java.lang.Object movedToDepartment_;
+    private Object movedToDepartment_;
     /**
      * <code>optional string MovedToDepartment = 3;</code>
      */
@@ -17556,14 +17556,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string MovedToDepartment = 3;</code>
      */
-    public java.lang.String getMovedToDepartment() {
-      java.lang.Object ref = movedToDepartment_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMovedToDepartment() {
+      Object ref = movedToDepartment_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           movedToDepartment_ = s;
         }
@@ -17575,11 +17575,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getMovedToDepartmentBytes() {
-      java.lang.Object ref = movedToDepartment_;
-      if (ref instanceof java.lang.String) {
+      Object ref = movedToDepartment_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         movedToDepartment_ = b;
         return b;
       } else {
@@ -17618,7 +17618,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int FORWARDEDTOBOXID_FIELD_NUMBER = 6;
-    private java.lang.Object forwardedToBoxId_;
+    private Object forwardedToBoxId_;
     /**
      * <code>optional string ForwardedToBoxId = 6;</code>
      */
@@ -17628,14 +17628,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string ForwardedToBoxId = 6;</code>
      */
-    public java.lang.String getForwardedToBoxId() {
-      java.lang.Object ref = forwardedToBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getForwardedToBoxId() {
+      Object ref = forwardedToBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           forwardedToBoxId_ = s;
         }
@@ -17647,11 +17647,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getForwardedToBoxIdBytes() {
-      java.lang.Object ref = forwardedToBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = forwardedToBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         forwardedToBoxId_ = b;
         return b;
       } else {
@@ -17741,59 +17741,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(byte[] data)
+    public static EntityPatch parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(java.io.InputStream input)
+    public static EntityPatch parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseDelimitedFrom(java.io.InputStream input)
+    public static EntityPatch parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseDelimitedFrom(
+    public static EntityPatch parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parseFrom(
+    public static EntityPatch parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -17802,14 +17802,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch prototype) {
+    public static Builder newBuilder(EntityPatch prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -17819,17 +17819,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.EntityPatch)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatchOrBuilder {
+        EntityPatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.Builder.class);
+                EntityPatch.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.newBuilder()
@@ -17838,7 +17838,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -17873,23 +17873,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_EntityPatch_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.getDefaultInstance();
+      public EntityPatch getDefaultInstanceForType() {
+        return EntityPatch.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch result = buildPartial();
+      public EntityPatch build() {
+        EntityPatch result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch(this);
+      public EntityPatch buildPartial() {
+        EntityPatch result = new EntityPatch(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -17922,16 +17922,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch)other);
+        if (other instanceof EntityPatch) {
+          return mergeFrom((EntityPatch)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(EntityPatch other) {
+        if (other == EntityPatch.getDefaultInstance()) return this;
         if (other.hasEntityId()) {
           bitField0_ |= 0x00000001;
           entityId_ = other.entityId_;
@@ -17972,11 +17972,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch parsedMessage = null;
+        EntityPatch parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.EntityPatch) e.getUnfinishedMessage();
+          parsedMessage = (EntityPatch) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -17987,7 +17987,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object entityId_ = "";
+      private Object entityId_ = "";
       /**
        * <code>required string EntityId = 1;</code>
        */
@@ -17997,18 +17997,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string EntityId = 1;</code>
        */
-      public java.lang.String getEntityId() {
-        java.lang.Object ref = entityId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEntityId() {
+        Object ref = entityId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             entityId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -18016,11 +18016,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getEntityIdBytes() {
-        java.lang.Object ref = entityId_;
+        Object ref = entityId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           entityId_ = b;
           return b;
         } else {
@@ -18031,7 +18031,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string EntityId = 1;</code>
        */
       public Builder setEntityId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -18095,7 +18095,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object movedToDepartment_ = "";
+      private Object movedToDepartment_ = "";
       /**
        * <code>optional string MovedToDepartment = 3;</code>
        */
@@ -18105,18 +18105,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string MovedToDepartment = 3;</code>
        */
-      public java.lang.String getMovedToDepartment() {
-        java.lang.Object ref = movedToDepartment_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMovedToDepartment() {
+        Object ref = movedToDepartment_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             movedToDepartment_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -18124,11 +18124,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getMovedToDepartmentBytes() {
-        java.lang.Object ref = movedToDepartment_;
+        Object ref = movedToDepartment_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           movedToDepartment_ = b;
           return b;
         } else {
@@ -18139,7 +18139,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string MovedToDepartment = 3;</code>
        */
       public Builder setMovedToDepartment(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -18235,7 +18235,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object forwardedToBoxId_ = "";
+      private Object forwardedToBoxId_ = "";
       /**
        * <code>optional string ForwardedToBoxId = 6;</code>
        */
@@ -18245,18 +18245,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string ForwardedToBoxId = 6;</code>
        */
-      public java.lang.String getForwardedToBoxId() {
-        java.lang.Object ref = forwardedToBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getForwardedToBoxId() {
+        Object ref = forwardedToBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             forwardedToBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -18264,11 +18264,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getForwardedToBoxIdBytes() {
-        java.lang.Object ref = forwardedToBoxId_;
+        Object ref = forwardedToBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           forwardedToBoxId_ = b;
           return b;
         } else {
@@ -18279,7 +18279,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string ForwardedToBoxId = 6;</code>
        */
       public Builder setForwardedToBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -18333,7 +18333,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string LetterFromBoxId = 1;</code>
      */
-    java.lang.String getLetterFromBoxId();
+    String getLetterFromBoxId();
     /**
      * <code>required string LetterFromBoxId = 1;</code>
      */
@@ -18347,7 +18347,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string LetterToBoxId = 2;</code>
      */
-    java.lang.String getLetterToBoxId();
+    String getLetterToBoxId();
     /**
      * <code>required string LetterToBoxId = 2;</code>
      */
@@ -18361,7 +18361,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterFromDepartmentId = 3;</code>
      */
-    java.lang.String getLetterFromDepartmentId();
+    String getLetterFromDepartmentId();
     /**
      * <code>optional string LetterFromDepartmentId = 3;</code>
      */
@@ -18375,7 +18375,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterToDepartmentId = 4;</code>
      */
-    java.lang.String getLetterToDepartmentId();
+    String getLetterToDepartmentId();
     /**
      * <code>optional string LetterToDepartmentId = 4;</code>
      */
@@ -18389,7 +18389,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterProxyBoxId = 5;</code>
      */
-    java.lang.String getLetterProxyBoxId();
+    String getLetterProxyBoxId();
     /**
      * <code>optional string LetterProxyBoxId = 5;</code>
      */
@@ -18403,7 +18403,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterProxyDepartmentId = 6;</code>
      */
-    java.lang.String getLetterProxyDepartmentId();
+    String getLetterProxyDepartmentId();
     /**
      * <code>optional string LetterProxyDepartmentId = 6;</code>
      */
@@ -18434,7 +18434,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -18512,14 +18512,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder.class);
+              TemplateToLetterTransformationInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<TemplateToLetterTransformationInfo> PARSER =
@@ -18532,14 +18532,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TemplateToLetterTransformationInfo> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int LETTERFROMBOXID_FIELD_NUMBER = 1;
-    private java.lang.Object letterFromBoxId_;
+    private Object letterFromBoxId_;
     /**
      * <code>required string LetterFromBoxId = 1;</code>
      */
@@ -18549,14 +18549,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string LetterFromBoxId = 1;</code>
      */
-    public java.lang.String getLetterFromBoxId() {
-      java.lang.Object ref = letterFromBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterFromBoxId() {
+      Object ref = letterFromBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterFromBoxId_ = s;
         }
@@ -18568,11 +18568,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterFromBoxIdBytes() {
-      java.lang.Object ref = letterFromBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterFromBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterFromBoxId_ = b;
         return b;
       } else {
@@ -18581,7 +18581,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int LETTERTOBOXID_FIELD_NUMBER = 2;
-    private java.lang.Object letterToBoxId_;
+    private Object letterToBoxId_;
     /**
      * <code>required string LetterToBoxId = 2;</code>
      */
@@ -18591,14 +18591,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string LetterToBoxId = 2;</code>
      */
-    public java.lang.String getLetterToBoxId() {
-      java.lang.Object ref = letterToBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterToBoxId() {
+      Object ref = letterToBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterToBoxId_ = s;
         }
@@ -18610,11 +18610,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterToBoxIdBytes() {
-      java.lang.Object ref = letterToBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterToBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterToBoxId_ = b;
         return b;
       } else {
@@ -18623,7 +18623,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int LETTERFROMDEPARTMENTID_FIELD_NUMBER = 3;
-    private java.lang.Object letterFromDepartmentId_;
+    private Object letterFromDepartmentId_;
     /**
      * <code>optional string LetterFromDepartmentId = 3;</code>
      */
@@ -18633,14 +18633,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterFromDepartmentId = 3;</code>
      */
-    public java.lang.String getLetterFromDepartmentId() {
-      java.lang.Object ref = letterFromDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterFromDepartmentId() {
+      Object ref = letterFromDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterFromDepartmentId_ = s;
         }
@@ -18652,11 +18652,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterFromDepartmentIdBytes() {
-      java.lang.Object ref = letterFromDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterFromDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterFromDepartmentId_ = b;
         return b;
       } else {
@@ -18665,7 +18665,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int LETTERTODEPARTMENTID_FIELD_NUMBER = 4;
-    private java.lang.Object letterToDepartmentId_;
+    private Object letterToDepartmentId_;
     /**
      * <code>optional string LetterToDepartmentId = 4;</code>
      */
@@ -18675,14 +18675,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterToDepartmentId = 4;</code>
      */
-    public java.lang.String getLetterToDepartmentId() {
-      java.lang.Object ref = letterToDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterToDepartmentId() {
+      Object ref = letterToDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterToDepartmentId_ = s;
         }
@@ -18694,11 +18694,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterToDepartmentIdBytes() {
-      java.lang.Object ref = letterToDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterToDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterToDepartmentId_ = b;
         return b;
       } else {
@@ -18707,7 +18707,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int LETTERPROXYBOXID_FIELD_NUMBER = 5;
-    private java.lang.Object letterProxyBoxId_;
+    private Object letterProxyBoxId_;
     /**
      * <code>optional string LetterProxyBoxId = 5;</code>
      */
@@ -18717,14 +18717,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterProxyBoxId = 5;</code>
      */
-    public java.lang.String getLetterProxyBoxId() {
-      java.lang.Object ref = letterProxyBoxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterProxyBoxId() {
+      Object ref = letterProxyBoxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterProxyBoxId_ = s;
         }
@@ -18736,11 +18736,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterProxyBoxIdBytes() {
-      java.lang.Object ref = letterProxyBoxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterProxyBoxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterProxyBoxId_ = b;
         return b;
       } else {
@@ -18749,7 +18749,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int LETTERPROXYDEPARTMENTID_FIELD_NUMBER = 6;
-    private java.lang.Object letterProxyDepartmentId_;
+    private Object letterProxyDepartmentId_;
     /**
      * <code>optional string LetterProxyDepartmentId = 6;</code>
      */
@@ -18759,14 +18759,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string LetterProxyDepartmentId = 6;</code>
      */
-    public java.lang.String getLetterProxyDepartmentId() {
-      java.lang.Object ref = letterProxyDepartmentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getLetterProxyDepartmentId() {
+      Object ref = letterProxyDepartmentId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           letterProxyDepartmentId_ = s;
         }
@@ -18778,11 +18778,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getLetterProxyDepartmentIdBytes() {
-      java.lang.Object ref = letterProxyDepartmentId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = letterProxyDepartmentId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         letterProxyDepartmentId_ = b;
         return b;
       } else {
@@ -18876,59 +18876,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(byte[] data)
+    public static TemplateToLetterTransformationInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(java.io.InputStream input)
+    public static TemplateToLetterTransformationInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseDelimitedFrom(java.io.InputStream input)
+    public static TemplateToLetterTransformationInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseDelimitedFrom(
+    public static TemplateToLetterTransformationInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parseFrom(
+    public static TemplateToLetterTransformationInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -18937,14 +18937,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo prototype) {
+    public static Builder newBuilder(TemplateToLetterTransformationInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -18954,17 +18954,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.TemplateToLetterTransformationInfo)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfoOrBuilder {
+        TemplateToLetterTransformationInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.Builder.class);
+                TemplateToLetterTransformationInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.newBuilder()
@@ -18973,7 +18973,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -19008,23 +19008,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateToLetterTransformationInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance();
+      public TemplateToLetterTransformationInfo getDefaultInstanceForType() {
+        return TemplateToLetterTransformationInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo result = buildPartial();
+      public TemplateToLetterTransformationInfo build() {
+        TemplateToLetterTransformationInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo(this);
+      public TemplateToLetterTransformationInfo buildPartial() {
+        TemplateToLetterTransformationInfo result = new TemplateToLetterTransformationInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -19057,16 +19057,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo)other);
+        if (other instanceof TemplateToLetterTransformationInfo) {
+          return mergeFrom((TemplateToLetterTransformationInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(TemplateToLetterTransformationInfo other) {
+        if (other == TemplateToLetterTransformationInfo.getDefaultInstance()) return this;
         if (other.hasLetterFromBoxId()) {
           bitField0_ |= 0x00000001;
           letterFromBoxId_ = other.letterFromBoxId_;
@@ -19117,11 +19117,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo parsedMessage = null;
+        TemplateToLetterTransformationInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateToLetterTransformationInfo) e.getUnfinishedMessage();
+          parsedMessage = (TemplateToLetterTransformationInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -19132,7 +19132,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object letterFromBoxId_ = "";
+      private Object letterFromBoxId_ = "";
       /**
        * <code>required string LetterFromBoxId = 1;</code>
        */
@@ -19142,18 +19142,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string LetterFromBoxId = 1;</code>
        */
-      public java.lang.String getLetterFromBoxId() {
-        java.lang.Object ref = letterFromBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterFromBoxId() {
+        Object ref = letterFromBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterFromBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19161,11 +19161,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterFromBoxIdBytes() {
-        java.lang.Object ref = letterFromBoxId_;
+        Object ref = letterFromBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterFromBoxId_ = b;
           return b;
         } else {
@@ -19176,7 +19176,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string LetterFromBoxId = 1;</code>
        */
       public Builder setLetterFromBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19208,7 +19208,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object letterToBoxId_ = "";
+      private Object letterToBoxId_ = "";
       /**
        * <code>required string LetterToBoxId = 2;</code>
        */
@@ -19218,18 +19218,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string LetterToBoxId = 2;</code>
        */
-      public java.lang.String getLetterToBoxId() {
-        java.lang.Object ref = letterToBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterToBoxId() {
+        Object ref = letterToBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterToBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19237,11 +19237,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterToBoxIdBytes() {
-        java.lang.Object ref = letterToBoxId_;
+        Object ref = letterToBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterToBoxId_ = b;
           return b;
         } else {
@@ -19252,7 +19252,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string LetterToBoxId = 2;</code>
        */
       public Builder setLetterToBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19284,7 +19284,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object letterFromDepartmentId_ = "";
+      private Object letterFromDepartmentId_ = "";
       /**
        * <code>optional string LetterFromDepartmentId = 3;</code>
        */
@@ -19294,18 +19294,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string LetterFromDepartmentId = 3;</code>
        */
-      public java.lang.String getLetterFromDepartmentId() {
-        java.lang.Object ref = letterFromDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterFromDepartmentId() {
+        Object ref = letterFromDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterFromDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19313,11 +19313,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterFromDepartmentIdBytes() {
-        java.lang.Object ref = letterFromDepartmentId_;
+        Object ref = letterFromDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterFromDepartmentId_ = b;
           return b;
         } else {
@@ -19328,7 +19328,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string LetterFromDepartmentId = 3;</code>
        */
       public Builder setLetterFromDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19360,7 +19360,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object letterToDepartmentId_ = "";
+      private Object letterToDepartmentId_ = "";
       /**
        * <code>optional string LetterToDepartmentId = 4;</code>
        */
@@ -19370,18 +19370,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string LetterToDepartmentId = 4;</code>
        */
-      public java.lang.String getLetterToDepartmentId() {
-        java.lang.Object ref = letterToDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterToDepartmentId() {
+        Object ref = letterToDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterToDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19389,11 +19389,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterToDepartmentIdBytes() {
-        java.lang.Object ref = letterToDepartmentId_;
+        Object ref = letterToDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterToDepartmentId_ = b;
           return b;
         } else {
@@ -19404,7 +19404,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string LetterToDepartmentId = 4;</code>
        */
       public Builder setLetterToDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19436,7 +19436,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object letterProxyBoxId_ = "";
+      private Object letterProxyBoxId_ = "";
       /**
        * <code>optional string LetterProxyBoxId = 5;</code>
        */
@@ -19446,18 +19446,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string LetterProxyBoxId = 5;</code>
        */
-      public java.lang.String getLetterProxyBoxId() {
-        java.lang.Object ref = letterProxyBoxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterProxyBoxId() {
+        Object ref = letterProxyBoxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterProxyBoxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19465,11 +19465,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterProxyBoxIdBytes() {
-        java.lang.Object ref = letterProxyBoxId_;
+        Object ref = letterProxyBoxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterProxyBoxId_ = b;
           return b;
         } else {
@@ -19480,7 +19480,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string LetterProxyBoxId = 5;</code>
        */
       public Builder setLetterProxyBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19512,7 +19512,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object letterProxyDepartmentId_ = "";
+      private Object letterProxyDepartmentId_ = "";
       /**
        * <code>optional string LetterProxyDepartmentId = 6;</code>
        */
@@ -19522,18 +19522,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string LetterProxyDepartmentId = 6;</code>
        */
-      public java.lang.String getLetterProxyDepartmentId() {
-        java.lang.Object ref = letterProxyDepartmentId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLetterProxyDepartmentId() {
+        Object ref = letterProxyDepartmentId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             letterProxyDepartmentId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -19541,11 +19541,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getLetterProxyDepartmentIdBytes() {
-        java.lang.Object ref = letterProxyDepartmentId_;
+        Object ref = letterProxyDepartmentId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           letterProxyDepartmentId_ = b;
           return b;
         } else {
@@ -19556,7 +19556,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string LetterProxyDepartmentId = 6;</code>
        */
       public Builder setLetterProxyDepartmentId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19623,7 +19623,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Author = 2;</code>
      */
-    java.lang.String getAuthor();
+    String getAuthor();
     /**
      * <code>optional string Author = 2;</code>
      */
@@ -19654,7 +19654,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -19715,14 +19715,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder.class);
+              TemplateTransformationInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<TemplateTransformationInfo> PARSER =
@@ -19735,7 +19735,7 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TemplateTransformationInfo> getParserForType() {
       return PARSER;
     }
@@ -19763,7 +19763,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int AUTHOR_FIELD_NUMBER = 2;
-    private java.lang.Object author_;
+    private Object author_;
     /**
      * <code>optional string Author = 2;</code>
      */
@@ -19773,14 +19773,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Author = 2;</code>
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthor() {
+      Object ref = author_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           author_ = s;
         }
@@ -19792,11 +19792,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
+      Object ref = author_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         author_ = b;
         return b;
       } else {
@@ -19856,59 +19856,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(byte[] data)
+    public static TemplateTransformationInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(java.io.InputStream input)
+    public static TemplateTransformationInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseDelimitedFrom(java.io.InputStream input)
+    public static TemplateTransformationInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseDelimitedFrom(
+    public static TemplateTransformationInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parseFrom(
+    public static TemplateTransformationInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -19917,14 +19917,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo prototype) {
+    public static Builder newBuilder(TemplateTransformationInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -19934,17 +19934,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.TemplateTransformationInfo)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfoOrBuilder {
+        TemplateTransformationInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.Builder.class);
+                TemplateTransformationInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.newBuilder()
@@ -19953,7 +19953,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -19985,23 +19985,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateTransformationInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance();
+      public TemplateTransformationInfo getDefaultInstanceForType() {
+        return TemplateTransformationInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo result = buildPartial();
+      public TemplateTransformationInfo build() {
+        TemplateTransformationInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo(this);
+      public TemplateTransformationInfo buildPartial() {
+        TemplateTransformationInfo result = new TemplateTransformationInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -20022,16 +20022,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo)other);
+        if (other instanceof TemplateTransformationInfo) {
+          return mergeFrom((TemplateTransformationInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(TemplateTransformationInfo other) {
+        if (other == TemplateTransformationInfo.getDefaultInstance()) return this;
         if (other.hasTransformedToDocumentId()) {
           mergeTransformedToDocumentId(other.getTransformedToDocumentId());
         }
@@ -20058,11 +20058,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo parsedMessage = null;
+        TemplateTransformationInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateTransformationInfo) e.getUnfinishedMessage();
+          parsedMessage = (TemplateTransformationInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -20189,7 +20189,7 @@ public final class DiadocMessage_GetApiProtos {
         return transformedToDocumentIdBuilder_;
       }
 
-      private java.lang.Object author_ = "";
+      private Object author_ = "";
       /**
        * <code>optional string Author = 2;</code>
        */
@@ -20199,18 +20199,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string Author = 2;</code>
        */
-      public java.lang.String getAuthor() {
-        java.lang.Object ref = author_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAuthor() {
+        Object ref = author_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             author_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -20218,11 +20218,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getAuthorBytes() {
-        java.lang.Object ref = author_;
+        Object ref = author_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           author_ = b;
           return b;
         } else {
@@ -20233,7 +20233,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>optional string Author = 2;</code>
        */
       public Builder setAuthor(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -20287,7 +20287,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
      */
-    Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType getType();
+    TemplateRefusalType getType();
 
     /**
      * <code>required string BoxId = 2;</code>
@@ -20296,7 +20296,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string BoxId = 2;</code>
      */
-    java.lang.String getBoxId();
+    String getBoxId();
     /**
      * <code>required string BoxId = 2;</code>
      */
@@ -20310,7 +20310,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Author = 3;</code>
      */
-    java.lang.String getAuthor();
+    String getAuthor();
     /**
      * <code>optional string Author = 3;</code>
      */
@@ -20324,7 +20324,7 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Comment = 4;</code>
      */
-    java.lang.String getComment();
+    String getComment();
     /**
      * <code>optional string Comment = 4;</code>
      */
@@ -20355,7 +20355,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -20385,7 +20385,7 @@ public final class DiadocMessage_GetApiProtos {
             }
             case 8: {
               int rawValue = input.readEnum();
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType value = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType.valueOf(rawValue);
+              TemplateRefusalType value = TemplateRefusalType.valueOf(rawValue);
               if (value == null) {
                 unknownFields.mergeVarintField(1, rawValue);
               } else {
@@ -20426,14 +20426,14 @@ public final class DiadocMessage_GetApiProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_fieldAccessorTable
+      return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder.class);
+              TemplateRefusalInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<TemplateRefusalInfo> PARSER =
@@ -20446,14 +20446,14 @@ public final class DiadocMessage_GetApiProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TemplateRefusalInfo> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int TYPE_FIELD_NUMBER = 1;
-    private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType type_;
+    private TemplateRefusalType type_;
     /**
      * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
      */
@@ -20463,12 +20463,12 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
      */
-    public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType getType() {
+    public TemplateRefusalType getType() {
       return type_;
     }
 
     public static final int BOXID_FIELD_NUMBER = 2;
-    private java.lang.Object boxId_;
+    private Object boxId_;
     /**
      * <code>required string BoxId = 2;</code>
      */
@@ -20478,14 +20478,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>required string BoxId = 2;</code>
      */
-    public java.lang.String getBoxId() {
-      java.lang.Object ref = boxId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getBoxId() {
+      Object ref = boxId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           boxId_ = s;
         }
@@ -20497,11 +20497,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getBoxIdBytes() {
-      java.lang.Object ref = boxId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = boxId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         boxId_ = b;
         return b;
       } else {
@@ -20510,7 +20510,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int AUTHOR_FIELD_NUMBER = 3;
-    private java.lang.Object author_;
+    private Object author_;
     /**
      * <code>optional string Author = 3;</code>
      */
@@ -20520,14 +20520,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Author = 3;</code>
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthor() {
+      Object ref = author_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           author_ = s;
         }
@@ -20539,11 +20539,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
+      Object ref = author_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         author_ = b;
         return b;
       } else {
@@ -20552,7 +20552,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     public static final int COMMENT_FIELD_NUMBER = 4;
-    private java.lang.Object comment_;
+    private Object comment_;
     /**
      * <code>optional string Comment = 4;</code>
      */
@@ -20562,14 +20562,14 @@ public final class DiadocMessage_GetApiProtos {
     /**
      * <code>optional string Comment = 4;</code>
      */
-    public java.lang.String getComment() {
-      java.lang.Object ref = comment_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getComment() {
+      Object ref = comment_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           comment_ = s;
         }
@@ -20581,11 +20581,11 @@ public final class DiadocMessage_GetApiProtos {
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
-      java.lang.Object ref = comment_;
-      if (ref instanceof java.lang.String) {
+      Object ref = comment_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         comment_ = b;
         return b;
       } else {
@@ -20594,7 +20594,7 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private void initFields() {
-      type_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType.UnknownTemplateRefusalType;
+      type_ = TemplateRefusalType.UnknownTemplateRefusalType;
       boxId_ = "";
       author_ = "";
       comment_ = "";
@@ -20663,59 +20663,59 @@ public final class DiadocMessage_GetApiProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(byte[] data)
+    public static TemplateRefusalInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(java.io.InputStream input)
+    public static TemplateRefusalInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseDelimitedFrom(java.io.InputStream input)
+    public static TemplateRefusalInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseDelimitedFrom(
+    public static TemplateRefusalInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parseFrom(
+    public static TemplateRefusalInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -20724,14 +20724,14 @@ public final class DiadocMessage_GetApiProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo prototype) {
+    public static Builder newBuilder(TemplateRefusalInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -20741,17 +20741,17 @@ public final class DiadocMessage_GetApiProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.TemplateRefusalInfo)
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfoOrBuilder {
+        TemplateRefusalInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_fieldAccessorTable
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.class, Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.Builder.class);
+                TemplateRefusalInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.newBuilder()
@@ -20760,7 +20760,7 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -20774,7 +20774,7 @@ public final class DiadocMessage_GetApiProtos {
 
       public Builder clear() {
         super.clear();
-        type_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType.UnknownTemplateRefusalType;
+        type_ = TemplateRefusalType.UnknownTemplateRefusalType;
         bitField0_ = (bitField0_ & ~0x00000001);
         boxId_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -20791,23 +20791,23 @@ public final class DiadocMessage_GetApiProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
+        return DiadocMessage_GetApiProtos.internal_static_Diadoc_Api_Proto_Events_TemplateRefusalInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance();
+      public TemplateRefusalInfo getDefaultInstanceForType() {
+        return TemplateRefusalInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo build() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo result = buildPartial();
+      public TemplateRefusalInfo build() {
+        TemplateRefusalInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo buildPartial() {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo result = new Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo(this);
+      public TemplateRefusalInfo buildPartial() {
+        TemplateRefusalInfo result = new TemplateRefusalInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -20832,16 +20832,16 @@ public final class DiadocMessage_GetApiProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo)other);
+        if (other instanceof TemplateRefusalInfo) {
+          return mergeFrom((TemplateRefusalInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo other) {
-        if (other == Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(TemplateRefusalInfo other) {
+        if (other == TemplateRefusalInfo.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -20880,11 +20880,11 @@ public final class DiadocMessage_GetApiProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo parsedMessage = null;
+        TemplateRefusalInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalInfo) e.getUnfinishedMessage();
+          parsedMessage = (TemplateRefusalInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -20895,7 +20895,7 @@ public final class DiadocMessage_GetApiProtos {
       }
       private int bitField0_;
 
-      private Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType type_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType.UnknownTemplateRefusalType;
+      private TemplateRefusalType type_ = TemplateRefusalType.UnknownTemplateRefusalType;
       /**
        * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
        */
@@ -20905,13 +20905,13 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
        */
-      public Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType getType() {
+      public TemplateRefusalType getType() {
         return type_;
       }
       /**
        * <code>required .Diadoc.Api.Proto.Events.TemplateRefusalType Type = 1 [default = UnknownTemplateRefusalType];</code>
        */
-      public Builder setType(Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType value) {
+      public Builder setType(TemplateRefusalType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -20925,12 +20925,12 @@ public final class DiadocMessage_GetApiProtos {
        */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        type_ = Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.TemplateRefusalType.UnknownTemplateRefusalType;
+        type_ = TemplateRefusalType.UnknownTemplateRefusalType;
         onChanged();
         return this;
       }
 
-      private java.lang.Object boxId_ = "";
+      private Object boxId_ = "";
       /**
        * <code>required string BoxId = 2;</code>
        */
@@ -20940,18 +20940,18 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>required string BoxId = 2;</code>
        */
-      public java.lang.String getBoxId() {
-        java.lang.Object ref = boxId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getBoxId() {
+        Object ref = boxId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             boxId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -20959,11 +20959,11 @@ public final class DiadocMessage_GetApiProtos {
        */
       public com.google.protobuf.ByteString
           getBoxIdBytes() {
-        java.lang.Object ref = boxId_;
+        Object ref = boxId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           boxId_ = b;
           return b;
         } else {
@@ -20974,7 +20974,7 @@ public final class DiadocMessage_GetApiProtos {
        * <code>required string BoxId = 2;</code>
        */
       public Builder setBoxId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -21006,7 +21006,7 @@ public final class DiadocMessage_GetApiProtos {
         return this;
       }
 
-      private java.lang.Object author_ = "";
+      private Object author_ = "";
       /**
        * <code>optional string Author = 3;</code>
        */
@@ -21016,7 +21016,7 @@ public final class DiadocMessage_GetApiProtos {
       /**
        * <code>optional string Author = 3;</code>
        */
-      public java.lang.String getAuthor() {
+      public String getAuthor() {
         java.lang.Object ref = author_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =

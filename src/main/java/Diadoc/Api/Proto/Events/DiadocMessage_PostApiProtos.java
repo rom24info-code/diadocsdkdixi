@@ -89538,7 +89538,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     boolean hasParentEntityId();
@@ -89546,7 +89546,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     java.lang.String getParentEntityId();
@@ -89554,7 +89554,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     com.google.protobuf.ByteString
@@ -89564,7 +89564,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     boolean hasRouteId();
@@ -89572,7 +89572,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     java.lang.String getRouteId();
@@ -89580,7 +89580,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     com.google.protobuf.ByteString
@@ -89590,7 +89590,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     boolean hasComment();
@@ -89598,7 +89598,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     java.lang.String getComment();
@@ -89606,7 +89606,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     com.google.protobuf.ByteString
@@ -89759,7 +89759,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     public boolean hasParentEntityId() {
@@ -89769,7 +89769,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     public java.lang.String getParentEntityId() {
@@ -89790,7 +89790,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string ParentEntityId = 1;</code>
      *
      * <pre>
-     * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+     * EntityId документа, который нужно снять с маршрута согласования
      * </pre>
      */
     public com.google.protobuf.ByteString
@@ -89813,7 +89813,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     public boolean hasRouteId() {
@@ -89823,7 +89823,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     public java.lang.String getRouteId() {
@@ -89844,7 +89844,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>required string RouteId = 2;</code>
      *
      * <pre>
-     * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+     * Идентификатор маршрута, с которого нужно снять документ
      * </pre>
      */
     public com.google.protobuf.ByteString
@@ -89867,7 +89867,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     public boolean hasComment() {
@@ -89877,7 +89877,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     public java.lang.String getComment() {
@@ -89898,7 +89898,7 @@ public final class DiadocMessage_PostApiProtos {
      * <code>optional string Comment = 3 [default = ""];</code>
      *
      * <pre>
-     * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+     * Текстовый комментарий, ограничение - 256 символов
      * </pre>
      */
     public com.google.protobuf.ByteString
@@ -90264,7 +90264,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public boolean hasParentEntityId() {
@@ -90274,7 +90274,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public java.lang.String getParentEntityId() {
@@ -90295,7 +90295,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -90315,7 +90315,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public Builder setParentEntityId(
@@ -90332,7 +90332,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public Builder clearParentEntityId() {
@@ -90345,7 +90345,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string ParentEntityId = 1;</code>
        *
        * <pre>
-       * EntityId РґРѕРєСѓРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ СЃ РјР°СЂС€СЂСѓС‚Р° СЃРѕРіР»Р°СЃРѕРІР°РЅРёСЏ
+       * EntityId документа, который нужно снять с маршрута согласования
        * </pre>
        */
       public Builder setParentEntityIdBytes(
@@ -90364,7 +90364,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public boolean hasRouteId() {
@@ -90374,7 +90374,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public java.lang.String getRouteId() {
@@ -90395,7 +90395,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -90415,7 +90415,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public Builder setRouteId(
@@ -90432,7 +90432,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public Builder clearRouteId() {
@@ -90445,7 +90445,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>required string RouteId = 2;</code>
        *
        * <pre>
-       * РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјР°СЂС€СЂСѓС‚Р°, СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СЃРЅСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚
+       * Идентификатор маршрута, с которого нужно снять документ
        * </pre>
        */
       public Builder setRouteIdBytes(
@@ -90464,7 +90464,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public boolean hasComment() {
@@ -90474,7 +90474,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public java.lang.String getComment() {
@@ -90495,7 +90495,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -90515,7 +90515,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public Builder setComment(
@@ -90532,7 +90532,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public Builder clearComment() {
@@ -90545,7 +90545,7 @@ public final class DiadocMessage_PostApiProtos {
        * <code>optional string Comment = 3 [default = ""];</code>
        *
        * <pre>
-       * РўРµРєСЃС‚РѕРІС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№, РѕРіСЂР°РЅРёС‡РµРЅРёРµ - 256 СЃРёРјРІРѕР»РѕРІ
+       * Текстовый комментарий, ограничение - 256 символов
        * </pre>
        */
       public Builder setCommentBytes(

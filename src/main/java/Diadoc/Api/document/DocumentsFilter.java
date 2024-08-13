@@ -15,6 +15,7 @@ public class DocumentsFilter {
     private boolean excludeSubdepartments;
     private String sortDirection;
     private String afterIndexKey;
+    private String documentNumber;
     private Integer count;
 
     public DocumentsFilter(){}
@@ -31,6 +32,7 @@ public class DocumentsFilter {
             boolean excludeSubdepartments,
             String sortDirection,
             String afterIndexKey,
+            String documentNumber,
             Integer count) {
         this.boxId = boxId;
         this.filterCategory = filterCategory;
@@ -43,6 +45,7 @@ public class DocumentsFilter {
         this.excludeSubdepartments = excludeSubdepartments;
         this.sortDirection = sortDirection;
         this.afterIndexKey = afterIndexKey;
+        this.documentNumber = documentNumber;
         this.count = count;
     }
 
@@ -140,8 +143,17 @@ public class DocumentsFilter {
         return afterIndexKey;
     }
 
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
     public DocumentsFilter setAfterIndexKey(String afterIndexKey) {
         this.afterIndexKey = afterIndexKey;
+        return this;
+    }
+
+    public DocumentsFilter setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
         return this;
     }
 

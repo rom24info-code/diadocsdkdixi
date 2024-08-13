@@ -75,6 +75,9 @@ public class DocumentClient {
             if (filter.getAfterIndexKey() != null) {
                 url.addParameter("afterIndexKey", filter.getAfterIndexKey());
             }
+            if (filter.getDocumentNumber() != null) {
+                url.addParameter("documentNumber", filter.getDocumentNumber());
+            }
             if (filter.getCount() != null) {
                 url.addParameter("count", filter.getCount().toString());
             }

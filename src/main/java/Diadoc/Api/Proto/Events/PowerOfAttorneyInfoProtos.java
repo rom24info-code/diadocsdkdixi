@@ -84,7 +84,7 @@ public final class PowerOfAttorneyInfoProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -176,14 +176,14 @@ public final class PowerOfAttorneyInfoProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
+      return PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_fieldAccessorTable
+      return PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.class, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder.class);
+              PowerOfAttorneyInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<PowerOfAttorneyInfo> PARSER =
@@ -196,7 +196,7 @@ public final class PowerOfAttorneyInfoProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<PowerOfAttorneyInfo> getParserForType() {
       return PARSER;
     }
@@ -362,59 +362,59 @@ public final class PowerOfAttorneyInfoProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(byte[] data)
+    public static PowerOfAttorneyInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(java.io.InputStream input)
+    public static PowerOfAttorneyInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseDelimitedFrom(java.io.InputStream input)
+    public static PowerOfAttorneyInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseDelimitedFrom(
+    public static PowerOfAttorneyInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parseFrom(
+    public static PowerOfAttorneyInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -423,14 +423,14 @@ public final class PowerOfAttorneyInfoProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo prototype) {
+    public static Builder newBuilder(PowerOfAttorneyInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -440,17 +440,17 @@ public final class PowerOfAttorneyInfoProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.PowerOfAttorneyInfo)
-        Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfoOrBuilder {
+        PowerOfAttorneyInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
+        return PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_fieldAccessorTable
+        return PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.class, Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.Builder.class);
+                PowerOfAttorneyInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.newBuilder()
@@ -459,7 +459,7 @@ public final class PowerOfAttorneyInfoProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -505,23 +505,23 @@ public final class PowerOfAttorneyInfoProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
+        return PowerOfAttorneyInfoProtos.internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance();
+      public PowerOfAttorneyInfo getDefaultInstanceForType() {
+        return PowerOfAttorneyInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo build() {
-        Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo result = buildPartial();
+      public PowerOfAttorneyInfo build() {
+        PowerOfAttorneyInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo buildPartial() {
-        Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo result = new Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo(this);
+      public PowerOfAttorneyInfo buildPartial() {
+        PowerOfAttorneyInfo result = new PowerOfAttorneyInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -558,16 +558,16 @@ public final class PowerOfAttorneyInfoProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo)other);
+        if (other instanceof PowerOfAttorneyInfo) {
+          return mergeFrom((PowerOfAttorneyInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo other) {
-        if (other == Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(PowerOfAttorneyInfo other) {
+        if (other == PowerOfAttorneyInfo.getDefaultInstance()) return this;
         if (other.hasFullId()) {
           mergeFullId(other.getFullId());
         }
@@ -612,11 +612,11 @@ public final class PowerOfAttorneyInfoProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo parsedMessage = null;
+        PowerOfAttorneyInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.PowerOfAttorneyInfoProtos.PowerOfAttorneyInfo) e.getUnfinishedMessage();
+          parsedMessage = (PowerOfAttorneyInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1034,7 +1034,7 @@ public final class PowerOfAttorneyInfoProtos {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n Events/PowerOfAttorneyInfo.proto\022\027Diad" +
       "oc.Api.Proto.Events\032&PowersOfAttorney/Po" +
       "werOfAttorney.proto\0320PowersOfAttorney/Po" +
@@ -1070,7 +1070,7 @@ public final class PowerOfAttorneyInfoProtos {
     internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Events_PowerOfAttorneyInfo_descriptor,
-        new java.lang.String[] { "FullId", "Status", "RoamingSendingStatus", "SendingType", });
+        new String[] { "FullId", "Status", "RoamingSendingStatus", "SendingType", });
     Diadoc.Api.Proto.PowersOfAttorney.PowerOfAttorneyProtos.getDescriptor();
     Diadoc.Api.Proto.PowersOfAttorney.PowerOfAttorneyValidationProtos.getDescriptor();
     Diadoc.Api.Proto.RoamingSendingStatusProtos.getDescriptor();

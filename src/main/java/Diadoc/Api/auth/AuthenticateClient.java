@@ -10,17 +10,17 @@ import org.apache.commons.codec.binary.StringUtils;
 import org.apache.http.client.methods.RequestBuilder;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.ByteArrayEntity;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
-
 import static Diadoc.Api.Proto.ExternalServiceAuthInfoProtos.*;
 import static java.nio.charset.StandardCharsets.*;
 
+
 public class AuthenticateClient {
     private static final String V_3_AUTHENTICATE = "/V3/Authenticate";
+    private static final String AUTHENTICATE = "/Authenticate";
     private AuthManager authManager;
     private DiadocHttpClient diadocHttpClient;
 
@@ -90,8 +90,10 @@ public class AuthenticateClient {
                 String token = getDecryptedToken(response, currentCert);
                 confirmAuthenticationByCertificate(currentCert, token);
             }
-        } catch (URISyntaxException | IOException | CertificateEncodingException | TokenDecryptException ex) {
+        } catch (URISyntaxException | IOException | CertificateEncodingException ex) {//| TokenDecryptException ex) {
             throw new DiadocSdkException(ex);
+        } catch (TokenDecryptException e) {
+            throw new RuntimeException(e);
         }
     }
 

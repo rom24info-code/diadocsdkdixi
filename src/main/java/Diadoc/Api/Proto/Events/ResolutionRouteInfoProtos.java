@@ -19,7 +19,7 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string RouteId = 1;</code>
      */
-    java.lang.String getRouteId();
+    String getRouteId();
     /**
      * <code>required string RouteId = 1;</code>
      */
@@ -33,7 +33,7 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string Author = 2;</code>
      */
-    java.lang.String getAuthor();
+    String getAuthor();
     /**
      * <code>required string Author = 2;</code>
      */
@@ -64,7 +64,7 @@ public final class ResolutionRouteInfoProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -118,14 +118,14 @@ public final class ResolutionRouteInfoProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
+      return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_fieldAccessorTable
+      return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.class, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder.class);
+              ResolutionRouteAssignmentInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<ResolutionRouteAssignmentInfo> PARSER =
@@ -138,14 +138,14 @@ public final class ResolutionRouteInfoProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<ResolutionRouteAssignmentInfo> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int ROUTEID_FIELD_NUMBER = 1;
-    private java.lang.Object routeId_;
+    private Object routeId_;
     /**
      * <code>required string RouteId = 1;</code>
      */
@@ -155,14 +155,14 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string RouteId = 1;</code>
      */
-    public java.lang.String getRouteId() {
-      java.lang.Object ref = routeId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getRouteId() {
+      Object ref = routeId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           routeId_ = s;
         }
@@ -174,11 +174,11 @@ public final class ResolutionRouteInfoProtos {
      */
     public com.google.protobuf.ByteString
         getRouteIdBytes() {
-      java.lang.Object ref = routeId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = routeId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         routeId_ = b;
         return b;
       } else {
@@ -187,7 +187,7 @@ public final class ResolutionRouteInfoProtos {
     }
 
     public static final int AUTHOR_FIELD_NUMBER = 2;
-    private java.lang.Object author_;
+    private Object author_;
     /**
      * <code>required string Author = 2;</code>
      */
@@ -197,14 +197,14 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string Author = 2;</code>
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthor() {
+      Object ref = author_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           author_ = s;
         }
@@ -216,11 +216,11 @@ public final class ResolutionRouteInfoProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
+      Object ref = author_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         author_ = b;
         return b;
       } else {
@@ -282,59 +282,59 @@ public final class ResolutionRouteInfoProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(byte[] data)
+    public static ResolutionRouteAssignmentInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(java.io.InputStream input)
+    public static ResolutionRouteAssignmentInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseDelimitedFrom(java.io.InputStream input)
+    public static ResolutionRouteAssignmentInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseDelimitedFrom(
+    public static ResolutionRouteAssignmentInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parseFrom(
+    public static ResolutionRouteAssignmentInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -343,14 +343,14 @@ public final class ResolutionRouteInfoProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo prototype) {
+    public static Builder newBuilder(ResolutionRouteAssignmentInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -360,17 +360,17 @@ public final class ResolutionRouteInfoProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.ResolutionRouteAssignmentInfo)
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfoOrBuilder {
+        ResolutionRouteAssignmentInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_fieldAccessorTable
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.class, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.Builder.class);
+                ResolutionRouteAssignmentInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.newBuilder()
@@ -379,7 +379,7 @@ public final class ResolutionRouteInfoProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -406,23 +406,23 @@ public final class ResolutionRouteInfoProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance();
+      public ResolutionRouteAssignmentInfo getDefaultInstanceForType() {
+        return ResolutionRouteAssignmentInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo build() {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo result = buildPartial();
+      public ResolutionRouteAssignmentInfo build() {
+        ResolutionRouteAssignmentInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo buildPartial() {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo result = new Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo(this);
+      public ResolutionRouteAssignmentInfo buildPartial() {
+        ResolutionRouteAssignmentInfo result = new ResolutionRouteAssignmentInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -439,16 +439,16 @@ public final class ResolutionRouteInfoProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo)other);
+        if (other instanceof ResolutionRouteAssignmentInfo) {
+          return mergeFrom((ResolutionRouteAssignmentInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo other) {
-        if (other == Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(ResolutionRouteAssignmentInfo other) {
+        if (other == ResolutionRouteAssignmentInfo.getDefaultInstance()) return this;
         if (other.hasRouteId()) {
           bitField0_ |= 0x00000001;
           routeId_ = other.routeId_;
@@ -479,11 +479,11 @@ public final class ResolutionRouteInfoProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo parsedMessage = null;
+        ResolutionRouteAssignmentInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteAssignmentInfo) e.getUnfinishedMessage();
+          parsedMessage = (ResolutionRouteAssignmentInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -494,7 +494,7 @@ public final class ResolutionRouteInfoProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object routeId_ = "";
+      private Object routeId_ = "";
       /**
        * <code>required string RouteId = 1;</code>
        */
@@ -504,18 +504,18 @@ public final class ResolutionRouteInfoProtos {
       /**
        * <code>required string RouteId = 1;</code>
        */
-      public java.lang.String getRouteId() {
-        java.lang.Object ref = routeId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRouteId() {
+        Object ref = routeId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             routeId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -523,11 +523,11 @@ public final class ResolutionRouteInfoProtos {
        */
       public com.google.protobuf.ByteString
           getRouteIdBytes() {
-        java.lang.Object ref = routeId_;
+        Object ref = routeId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           routeId_ = b;
           return b;
         } else {
@@ -538,7 +538,7 @@ public final class ResolutionRouteInfoProtos {
        * <code>required string RouteId = 1;</code>
        */
       public Builder setRouteId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -570,7 +570,7 @@ public final class ResolutionRouteInfoProtos {
         return this;
       }
 
-      private java.lang.Object author_ = "";
+      private Object author_ = "";
       /**
        * <code>required string Author = 2;</code>
        */
@@ -580,18 +580,18 @@ public final class ResolutionRouteInfoProtos {
       /**
        * <code>required string Author = 2;</code>
        */
-      public java.lang.String getAuthor() {
-        java.lang.Object ref = author_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAuthor() {
+        Object ref = author_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             author_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -599,11 +599,11 @@ public final class ResolutionRouteInfoProtos {
        */
       public com.google.protobuf.ByteString
           getAuthorBytes() {
-        java.lang.Object ref = author_;
+        Object ref = author_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           author_ = b;
           return b;
         } else {
@@ -614,7 +614,7 @@ public final class ResolutionRouteInfoProtos {
        * <code>required string Author = 2;</code>
        */
       public Builder setAuthor(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -668,7 +668,7 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string RouteId = 1;</code>
      */
-    java.lang.String getRouteId();
+    String getRouteId();
     /**
      * <code>required string RouteId = 1;</code>
      */
@@ -682,7 +682,7 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string Author = 2;</code>
      */
-    java.lang.String getAuthor();
+    String getAuthor();
     /**
      * <code>required string Author = 2;</code>
      */
@@ -713,7 +713,7 @@ public final class ResolutionRouteInfoProtos {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -767,14 +767,14 @@ public final class ResolutionRouteInfoProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
+      return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_fieldAccessorTable
+      return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.class, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder.class);
+              ResolutionRouteRemovalInfo.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<ResolutionRouteRemovalInfo> PARSER =
@@ -787,14 +787,14 @@ public final class ResolutionRouteInfoProtos {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<ResolutionRouteRemovalInfo> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int ROUTEID_FIELD_NUMBER = 1;
-    private java.lang.Object routeId_;
+    private Object routeId_;
     /**
      * <code>required string RouteId = 1;</code>
      */
@@ -804,14 +804,14 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string RouteId = 1;</code>
      */
-    public java.lang.String getRouteId() {
-      java.lang.Object ref = routeId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getRouteId() {
+      Object ref = routeId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           routeId_ = s;
         }
@@ -823,11 +823,11 @@ public final class ResolutionRouteInfoProtos {
      */
     public com.google.protobuf.ByteString
         getRouteIdBytes() {
-      java.lang.Object ref = routeId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = routeId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         routeId_ = b;
         return b;
       } else {
@@ -836,7 +836,7 @@ public final class ResolutionRouteInfoProtos {
     }
 
     public static final int AUTHOR_FIELD_NUMBER = 2;
-    private java.lang.Object author_;
+    private Object author_;
     /**
      * <code>required string Author = 2;</code>
      */
@@ -846,14 +846,14 @@ public final class ResolutionRouteInfoProtos {
     /**
      * <code>required string Author = 2;</code>
      */
-    public java.lang.String getAuthor() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getAuthor() {
+      Object ref = author_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           author_ = s;
         }
@@ -865,11 +865,11 @@ public final class ResolutionRouteInfoProtos {
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
-      java.lang.Object ref = author_;
-      if (ref instanceof java.lang.String) {
+      Object ref = author_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         author_ = b;
         return b;
       } else {
@@ -931,59 +931,59 @@ public final class ResolutionRouteInfoProtos {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(byte[] data)
+    public static ResolutionRouteRemovalInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(java.io.InputStream input)
+    public static ResolutionRouteRemovalInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseDelimitedFrom(java.io.InputStream input)
+    public static ResolutionRouteRemovalInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseDelimitedFrom(
+    public static ResolutionRouteRemovalInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parseFrom(
+    public static ResolutionRouteRemovalInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -992,14 +992,14 @@ public final class ResolutionRouteInfoProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo prototype) {
+    public static Builder newBuilder(ResolutionRouteRemovalInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1009,17 +1009,17 @@ public final class ResolutionRouteInfoProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Diadoc.Api.Proto.Events.ResolutionRouteRemovalInfo)
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfoOrBuilder {
+        ResolutionRouteRemovalInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_fieldAccessorTable
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.class, Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.Builder.class);
+                ResolutionRouteRemovalInfo.class, Builder.class);
       }
 
       // Construct using Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.newBuilder()
@@ -1028,7 +1028,7 @@ public final class ResolutionRouteInfoProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1055,23 +1055,23 @@ public final class ResolutionRouteInfoProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
+        return ResolutionRouteInfoProtos.internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor;
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo getDefaultInstanceForType() {
-        return Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance();
+      public ResolutionRouteRemovalInfo getDefaultInstanceForType() {
+        return ResolutionRouteRemovalInfo.getDefaultInstance();
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo build() {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo result = buildPartial();
+      public ResolutionRouteRemovalInfo build() {
+        ResolutionRouteRemovalInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo buildPartial() {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo result = new Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo(this);
+      public ResolutionRouteRemovalInfo buildPartial() {
+        ResolutionRouteRemovalInfo result = new ResolutionRouteRemovalInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1088,16 +1088,16 @@ public final class ResolutionRouteInfoProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo) {
-          return mergeFrom((Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo)other);
+        if (other instanceof ResolutionRouteRemovalInfo) {
+          return mergeFrom((ResolutionRouteRemovalInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo other) {
-        if (other == Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(ResolutionRouteRemovalInfo other) {
+        if (other == ResolutionRouteRemovalInfo.getDefaultInstance()) return this;
         if (other.hasRouteId()) {
           bitField0_ |= 0x00000001;
           routeId_ = other.routeId_;
@@ -1128,11 +1128,11 @@ public final class ResolutionRouteInfoProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo parsedMessage = null;
+        ResolutionRouteRemovalInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Diadoc.Api.Proto.Events.ResolutionRouteInfoProtos.ResolutionRouteRemovalInfo) e.getUnfinishedMessage();
+          parsedMessage = (ResolutionRouteRemovalInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1143,7 +1143,7 @@ public final class ResolutionRouteInfoProtos {
       }
       private int bitField0_;
 
-      private java.lang.Object routeId_ = "";
+      private Object routeId_ = "";
       /**
        * <code>required string RouteId = 1;</code>
        */
@@ -1153,18 +1153,18 @@ public final class ResolutionRouteInfoProtos {
       /**
        * <code>required string RouteId = 1;</code>
        */
-      public java.lang.String getRouteId() {
-        java.lang.Object ref = routeId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRouteId() {
+        Object ref = routeId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             routeId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1172,11 +1172,11 @@ public final class ResolutionRouteInfoProtos {
        */
       public com.google.protobuf.ByteString
           getRouteIdBytes() {
-        java.lang.Object ref = routeId_;
+        Object ref = routeId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           routeId_ = b;
           return b;
         } else {
@@ -1187,7 +1187,7 @@ public final class ResolutionRouteInfoProtos {
        * <code>required string RouteId = 1;</code>
        */
       public Builder setRouteId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1219,7 +1219,7 @@ public final class ResolutionRouteInfoProtos {
         return this;
       }
 
-      private java.lang.Object author_ = "";
+      private Object author_ = "";
       /**
        * <code>required string Author = 2;</code>
        */
@@ -1229,18 +1229,18 @@ public final class ResolutionRouteInfoProtos {
       /**
        * <code>required string Author = 2;</code>
        */
-      public java.lang.String getAuthor() {
-        java.lang.Object ref = author_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAuthor() {
+        Object ref = author_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             author_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1248,11 +1248,11 @@ public final class ResolutionRouteInfoProtos {
        */
       public com.google.protobuf.ByteString
           getAuthorBytes() {
-        java.lang.Object ref = author_;
+        Object ref = author_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           author_ = b;
           return b;
         } else {
@@ -1263,7 +1263,7 @@ public final class ResolutionRouteInfoProtos {
        * <code>required string Author = 2;</code>
        */
       public Builder setAuthor(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1324,7 +1324,7 @@ public final class ResolutionRouteInfoProtos {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n Events/ResolutionRouteInfo.proto\022\027Diad" +
       "oc.Api.Proto.Events\"@\n\035ResolutionRouteAs" +
       "signmentInfo\022\017\n\007RouteId\030\001 \002(\t\022\016\n\006Author\030" +
@@ -1349,13 +1349,13 @@ public final class ResolutionRouteInfoProtos {
     internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Events_ResolutionRouteAssignmentInfo_descriptor,
-        new java.lang.String[] { "RouteId", "Author", });
+        new String[] { "RouteId", "Author", });
     internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Diadoc_Api_Proto_Events_ResolutionRouteRemovalInfo_descriptor,
-        new java.lang.String[] { "RouteId", "Author", });
+        new String[] { "RouteId", "Author", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
