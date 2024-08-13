@@ -1,9 +1,6 @@
 package ru.dixi.Diadoc.Api
 
-import Diadoc.Api.Proto.Employees.EmployeeProtos.Employee
-import com.fasterxml.jackson.annotation.JacksonInject
 import com.fasterxml.jackson.annotation.JsonInclude
-import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.annotation.JsonRootName
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
