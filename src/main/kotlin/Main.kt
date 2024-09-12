@@ -17,8 +17,6 @@ private const val devKey = "1S82-5-48-4ebb53a8-cea0-4f25-a79c-ea90d40bf343"
 
 fun main() {
 
-
-
     val diadocApi = DiadocApi(devKey, addressApiDiadoc)
     val certs = CertificateHelper.getCertificatesAll(rutoken = true)//CertificateHelper.getCertificatesFromPersonalStore()
 
