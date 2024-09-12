@@ -19,6 +19,7 @@ import ru.CryptoPro.JCP.spec.GostCipherSpec;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
+import javax.swing.text.StyledEditorKit;
 import java.io.IOException;
 import java.security.*;
 import java.security.cert.X509Certificate;
@@ -27,7 +28,8 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 
 public class TokenDecryptManager {
-    public static byte[] decryptToken(byte[] encryptedToken, X509Certificate currentCert) throws TokenDecryptException {
+
+    public static byte[] decryptToken(byte[] encryptedToken, X509Certificate currentCert, KeyStore keyStore, char[] password) throws TokenDecryptException {
         try {
             ContentInfo contentInfo = new ContentInfo();
             decodeAsn1Bytes(contentInfo, encryptedToken);
@@ -41,7 +43,7 @@ public class TokenDecryptManager {
             PublicKey senderPublic = kf.generatePublic(pspec);
             KeyAgreement responderKeyAgree = KeyAgreement.getInstance(JCP.GOST_DH_2012_256_NAME);
             byte[] sv = encrKey.transportParameters.ukm.value;
-            PrivateKey privateKey = CertificateHelper.getPrivateKey(currentCert, null);
+            PrivateKey privateKey = CertificateHelper.INSTANCE.getPrivateKeyFromAllCerts(currentCert, keyStore, password);
             responderKeyAgree.init(privateKey, new IvParameterSpec(sv));
             responderKeyAgree.doPhase(senderPublic, true);
             Key responderSecret = responderKeyAgree.generateSecret(CryptoProvider.GOST_CIPHER_NAME);

@@ -34,7 +34,6 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
-/src/main/kotlin/Main.kt
 
 ### VS Code ###
 .vscode/

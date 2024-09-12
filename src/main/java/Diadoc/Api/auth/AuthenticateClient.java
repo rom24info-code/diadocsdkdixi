@@ -12,6 +12,8 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.ByteArrayEntity;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.security.Key;
+import java.security.KeyStore;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 import static Diadoc.Api.Proto.ExternalServiceAuthInfoProtos.*;
@@ -72,7 +74,7 @@ public class AuthenticateClient {
 
     }
 
-    public void authenticate(X509Certificate currentCert, boolean autoConfirm) throws DiadocSdkException {
+    public void authenticate(X509Certificate currentCert, KeyStore keyStore, boolean autoConfirm, char[] passwordPrivateKey) throws DiadocSdkException {
         try {
             authManager.clearCredentials();
 
@@ -87,7 +89,7 @@ public class AuthenticateClient {
             var response = diadocHttpClient.performRequest(request);
 
             if (autoConfirm) {
-                String token = getDecryptedToken(response, currentCert);
+                String token = getDecryptedToken(response, currentCert, keyStore, passwordPrivateKey);
                 confirmAuthenticationByCertificate(currentCert, token);
             }
         } catch (URISyntaxException | IOException | CertificateEncodingException ex) {//| TokenDecryptException ex) {
@@ -97,8 +99,8 @@ public class AuthenticateClient {
         }
     }
 
-    public void authenticate(X509Certificate currentCert) throws DiadocSdkException {
-        authenticate(currentCert, true);
+    public void authenticate(X509Certificate currentCert, KeyStore keyStore, char[] passwordPrivateKey) throws DiadocSdkException {
+        authenticate(currentCert, keyStore, true, passwordPrivateKey);
     }
 
     public void confirmAuthenticationByCertificate(X509Certificate currentCert, String token) throws DiadocSdkException {
@@ -118,8 +120,8 @@ public class AuthenticateClient {
         }
     }
 
-    private String getDecryptedToken(byte[] encryptedToken, X509Certificate currentCert) throws TokenDecryptException {
-        return StringUtils.newStringUtf8(Base64.encodeBase64(TokenDecryptManager.decryptToken(encryptedToken, currentCert)));
+    private String getDecryptedToken(byte[] encryptedToken, X509Certificate currentCert, KeyStore keyStore, char[] passwordPrivateKey) throws TokenDecryptException {
+        return StringUtils.newStringUtf8(Base64.encodeBase64(TokenDecryptManager.decryptToken(encryptedToken, currentCert, keyStore, passwordPrivateKey)));
     }
 
     public ExternalServiceAuthInfo getExternalServiceAuthInfo(String key) throws DiadocSdkException {

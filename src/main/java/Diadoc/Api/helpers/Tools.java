@@ -26,6 +26,12 @@ public class Tools {
         return 621355968000000000L + time * 10000;
     }
 
+    public static long fromCsTicks(long ticks) {
+        long result = 0;
+        result = (ticks - 621355968000000000L) / 10000;
+        return result;
+    }
+
     public static void WriteAllBytes(String getEntityDestinationPath,
                                      ByteString data) throws IOException {
         WriteAllBytes(getEntityDestinationPath, data.toByteArray());
