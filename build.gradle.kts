@@ -64,3 +64,8 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.jar {
+    exclude("MainKt.class")
+    exclude("TestTicksKt.class")
+}
