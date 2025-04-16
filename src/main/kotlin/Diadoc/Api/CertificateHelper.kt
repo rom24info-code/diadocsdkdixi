@@ -2,7 +2,6 @@ package Diadoc.Api
 
 import Diadoc.Api.sign.GOSTSignInfoProvider
 import com.objsys.asn1j.runtime.*
-import org.apache.commons.codec.binary.Hex
 import ru.CryptoPro.JCP.ASN.CryptographicMessageSyntax.*
 import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.CertificateSerialNumber
 import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.Name
@@ -197,13 +196,14 @@ object CertificateHelper {
         return commonName.substring(0, commaIndex)
     }
 
+    @OptIn(ExperimentalStdlibApi::class)
     @Throws(NoSuchAlgorithmException::class, CertificateEncodingException::class)
     fun getThumbPrint(cert: X509Certificate): String {
         val md = MessageDigest.getInstance("SHA-1")
         val der = cert.encoded
         md.update(der)
         val digest = md.digest()
-        return String(Hex.encodeHex(digest))
+        return digest.toHexString(HexFormat.Default)
     }
 
     fun getCertificatesFromPersonalStore(): List<X509Certificate> {
